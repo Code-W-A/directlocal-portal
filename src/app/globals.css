@@ -1,0 +1,35 @@
+@import "./fonts.css";
+:root { --ink:#183a34; --muted:#506660; --paper:#f8f7f2; --line:#d8e0d9; --accent:#bfde63; --white:#fff; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:"Director Sans",system-ui,sans-serif; line-height:1.65; }
+a { color:inherit; text-underline-offset:4px; }
+a:hover { text-decoration-thickness:2px; }
+:focus-visible { outline:3px solid #325dcc; outline-offset:5px; }
+h1,h2,h3,p { margin-top:0; }
+h1,h2,h3 { line-height:1.15; letter-spacing:-.035em; }
+h1 { font-size:clamp(2.6rem,6.5vw,5.6rem); font-weight:650; }
+h2 { font-size:clamp(1.8rem,4vw,2.7rem); }
+h3 { font-size:1.3rem; }
+img { max-width:100%; height:auto; }
+main { min-height:65vh; }
+.container { width:min(1120px, calc(100% - 48px)); margin-inline:auto; }
+.skip-link { position:fixed; top:12px; left:16px; z-index:10; transform:translateY(-160%); opacity:0; pointer-events:none; background:var(--ink); color:white; padding:12px 20px; border-radius:8px; }
+.skip-link:focus { transform:translateY(0); opacity:1; pointer-events:auto; }
+.prose { max-width:72ch; }
+.prose h2 { font-size:1.9rem; margin-top:2rem; }
+.prose h3 { margin-top:1.5rem; }
+.prose a { text-decoration:underline; }
+@media (max-width:600px) { .container { width:calc(100% - 32px); } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+.content-page { padding-block: 3rem 5rem; }
+.content-page h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+.content-page li { margin-block: 1rem; }
+.sofa-image { max-width: 100%; height: auto; margin-top: 1.5rem; }
+.search-filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; margin-block: 2rem; }
+.search-filters label, .filter-field { display: grid; gap: .5rem; font-weight: 600; }
+.search-filters select, .search-filters input, .search-filters button { width: 100%; min-height: 48px; padding: .7rem; border: 1px solid #647268; border-radius: 8px; font: inherit; background: white; color: #142d23; }
+.search-filters button { cursor: pointer; background: #173f30; color: white; align-self: end; }
+.search-results { list-style: none; padding: 0; }
+.search-results li { border: 1px solid #cad3cd; padding: 1.25rem; border-radius: 12px; }

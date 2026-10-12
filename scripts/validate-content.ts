@@ -1,0 +1,10 @@
+import nextEnv from "@next/env";
+nextEnv.loadEnvConfig(process.cwd());
+const { loadCatalog } = await import("../src/lib/content/load");
+const { site } = await import("../src/config/site");
+const { getPublicPages } = await import("../src/lib/seo/registry");
+const { renderMarkdown } = await import("../src/lib/content/markdown");
+const catalog = await loadCatalog();
+for (const page of catalog.pages) renderMarkdown(page.body);
+console.log(`Content valid: ${catalog.services.length} services, ${catalog.locations.length} locations, ${catalog.companies.length} companies, ${catalog.pages.length} editorial pages.`);
+console.log(`Public pages: ${getPublicPages(catalog, site).length}. Indexing: ${site.indexable ? "enabled" : "disabled"}.`);

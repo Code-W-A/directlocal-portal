@@ -1,0 +1,2 @@
+.action { display:inline-flex; align-items:center; justify-content:space-between; gap:30px; border-radius:8px; padding:14px 20px; background:var(--ink); color:white; font-weight:650; text-decoration:none; }
+.action:hover { background:#27594f; }

@@ -1,0 +1,4 @@
+.content { padding-block:90px; max-width:850px; }
+.content h1 { font-size:clamp(2.5rem,6vw,4.5rem); }
+.content>p { color:var(--muted); }
+.content>a { margin-top:20px; }

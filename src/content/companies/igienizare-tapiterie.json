@@ -1,0 +1,61 @@
+{
+  "status": "published",
+  "updatedAt": "2026-10-12",
+  "id": "igienizare-tapiterie",
+  "slug": "igienizare-tapiterie",
+  "indexStatus": "noindex",
+  "name": "Igienizare Tapițerie",
+  "description": "Furnizor care declară curățarea canapelelor la domiciliu în Brașov. Website-ul menționează și un sediu în Brașov, fără o adresă stradală confirmată în director.",
+  "seo": {
+    "title": "Igienizare Tapițerie — contact și acoperire declarată",
+    "description": "Telefonul și website-ul Igienizare Tapițerie, serviciul de curățare canapele în Brașov și sursa datelor consultate."
+  },
+  "website": "https://www.igienizaretapiterie.ro/",
+  "phone": "0723 316 469",
+  "evidence": {
+    "name": [
+      "website"
+    ],
+    "description": [
+      "website"
+    ],
+    "website": [
+      "website"
+    ],
+    "phone": [
+      "website"
+    ]
+  },
+  "headquarters": {
+    "locality": "Brașov",
+    "county": "Brașov",
+    "sourceIds": [
+      "website"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatare-canapele",
+      "sourceIds": [
+        "website"
+      ],
+      "coverage": [
+        {
+          "locationId": "brasov",
+          "sourceIds": [
+            "website"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "website",
+      "url": "https://www.igienizaretapiterie.ro/",
+      "checkedAt": "2026-10-12",
+      "note": "Website oficial: nume comercial, telefon, curățare canapele, sediu declarat în Brașov și deplasare în Brașov."
+    }
+  ],
+  "sponsored": false
+}

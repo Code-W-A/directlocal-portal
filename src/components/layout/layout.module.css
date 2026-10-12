@@ -1,0 +1,12 @@
+.header { border-bottom:1px solid var(--line); }
+.bar { min-height:100px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+.brand { display:flex; align-items:center; gap:12px; font-weight:750; text-decoration:none; font-size:1.1rem; }
+.mark { width:42px; height:42px; display:grid; place-items:center; background:var(--ink); color:var(--accent); border-radius:12px; font-size:1.7rem; line-height:1; }
+.bar nav a { font-size:.92rem; }
+.footer { border-top:1px solid var(--line); padding:28px 0; }
+.footerInner { display:flex; justify-content:space-between; gap:16px; color:var(--muted); font-size:.85rem; }
+@media(max-width:600px) { .bar { min-height:86px; gap:16px; } .brand { font-size:.9rem; gap:8px; } .bar nav a { font-size:.8rem; } .mark { width:34px; height:34px; } .footerInner { flex-direction:column; gap:4px; } }
+
+.bar nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px 18px; }
+.bar nav a { display:inline-flex; align-items:center; min-height:44px; }
+@media(max-width:600px) { .bar { flex-wrap:wrap; padding-block:14px; gap:6px; } .bar nav { width:100%; justify-content:flex-start; gap:20px; } }
