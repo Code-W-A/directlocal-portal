@@ -11,3 +11,5 @@ Căutarea primește la build un index minimal serializat. Filtrarea este client-
 Registrul public include atât index cât și noindex. Sitemap folosește doar subsetul indexabil efectiv. Metadata folosește politica globală, indexStatus și mediul de preview. Fără SITE_URL nu se emit adrese canonice fictive; referințele interne JSON-LD sunt relative în exportul local, absolute cu domeniu configurat.
 
 Nu există backend, API, CMS, baze de date, autentificare, ISR, server actions sau middleware. `npm start` este un server local pentru fișierele exportate. Imaginile sunt locale; optimizatorul runtime este dezactivat. Schimbarea unui slug public cere redirect permanent la hosting, nu JavaScript.
+
+Ofertele pot declara separat orașe și județe, fiecare cu surse. Județele nu sunt convertite în orașe fictive; căutarea după oraș cere acoperire explicită. Pagina de județ poate afișa direct firme și ItemList înainte de textul editorial. Regula de minimum trei firme a fost înlocuită cu evaluare editorială documentată, fără modificarea blocării globale a indexării.

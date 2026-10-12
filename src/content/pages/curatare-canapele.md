@@ -11,7 +11,7 @@
     "description": "Descoperă unde sunt documentați furnizori de curățare canapele și ce informații să pregătești înainte de a cere o ofertă."
   },
   "indexStatus": "noindex",
-  "intro": "Alege județul pentru a vedea localitățile și furnizorii documentați. Directorul începe cu Brașov; prezența unei firme aici nu reprezintă o recomandare și nu confirmă disponibilitatea pentru o programare.",
+  "intro": "Alege județul pentru a vedea localitățile și furnizorii documentați. Sunt documentate Brașov, Timișoara, Constanța și județul Ilfov; prezența unei firme aici nu reprezintă o recomandare și nu confirmă disponibilitatea pentru o programare.",
   "sources": [
     {
       "id": "website",

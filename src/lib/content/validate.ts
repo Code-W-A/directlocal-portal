@@ -22,6 +22,7 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
   }
   for (const l of catalog.locations) ref(catalog.counties, l.countyId, l.status === "published");
   for (const c of catalog.companies) {
+    if (c.indexStatus === "index" && (!c.editorialReviewed || !c.reviewNote)) throw new Error(`Index requires documented editorial review: ${c.id}`);
     unique(c.sources.map(s => s.id), `sources in ${c.id}`);
     const sources = new Set(c.sources.map(s => s.id));
     function evidence(ids: string[] | undefined) { if (!ids?.length || ids.some(id => !sources.has(id))) throw new Error(`Missing source evidence in ${c.id}.`); }
@@ -31,6 +32,9 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
     unique(c.offerings.map(o => o.serviceId), `offerings in ${c.id}`);
     for (const o of c.offerings) {
       ref(catalog.services, o.serviceId, c.status === "published"); evidence(o.sourceIds);
+      if (!o.coverage.length && !o.countyCoverage.length) throw new Error(`Missing coverage: ${c.id}`);
+      unique(o.countyCoverage.map(a => a.countyId), `county coverage in ${c.id}`);
+      for (const a of o.countyCoverage) { ref(catalog.counties, a.countyId, c.status === "published"); evidence(a.sourceIds); }
       unique(o.coverage.map(a => a.locationId), `coverage in ${c.id}`);
       for (const a of o.coverage) { ref(catalog.locations, a.locationId, c.status === "published"); evidence(a.sourceIds); }
     }
@@ -38,7 +42,7 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
   for (const p of catalog.pages) {
     const published = p.status === "published";
     renderMarkdown(p.body);
-    if (p.indexStatus === "index" && !p.editorialReviewed) throw new Error(`Index requires editorial review: ${p.id}`);
+    if (p.indexStatus === "index" && (!p.editorialReviewed || !p.reviewNote)) throw new Error(`Index requires editorial review: ${p.id}`);
     if (p.kind === "editorial") {
       if (!["despre-noi", "contact", "metodologie"].includes(p.slug)) throw new Error(`Unsupported editorial route: ${p.slug}`);
       continue;
@@ -46,7 +50,16 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
     ref(catalog.services, p.serviceId, published);
     if (p.kind === "service") continue;
     if (published && !catalog.pages.some(parent => parent.kind === "service" && parent.serviceId === p.serviceId && parent.status === "published")) throw new Error(`Needs published parent service: ${p.id}`);
-    if (p.kind === "county") { ref(catalog.counties, p.countyId, published); continue; }
+    if (p.kind === "county") {
+      ref(catalog.counties, p.countyId, published);
+      unique(p.companyIds, `company references in ${p.id}`);
+      for (const id of p.companyIds) {
+        const c = ref(catalog.companies, id, published);
+        if (!c.offerings.some(o => o.serviceId === p.serviceId && (o.countyCoverage.some(a => a.countyId === p.countyId) || o.coverage.some(a => catalog.locations.find(l => l.id === a.locationId)?.countyId === p.countyId)))) throw new Error(`Company ${id} does not cover ${p.id}`);
+      }
+      if (p.indexStatus === "index" && !p.companyIds.length) throw new Error(`Index requires a useful sourced listing: ${p.id}`);
+      continue;
+    }
     const location = ref(catalog.locations, p.locationId, published);
     if (published && !catalog.pages.some(parent => parent.kind === "county" && parent.serviceId === p.serviceId && parent.countyId === location.countyId && parent.status === "published")) throw new Error(`Needs published parent county: ${p.id}`);
     unique(p.companyIds, `company references in ${p.id}`);
@@ -54,7 +67,6 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
       const c = ref(catalog.companies, id, published);
       if (!c.offerings.some(o => o.serviceId === p.serviceId && o.coverage.some(a => a.locationId === p.locationId))) throw new Error(`Company ${id} does not cover ${p.id}`);
     }
-    if (p.indexStatus === "index" && p.companyIds.length < 3) throw new Error(`Index requires three verified companies: ${p.id}`);
     const count = p.intro.split(/\s+/).length;
     if (count < 70 || count > 120) throw new Error(`Local introduction needs 70–120 words: ${p.id}`);
   }
@@ -68,9 +80,9 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
     const dates = [p.updatedAt, ...p.sources.map(s => s.checkedAt)];
     if (dates.some(d => d > new Date().toISOString().slice(0, 10))) throw new Error(`Future verification date: ${p.id}`);
   }
-  const local = catalog.pages.filter(p => p.kind === "local" && p.status === "published");
+  const local = catalog.pages.filter(p => (p.kind === "local" || p.kind === "county") && p.status === "published");
   for (let i = 0; i < local.length; i++) for (let j = i + 1; j < local.length; j++) {
-    if (similarity(`${local[i].intro} ${local[i].body}`, `${local[j].intro} ${local[j].body}`) >= 0.8) throw new Error(`Excessive local similarity: ${local[i].id}, ${local[j].id}`);
+    if (similarity(`${local[i].intro} ${local[i].body}`, `${local[j].intro} ${local[j].body}`) >= 0.8) throw new Error(`Excessive geographic similarity: ${local[i].id}, ${local[j].id}`);
   }
   return catalog;
 }

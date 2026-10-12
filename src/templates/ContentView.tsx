@@ -1,3 +1,4 @@
+import { CompanyList } from "@/components/directory/CompanyList";
 import { PageLinks } from "@/components/directory/PageLinks";
 import type { Catalog, ContentPage } from "@/lib/content/schemas";
 import { contentPath, servicePath, countyPath } from "@/lib/seo/urls";
@@ -16,6 +17,7 @@ export function ContentView({ page, catalog }: { page: ContentPage; catalog: Cat
   const county = catalog.counties.find(c => c.id === page.countyId)!;
   const children = catalog.pages.filter(p => p.kind === "local" && p.serviceId === service.id && p.status === "published" && catalog.locations.find(l => l.id === p.locationId)?.countyId === county.id);
   return <EditorialPage page={page} crumbs={[{ label: "Acasă", href: "/" }, { label: "Servicii", href: "/servicii/" }, { label: service.name, href: servicePath(service) }, { label: `Județul ${county.name}`, href: countyPath(service, county) }]}>
-    <section><h2>Localități documentate</h2><PageLinks items={children.map(p => ({ href: contentPath(p, catalog), label: p.title }))} /></section>
+    {page.companyIds.length ? <section><h2>Firme pentru {service.name.toLowerCase()} în {county.name}</h2><CompanyList companies={catalog.companies.filter(c => page.companyIds.includes(c.id))} /></section> : null}
+    {children.length ? <section><h2>Localități documentate</h2><PageLinks items={children.map(p => ({ href: contentPath(p, catalog), label: p.title }))} /></section> : null}
   </EditorialPage>;
 }

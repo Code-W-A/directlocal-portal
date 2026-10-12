@@ -37,7 +37,7 @@ Testele browser rulează exportul, pe desktop și mobil, inclusiv fără JavaScr
 
 Copiază `.env.example` în `.env.local` numai dacă ai un domeniu real de configurat. Funcționează și fără variabile. `SITE_URL` este originea HTTPS a viitorului site, fără cale; `INDEXING_ENABLED=false` implicit. Domeniul nu se deduce din URL-ul temporar Vercel. Preview-urile Vercel rămân noindex.
 
-PoC-ul conține zece pagini publice: homepage, servicii, serviciu, județ, oraș, firmă, căutare, despre noi, contact și metodologie. Există un serviciu (curățare canapele), județul și municipiul Brașov și un profil documentat. Toate paginile au indexStatus noindex. `sitemap.xml` rămâne gol cât indexarea e dezactivată. `robots.txt` permite accesul pentru citirea directivelor noindex.
+PoC-ul conține 18 pagini publice: homepage, servicii, serviciu, județ, oraș, firmă, căutare, despre noi, contact și metodologie. Există un serviciu (curățare canapele), patru firme, patru județe și trei orașe documentate. Șase pagini noi au eligibilitate editorială index; toate paginile rămân efectiv noindex cât indexarea globală este dezactivată. `sitemap.xml` rămâne gol cât indexarea e dezactivată. `robots.txt` permite accesul pentru citirea directivelor noindex.
 
 Configurația Vercel este pregătită, dar nu s-a făcut deploy. La conectarea ulterioară: Root Directory = rădăcina acestui proiect; build `npm run build`; output `out`; versiune Node 22 sau mai nouă acceptată de Vercel. Publicarea și activarea indexării sunt pași separați.
 
@@ -47,3 +47,5 @@ Configurația Vercel este pregătită, dar nu s-a făcut deploy. La conectarea u
 - [Rezultatele verificării și auditul dependențelor](docs/VERIFICATION.md)
 
 Numele „Director de servicii” este provizoriu și se schimbă centralizat în configurația site-ului. Nu există firme, metrici SEO sau recenzii fictive în export. Sursele și limitările sunt în docs/research/initial-seo-opportunity.md. Contactul folosește mailto:webdynamicx@gmail.com; nu sunt necesare credențiale SMTP.
+
+Extinderea și evaluările editoriale: [raport](research/three-local-opportunities.md).

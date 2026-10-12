@@ -18,9 +18,9 @@
 
 ## Publicare și indexare
 
-`status: published` produce HTML; `indexStatus: index` cere eligibilitate și revizuire editorială. O pagină locală are nevoie de minimum trei firme, surse pentru serviciu și localitate, conținut distinct și fără afirmații nesusținute. Indexarea efectivă cere și `INDEXING_ENABLED=true`, domeniu real și mediu non-preview. PoC-ul rămâne integral noindex.
+`status: published` produce HTML; `indexStatus: index` cere eligibilitate și revizuire editorială. O pagină poate avea o singură firmă dacă oferă contact utilizabil, serviciu și zonă susținute de surse, informații distincte și fără afirmații nesusținute. Numărul de firme nu este o cerință Google și nu mai constituie un prag automat. Paginile și profilurile eligibile necesită editorialReviewed și reviewNote cu justificarea verificării. Indexarea efectivă cere și `INDEXING_ENABLED=true`, domeniu real și mediu non-preview. Indexarea globală rămâne dezactivată; eligibilitatea din date nu activează singură indexarea HTML.
 
-Similarity: Jaccard pe secvențe de cinci cuvinte, text normalizat din introducere și corp; componentele comune nu intră în comparație. Pragul ≥0,80 blochează publicarea. Această euristică nu înlocuiește revizuirea umană și verificarea factuală.
+Similarity: Jaccard pe secvențe de cinci cuvinte, text normalizat din introducere și corp pentru toate paginile de oraș și județ; componentele comune nu intră în comparație. Pragul ≥0,80 blochează publicarea. Această euristică nu înlocuiește revizuirea umană și verificarea factuală.
 
 ## URL și metadata
 
@@ -33,3 +33,16 @@ Numai imagini proprii ori licențe comerciale explicite verificate. Fișiere loc
 ## Limitele automatizării
 
 Validarea surselor verifică prezența și legăturile lor, nu adevărul unei propoziții. Lista de expresii interzise detectează exemple, nu toate exagerările. Confirmarea factuală și aprobarea indexării rămân editoriale.
+
+
+## Redactare naturală și surse metodologice
+
+Scrie pentru o persoană care caută un furnizor: contact, acoperire, ce include serviciul și ce trebuie clarificat. Folosește paragrafe scurte și verbe concrete. Evită jargonul, introducerile promoționale și repetarea artificială a expresiei serviciu–oraș. Revizuiește fiecare pagină independent; nu folosi numai înlocuirea numelui localității.
+
+Introducerea de 70–120 de cuvinte este un reper editorial al proiectului, nu o regulă de clasare Google. Nu umple paginile pentru a atinge un număr de cuvinte. Nu promite poziții SEO pe baza KD.
+
+Surse consultate la 2026-10-12:
+- https://developers.google.com/search/docs/fundamentals/creating-helpful-content — utilitate, originalitate, surse și lipsa unui număr preferat de cuvinte.
+- https://developers.google.com/search/docs/essentials/spam-policies#doorway-abuse — evitarea paginilor similare care intermediază inutil accesul la informație.
+
+Aplicare: paginile țintă oferă contact și detalii direct; paginile părinte restrânse rămân noindex. Scrierea naturală nu constituie dovadă de verificare factuală și nu garantează clasarea.

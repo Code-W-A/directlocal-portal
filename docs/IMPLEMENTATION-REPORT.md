@@ -1,3 +1,5 @@
+> Raport istoric al PoC-ului inițial. Pentru starea extinsă și politica editorială actuală, vezi [extinderea](research/three-local-opportunities.md).
+
 # Raport de implementare — 12 octombrie 2026
 
 ## Rezultat

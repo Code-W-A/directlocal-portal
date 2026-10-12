@@ -1,3 +1,5 @@
+> Raport istoric al PoC-ului inițial. Pentru starea extinsă și politica editorială actuală, vezi [extinderea](research/three-local-opportunities.md).
+
 # Verificare locală — 12 octombrie 2026
 
 - `npm run check`: PASS — lint, 29 teste unitare, validare conținut, Next.js build Webpack, verificare export și TypeScript.

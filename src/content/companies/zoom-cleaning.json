@@ -1,0 +1,61 @@
+{
+  "status": "published",
+  "updatedAt": "2026-10-12",
+  "id": "zoom-cleaning",
+  "slug": "zoom-cleaning",
+  "name": "Zoom Cleaning",
+  "description": "Zoom Cleaning oferă curățare canapele la domiciliu în Timișoara. Găsești aici telefonul, website-ul și serviciul declarat de furnizor.",
+  "phone": "0726 829 645",
+  "website": "https://www.zoomcleaning.ro/",
+  "sources": [
+    {
+      "id": "zoom-site",
+      "url": "https://www.zoomcleaning.ro/",
+      "checkedAt": "2026-10-12",
+      "note": "Website Zoom Cleaning: contact, curățare canapele la domiciliu în Timișoara și solicitarea unei oferte personalizate."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizuire documentară 2026-10-12: identitate comercială, contact și acoperire susținute de surse. Text propriu, fără garanții, recenzii sau tarife preluate. Sediul este separat de zona deservită.",
+  "seo": {
+    "title": "Zoom Cleaning — contact și curățare canapele",
+    "description": "Zoom Cleaning oferă curățare canapele la domiciliu în Timișoara. Găsești aici telefonul, website-ul și serviciul declarat de furnizor."
+  },
+  "evidence": {
+    "name": [
+      "zoom-site"
+    ],
+    "description": [
+      "zoom-site"
+    ],
+    "website": [
+      "zoom-site"
+    ],
+    "phone": [
+      "zoom-site"
+    ],
+    "email": [
+      "zoom-site"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatare-canapele",
+      "sourceIds": [
+        "zoom-site"
+      ],
+      "coverage": [
+        {
+          "locationId": "timisoara",
+          "sourceIds": [
+            "zoom-site"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "email": "info@zoomcleaning.ro"
+}

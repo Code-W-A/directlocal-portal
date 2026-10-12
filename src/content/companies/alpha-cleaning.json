@@ -1,0 +1,72 @@
+{
+  "status": "published",
+  "updatedAt": "2026-10-12",
+  "id": "alpha-cleaning",
+  "slug": "alpha-cleaning",
+  "name": "Alpha Cleaning",
+  "description": "Alpha Cleaning declară curățarea canapelelor la domiciliu în Constanța. Consultă telefonul, adresa de contact și sursele informațiilor.",
+  "phone": "0724 304 419",
+  "website": "https://alphacleaning.ro/",
+  "sources": [
+    {
+      "id": "alpha-serviciu",
+      "url": "https://alphacleaning.ro/servicii/canapele",
+      "checkedAt": "2026-10-12",
+      "note": "Pagina serviciului Alpha Cleaning: curățare canapele la domiciliu în Constanța și telefon. Duratele de uscare publicate nu sunt consecvente; nu le preluăm ca valori certe."
+    },
+    {
+      "id": "alpha-contact",
+      "url": "https://alphacleaning.ro/contact",
+      "checkedAt": "2026-10-12",
+      "note": "Pagina de contact: telefon și adresa publicată Strada Poporului 187, Constanța."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizuire documentară 2026-10-12: identitate comercială, contact și acoperire susținute de surse. Text propriu, fără garanții, recenzii sau tarife preluate. Sediul este separat de zona deservită.",
+  "seo": {
+    "title": "Alpha Cleaning — contact și curățare canapele",
+    "description": "Alpha Cleaning declară curățarea canapelelor la domiciliu în Constanța. Consultă telefonul, adresa de contact și sursele informațiilor."
+  },
+  "evidence": {
+    "name": [
+      "alpha-serviciu"
+    ],
+    "description": [
+      "alpha-serviciu",
+      "alpha-contact"
+    ],
+    "website": [
+      "alpha-serviciu"
+    ],
+    "phone": [
+      "alpha-contact"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatare-canapele",
+      "sourceIds": [
+        "alpha-serviciu"
+      ],
+      "coverage": [
+        {
+          "locationId": "constanta",
+          "sourceIds": [
+            "alpha-serviciu"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "headquarters": {
+    "locality": "Constanța",
+    "county": "Constanța",
+    "street": "Strada Poporului 187",
+    "sourceIds": [
+      "alpha-contact"
+    ]
+  }
+}

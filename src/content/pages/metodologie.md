@@ -33,7 +33,7 @@ Listările sunt ordonate alfabetic după numele afișat. Nu folosim clasamente d
 Declarațiile website-urilor pot deveni neactuale. Nu am efectuat apeluri de confirmare, vizite la sediu sau evaluări ale lucrărilor. Confirmă oferta și programarea direct cu firma.
 
 ## Publicarea paginilor
-O pagină locală poate fi propusă pentru indexare numai cu minimum trei firme relevante, dovezi pentru serviciu și zonă, conținut distinct și revizuire editorială. Pagina inițială cu un furnizor rămâne neindexabilă.
+O pagină poate fi propusă pentru indexare după o evaluare editorială documentată: contact utilizabil, dovezi pentru serviciu și zonă, informații distincte și lipsa afirmațiilor nesusținute. Numărul firmelor nu este un prag automat. O singură listare nu reprezintă o comparație completă a pieței. Activarea indexării site-ului este o etapă separată.
 
 ## Raportarea erorilor
 Trimite URL-ul, informația contestată și o sursă publică prin [Contact](/contact/). Nu promitem un termen de răspuns.

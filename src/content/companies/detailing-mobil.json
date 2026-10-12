@@ -1,0 +1,64 @@
+{
+  "status": "published",
+  "updatedAt": "2026-10-12",
+  "id": "detailing-mobil",
+  "slug": "detailing-mobil",
+  "name": "Detailing Mobil",
+  "description": "Detailing Mobil declară curățarea canapelelor la client în Ilfov. Sediul este în București; firma nu are punct de predare a obiectelor pentru curățare.",
+  "phone": "0735 467 978",
+  "website": "https://detailingmobil.ro/",
+  "sources": [
+    {
+      "id": "mobil-site",
+      "url": "https://detailingmobil.ro/",
+      "checkedAt": "2026-10-12",
+      "note": "Website Detailing Mobil: curățare canapele în București și Ilfov, telefon, sediu declarat în București și lipsa unui punct de predare a obiectelor."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizuire documentară 2026-10-12: identitate comercială, contact și acoperire susținute de surse. Text propriu, fără garanții, recenzii sau tarife preluate. Sediul este separat de zona deservită.",
+  "seo": {
+    "title": "Detailing Mobil — contact și curățare canapele",
+    "description": "Detailing Mobil declară curățarea canapelelor la client în Ilfov. Sediul este în București; firma nu are punct de predare a obiectelor pentru curățare."
+  },
+  "evidence": {
+    "name": [
+      "mobil-site"
+    ],
+    "description": [
+      "mobil-site"
+    ],
+    "website": [
+      "mobil-site"
+    ],
+    "phone": [
+      "mobil-site"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatare-canapele",
+      "sourceIds": [
+        "mobil-site"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "ilfov",
+          "sourceIds": [
+            "mobil-site"
+          ]
+        }
+      ]
+    }
+  ],
+  "headquarters": {
+    "locality": "București",
+    "county": "București",
+    "sourceIds": [
+      "mobil-site"
+    ]
+  }
+}

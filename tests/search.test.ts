@@ -17,8 +17,18 @@ test("search supports real catalog, accents, empty results and combined filters"
 test("sitemap selector excludes noindex even with global indexing enabled", async () => {
   const config = resolveSiteConfig({ SITE_URL: "https://director.ro", INDEXING_ENABLED: "true" });
   const pages = getPublicPages(await loadCatalog(), config);
-  assert.equal(indexablePages(pages, config).length, 0);
+  assert.equal(indexablePages(pages, config).length, 6);
   const candidate = { ...pages[0], indexStatus: "index" as const };
-  assert.deepEqual(indexablePages([...pages.slice(1), candidate], config), [candidate]);
+  assert.deepEqual(indexablePages([...pages.slice(1), candidate], config), [...pages.slice(1).filter(p => p.indexStatus === "index"), candidate]);
   assert.equal(indexablePages([candidate], resolveSiteConfig({})).length, 0);
+});
+
+test("county filter finds Ilfov without fabricating cities", async () => {
+  const rows = buildSearchIndex(await loadCatalog());
+  const filters = { service: "curatare-canapele", county: "ilfov", city: "", query: "" };
+  assert.deepEqual(filterSearch(rows, filters).map(r => r.id), ["detailing-mobil"]);
+  assert.equal(filterSearch(rows, { ...filters, city: "voluntari" }).length, 0);
+  assert.equal(filterSearch(rows, { ...filters, city: "brasov" }).length, 0);
+  assert(rows.find(r => r.id === "detailing-mobil")!.coverage.every(a => !a.cityId));
+  assert.deepEqual(filterSearch(rows, { ...filters, county: "timis", city: "timisoara" }).map(r => r.id), ["zoom-cleaning"]);
 });

@@ -18,6 +18,7 @@ export function getPublicPages(catalog: Catalog, site: SiteConfig): PublicPage[]
       dates.push(city.updatedAt, catalog.counties.find(c => c.id === city.countyId)!.updatedAt);
       for (const id of p.companyIds) { const c = catalog.companies.find(c => c.id === id)!; dates.push(c.updatedAt, ...c.sources.map(s => s.checkedAt)); }
     }
+    if (p.kind === "county") for (const id of p.companyIds) { const c = catalog.companies.find(c => c.id === id)!; dates.push(c.updatedAt, ...c.sources.map(s => s.checkedAt)); }
     pages.push({ path: contentPath(p, catalog), ...p.seo, h1: p.title, updatedAt: dates.sort().at(-1)!, indexStatus: p.indexStatus });
   }
   return pages;

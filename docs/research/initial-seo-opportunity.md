@@ -1,3 +1,5 @@
+> Raport istoric al PoC-ului inițial. Pentru starea extinsă și politica editorială actuală, vezi [extinderea](three-local-opportunities.md).
+
 # Oportunitatea SEO inițială — 12 octombrie 2026
 
 ## Alegere și limite

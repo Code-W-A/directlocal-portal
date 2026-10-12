@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { loadCatalog } from "@/lib/content/load";
+import { contentPath } from "@/lib/seo/urls";
 import { metadataFor } from "@/lib/content/public";
 
 import { ActionLink } from "@/components/ui/ActionLink";
 import styles from "./page.module.css";
 export async function generateMetadata() { return metadataFor("/"); }
-export default function HomePage() {
+export default async function HomePage() {
+  const catalog = await loadCatalog();
+  const destinations = catalog.pages.filter(p => p.status === "published" && (p.kind === "local" || (p.kind === "county" && p.companyIds.length > 0)));
   return <>
     <section className={`container ${styles.hero}`} aria-labelledby="titlu">
       <div className={styles.intro}>
@@ -18,10 +22,11 @@ export default function HomePage() {
         <span className={styles.noteLabel}>LA ÎNCEPUT DE DRUM</span>
         <div className={styles.symbol} aria-hidden="true">↗</div>
         <h2>Curățare canapele în Brașov</h2>
-        <p>Prima listare documentată: contact, serviciu declarat și surse publice.</p><Link href="/servicii/curatare-canapele/brasov/brasov/">Vezi pagina din Brașov</Link>
+        <p>Contact, serviciu declarat și surse publice pentru fiecare furnizor.</p><Link href="/servicii/curatare-canapele/brasov/brasov/">Vezi pagina din Brașov</Link>
         <Image src="/images/canapea.webp" width={800} height={400} alt="Ilustrație generică a unei canapele verzi cu două perne" className="sofa-image" /><p className={styles.noteFoot}>Ilustrație generică, nu fotografia unei firme.</p>
       </aside>
     </section>
+    <section className="container content-page"><h2>Curățare canapele: alege zona</h2><ul>{destinations.map(p => <li key={p.id}><Link href={contentPath(p, catalog)}>{p.title}</Link></li>)}</ul></section>
     <section id="despre" className={styles.about} aria-labelledby="despre-titlu">
       <div className="container">
         <p className={styles.eyebrow}>DESPRE DIRECTOR</p>

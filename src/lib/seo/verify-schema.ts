@@ -16,19 +16,19 @@ export function verifyStructuredData($: CheerioAPI, path: string, catalog: Catal
     const expected = { '@context': 'https://schema.org', '@type': 'LocalBusiness', name: company.name, description: company.description,
       ...(company.website ? { url: company.website } : {}), ...(company.phone ? { telephone: company.phone } : {}), ...(company.email ? { email: company.email } : {}),
       ...(company.headquarters ? { address: { '@type': 'PostalAddress', addressLocality: company.headquarters.locality, addressRegion: company.headquarters.county, addressCountry: 'RO', ...(company.headquarters.street ? { streetAddress: company.headquarters.street } : {}) } } : {}),
-      areaServed: catalog.locations.filter(l => company.offerings.some(o => o.coverage.some(a => a.locationId === l.id))).map(l => ({ '@type': 'City', name: l.name })) };
+      areaServed: catalog.locations.filter(l => company.offerings.some(o => o.coverage.some(a => a.locationId === l.id))).map(l => ({ '@type': 'City', name: l.name })).concat(catalog.counties.filter(c => company.offerings.some(o => o.countyCoverage.some(a => a.countyId === c.id))).map(c => ({ '@type': 'AdministrativeArea', name: c.name }))) };
     assert.deepEqual(business[0], expected, `Business schema mismatch: ${path}`);
     const visible = $('main').text();
     for (const value of [company.name, company.description, company.phone, company.email, company.headquarters?.locality, company.headquarters?.county, company.headquarters?.street].filter(Boolean)) assert(visible.includes(value!), `Business fact absent from visible content: ${path}`);
     if (company.website) assert($('a[href]').toArray().some(a => $(a).attr('href') === company.website));
     for (const area of expected.areaServed) assert(visible.includes(area.name));
   }
-  const local = catalog.pages.find(p => p.kind === "local" && contentPath(p, catalog) === path);
+  const local = catalog.pages.find(p => (p.kind === "local" || (p.kind === "county" && p.companyIds.length > 0)) && contentPath(p, catalog) === path);
   const itemLists = data.filter(d => d['@type'] === 'ItemList');
   const pageLinks = $('[data-item-list] a').toArray();
-  assert.equal(itemLists.length, local || pageLinks.length ? 1 : 0, `ItemList count: ${path}`);
-  if (pageLinks.length) assert.deepEqual(itemLists[0].itemListElement, pageLinks.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: $(a).text(), url: url($(a).attr('href')!) })), `Page list mismatch: ${path}`);
-  if (local?.kind === "local") {
+  assert.equal(itemLists.length, (local ? 1 : 0) + (pageLinks.length ? 1 : 0), `ItemList count: ${path}`);
+  if (pageLinks.length) assert.deepEqual(itemLists[local ? 1 : 0].itemListElement, pageLinks.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: $(a).text(), url: url($(a).attr('href')!) })), `Page list mismatch: ${path}`);
+  if (local && (local.kind === "local" || local.kind === "county")) {
     const companies = catalog.companies.filter(c => local.companyIds.includes(c.id)).toSorted((a,b) => a.name.localeCompare(b.name, 'ro'));
     assert.deepEqual(itemLists[0].itemListElement, companies.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, url: url(companyPath(c)) })), `ItemList mismatch: ${path}`);
     for (const c of companies) assert($('h3 a').toArray().some(a => $(a).attr('href') === companyPath(c) && $(a).text() === c.name));

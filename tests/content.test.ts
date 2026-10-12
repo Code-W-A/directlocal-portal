@@ -20,19 +20,19 @@ export function fixture(): Catalog {
     services: [{ ...base, id: "test-service", slug: "test-service", name: "Serviciu de test", summary: "Exclusiv pentru teste." }],
     counties: [{ ...base, id: "test-county", slug: "test-county", name: "Județ de test" }],
     locations: [{ ...base, id: "test-city", slug: "test-city", name: "Localitate de test", countyId: "test-county" }],
-    companies: [{ ...base, id: "test-company", slug: "test-company", indexStatus: "noindex", sponsored: false, name: "Firmă de test", description: "Date fictive numai pentru teste.", seo: { title: "Firmă test", description: "Descriere test." }, website: "https://example.org/", evidence: { name: ["source"], description: ["source"], website: ["source"] }, offerings: [{ serviceId: "test-service", sourceIds: ["source"], coverage: [{ locationId: "test-city", sourceIds: ["source"] }] }], sources: [source] }],
+    companies: [{ ...base, id: "test-company", slug: "test-company", indexStatus: "noindex", editorialReviewed: false, sponsored: false, name: "Firmă de test", description: "Date fictive numai pentru teste.", seo: { title: "Firmă test", description: "Descriere test." }, website: "https://example.org/", evidence: { name: ["source"], description: ["source"], website: ["source"] }, offerings: [{ serviceId: "test-service", sourceIds: ["source"], countyCoverage: [], coverage: [{ locationId: "test-city", sourceIds: ["source"] }] }], sources: [source] }],
     pages: [
       { ...editorial, id: "test-hub", slug: "test-hub", kind: "service", title: "Serviciu test", seo: { title: "Serviciu test", description: "Descriere serviciu." }, serviceId: "test-service", body: "## Despre\nConținut pentru teste." },
       { ...editorial, id: "test-local", slug: "test-local", kind: "local", title: "Pagină locală test", seo: { title: "Pagină locală test", description: "Descriere locală." }, serviceId: "test-service", locationId: "test-city", companyIds: ["test-company"], body: "## Informații locale\nConținut local pentru teste." },
-      { ...editorial, id: "test-county-page", slug: "test-county-page", kind: "county", title: "Județ test", seo: { title: "Județ test", description: "Descriere județ." }, serviceId: "test-service", countyId: "test-county", body: "## Localități\nDirector pentru județ." },
+      { ...editorial, id: "test-county-page", slug: "test-county-page", kind: "county", intro: "Navigare către localitățile documentate în acest județ, exclusiv în teste.", title: "Județ test", seo: { title: "Județ test", description: "Descriere județ." }, serviceId: "test-service", countyId: "test-county", companyIds: [], body: "## Localități\nDirector pentru județ." },
     ],
   };
 }
-test("real PoC has ten routes and all remain noindex", async () => {
+test("extended catalog has eighteen routes and six editorially eligible pages", async () => {
   const catalog = await loadCatalog();
-  assert.equal(catalog.companies.length, 1); assert.equal(catalog.locations.length, 1);
+  assert.equal(catalog.companies.length, 4); assert.equal(catalog.locations.length, 3);
   const pages = getPublicPages(catalog, site);
-  assert.equal(pages.length, 10); assert(pages.every(p => p.indexStatus === "noindex"));
+  assert.equal(pages.length, 18); assert.equal(pages.filter(p => p.indexStatus === "index").length, 6);
 });
 test("published pages derive stable service, county, local and company URLs", () => {
   const paths = getPublicPages(validateCatalog(fixture()), site).map(p => p.path);
@@ -110,13 +110,30 @@ test("reject missing sources and invalid verification dates", () => {
   const future = fixture(); future.companies[0].sources[0].checkedAt = "2999-01-01"; assert.throws(() => validateCatalog(future), /Future/);
   const noDate = fixture(); noDate.companies[0].sources[0].checkedAt = ""; assert.throws(() => validateCatalog(noDate));
 });
-test("index gate requires review and at least three sourced companies", () => {
+test("one sourced company is eligible only after documented review", () => {
   const data = fixture(); data.pages[1].indexStatus = "index";
   assert.throws(() => validateCatalog(data), /review/);
-  data.pages[1].editorialReviewed = true; assert.throws(() => validateCatalog(data), /three/);
-  for (const id of ["second", "third"]) data.companies.push({ ...data.companies[0], id, slug: id, name: id, seo: { title: id, description: id } });
-  if (data.pages[1].kind === "local") data.pages[1].companyIds = data.companies.map(c => c.id);
+  data.pages[1].editorialReviewed = true; assert.throws(() => validateCatalog(data), /review/);
+  data.pages[1].reviewNote = "Source, contact, distinct useful content checked.";
   assert.doesNotThrow(() => validateCatalog(data));
+  data.companies[0].indexStatus = "index";
+  assert.throws(() => validateCatalog(data), /review/);
+  data.companies[0].editorialReviewed = true; data.companies[0].reviewNote = "Contact and service coverage documented.";
+  assert.doesNotThrow(() => validateCatalog(data));
+});
+test("county-only coverage needs source and county reference; no city is inferred", () => {
+  const data = fixture();
+  data.pages = data.pages.filter(p => p.kind !== "local");
+  const offering = data.companies[0].offerings[0]; offering.coverage = [];
+  offering.countyCoverage = [{ countyId: "test-county", sourceIds: ["source"] }];
+  const countyPage = data.pages.find(p => p.kind === "county")!;
+  if (countyPage.kind === "county") countyPage.companyIds = ["test-company"];
+  assert.doesNotThrow(() => validateCatalog(data));
+  offering.countyCoverage[0].sourceIds = ["missing"];
+  assert.throws(() => validateCatalog(data), /source evidence/);
+  offering.countyCoverage[0] = { countyId: "missing", sourceIds: ["source"] };
+  assert.throws(() => validateCatalog(data), /Missing reference/);
+  offering.countyCoverage = []; assert.throws(() => validateCatalog(data), /Missing coverage/);
 });
 test("reject duplicate titles, H1 and unsupported claims", () => {
   const titles = fixture(); titles.pages[1].seo.title = titles.pages[0].seo.title; assert.throws(() => validateCatalog(titles), /title/);

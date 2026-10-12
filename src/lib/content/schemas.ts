@@ -11,18 +11,18 @@ export const serviceSchema = z.object({ ...base, name: text, summary: text }).st
 export const countySchema = z.object({ ...base, name: text }).strict();
 export const locationSchema = z.object({ ...base, name: text, countyId: slug }).strict();
 export const companySchema = z.object({
-  ...base, indexStatus, name: text, description: text, seo: seoSchema,
+  ...base, indexStatus, editorialReviewed: z.boolean().default(false), reviewNote: text.optional(), name: text, description: text, seo: seoSchema,
   website: z.url({ protocol: /^https?$/ }).optional(),
   phone: z.string().regex(/^\+?[0-9 ()-]{6,25}$/).optional(), email: z.email().optional(),
   evidence: z.object({ name: refs, description: refs, website: refs.optional(), phone: refs.optional(), email: refs.optional() }).strict(),
   headquarters: z.object({ locality: text, county: text, street: text.optional(), sourceIds: refs }).strict().optional(),
-  offerings: z.array(z.object({ serviceId: slug, sourceIds: refs, coverage: z.array(z.object({ locationId: slug, sourceIds: refs }).strict()).min(1) }).strict()).min(1),
+  offerings: z.array(z.object({ serviceId: slug, sourceIds: refs, coverage: z.array(z.object({ locationId: slug, sourceIds: refs }).strict()), countyCoverage: z.array(z.object({ countyId: slug, sourceIds: refs }).strict()).default([]) }).strict()).min(1),
   sources: z.array(sourceSchema).min(1), sponsored: z.boolean(),
 }).strict().refine(c => Boolean(c.website || c.phone || c.email), "A company needs a real contact method.");
-const pageBase = { ...base, indexStatus, title: text, seo: seoSchema, intro: text, body: text, sources: z.array(sourceSchema).min(1), editorialReviewed: z.boolean() };
+const pageBase = { ...base, indexStatus, title: text, seo: seoSchema, intro: text, body: text, sources: z.array(sourceSchema).min(1), editorialReviewed: z.boolean(), reviewNote: text.optional() };
 export const pageSchema = z.discriminatedUnion("kind", [
   z.object({ ...pageBase, kind: z.literal("service"), serviceId: slug }).strict(),
-  z.object({ ...pageBase, kind: z.literal("county"), serviceId: slug, countyId: slug }).strict(),
+  z.object({ ...pageBase, kind: z.literal("county"), serviceId: slug, countyId: slug, companyIds: z.array(slug).default([]) }).strict(),
   z.object({ ...pageBase, kind: z.literal("local"), serviceId: slug, locationId: slug, companyIds: z.array(slug).min(1) }).strict(),
   z.object({ ...pageBase, kind: z.literal("editorial") }).strict(),
 ]);

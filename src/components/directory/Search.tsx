@@ -8,7 +8,7 @@ export function Search({ rows }: { rows: SearchRow[] }) {
   const areas = rows.flatMap(r => r.coverage);
   const services = [...new Map(areas.map(a => [a.serviceId, a.service])).entries()];
   const counties = [...new Map(areas.filter(a => !filters.service || a.serviceId === filters.service).map(a => [a.countyId, a.county])).entries()];
-  const cities = [...new Map(areas.filter(a => (!filters.service || a.serviceId === filters.service) && (!filters.county || a.countyId === filters.county)).map(a => [a.cityId, `${a.city}, ${a.county}`])).entries()];
+  const cities = [...new Map(areas.filter(a => a.cityId && (!filters.service || a.serviceId === filters.service) && (!filters.county || a.countyId === filters.county)).map(a => [a.cityId, `${a.city}, ${a.county}`])).entries()];
   const results = filterSearch(rows, filters);
   return <><div className="search-filters">
     <div className="filter-field"><label htmlFor="filter-service">Serviciu</label><select id="filter-service" value={filters.service} onChange={e => setFilters({ ...filters, service: e.target.value, county: "", city: "" })}><option value="">Toate serviciile</option>{services.map(([id, name]) => <option key={id} value={id}>{name}</option>)}</select></div>

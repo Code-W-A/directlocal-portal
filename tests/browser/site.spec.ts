@@ -77,9 +77,9 @@ test("static search filters, empty results and reset", async ({ page }, testInfo
   await expect(page.getByText("Nu există firme pentru selecția ta.", { exact: false })).toBeVisible();
   await expect(page).toHaveURL(/\/cauta\/$/);
   await page.getByRole("button", { name: "Resetează filtrele" }).click();
-  await expect(page.getByRole("status")).toHaveText("1 firmă găsită");
+  await expect(page.getByRole("status")).toHaveText("4 firme găsite");
   await expect(page.getByLabel("Oraș", { exact: true })).toHaveValue("");
-  await page.getByLabel("Nume sau descriere").fill("tapiterie");
+  await page.getByLabel("Nume sau descriere").fill("igienizare tapiterie");
   await expect(page.getByRole("status")).toHaveText("1 firmă găsită");
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   await expect(page.locator('link[rel="canonical"]')).toHaveCount(0);
@@ -99,4 +99,31 @@ test("editorial pages and nested unknown URLs", async ({ page }) => {
   await expect(page.getByRole("link", { name: "webdynamicx@gmail.com", exact: true })).toHaveAttribute("href", "mailto:webdynamicx@gmail.com");
   await expect(page.locator("form")).toHaveCount(0);
   for (const path of ["/servicii/curatare-canapele/brasov/sacele/", "/firme/inexistenta/"]) expect((await page.goto(path))?.status()).toBe(404);
+});
+
+
+test("new cities and county coverage have working listings and profiles", async ({ page }, testInfo) => {
+  for (const [path, name] of [
+    ["/servicii/curatare-canapele/timis/timisoara/", "Zoom Cleaning"],
+    ["/servicii/curatare-canapele/constanta/constanta/", "Alpha Cleaning"],
+    ["/servicii/curatare-canapele/ilfov/", "Detailing Mobil"],
+  ]) {
+    expect((await page.goto(path))?.status()).toBe(200);
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+    await expect(page.getByRole("link", { name, exact: true })).toBeVisible();
+    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+    await page.getByRole("link", { name, exact: true }).click();
+    await expect(page.locator("h1")).toHaveText(name);
+  }
+  await page.goto("/cauta/");
+  await page.getByLabel("Județ", { exact: true }).selectOption("ilfov");
+  await expect(page.getByRole("status")).toHaveText("1 firmă găsită");
+  await expect(page.getByLabel("Oraș", { exact: true }).locator("option")).toHaveCount(1);
+  await expect(page.getByRole("link", { name: "Detailing Mobil", exact: true })).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("ilfov-search.png"), fullPage: true });
+  await page.getByLabel("Județ", { exact: true }).selectOption("timis");
+  await page.getByLabel("Oraș", { exact: true }).selectOption("timisoara");
+  await expect(page.getByRole("link", { name: "Zoom Cleaning", exact: true })).toBeVisible();
+  expect((await page.goto("/servicii/curatare-canapele/ilfov/voluntari/"))?.status()).toBe(404);
 });

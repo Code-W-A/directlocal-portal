@@ -24,7 +24,7 @@
 }
 ---
 ## Ce poți găsi aici
-Serviciile sunt organizate după județ și oraș. Profilurile includ datele de contact, zona declarată de prestare și sursele consultate. Prima versiune acoperă curățarea canapelelor în Brașov.
+Serviciile sunt organizate după județ și oraș. Profilurile includ datele de contact, zona declarată de prestare și sursele consultate. Directorul acoperă curățarea canapelelor în Brașov, Timișoara, Constanța și județul Ilfov.
 
 ## Cum sunt incluse firmele
 Pornim de la surse publice și verificăm dacă serviciul și localitatea sunt declarate. Nu presupunem că o firmă deservește un oraș doar fiindcă are sediul acolo.
