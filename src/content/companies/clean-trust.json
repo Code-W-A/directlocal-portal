@@ -1,0 +1,60 @@
+{
+  "id": "clean-trust",
+  "slug": "clean-trust",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Clean Trust",
+  "description": "Clean Trust prezintă curățenie la domiciliu și după constructor în Târgoviște și în județul Dâmbovița. Lista publicată include și alte localități, care se confirmă direct la programare.",
+  "seo": {
+    "title": "Clean Trust — servicii și contact",
+    "description": "Clean Trust prezintă curățenie la domiciliu și după constructor în Târgoviște și în județul Dâmbovița. Lista publicată include și alte localități, care se confirmă direct la programare."
+  },
+  "website": "https://cleantrust.ro/",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatenie",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://cleantrust.ro/",
+      "note": "Brand, curățenie generală, la domiciliu și după constructor; Târgoviște și Dâmbovița numite explicit. Fără recenzii ori promisiuni de rezultate preluate."
+    }
+  ],
+  "sponsored": false
+}

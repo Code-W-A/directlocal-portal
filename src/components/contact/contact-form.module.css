@@ -1,0 +1,15 @@
+.form { padding:clamp(20px,4vw,36px); border:1px solid #dce5f0; border-radius:20px; background:#fff; display:grid; gap:20px; margin:24px 0; color:#22354b; }
+.form p { margin:0; line-height:1.6; }
+.fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.form label { display:grid; gap:8px; font-weight:600; font-size:14px; }
+.form input:not([type=checkbox]), .form textarea, .form select { width:100%; min-width:0; border:1px solid #bac9da; border-radius:10px; padding:12px; font:inherit; background:#fff; color:#182f48; }
+.form input:focus-visible,.form textarea:focus-visible,.form select:focus-visible { outline:3px solid #aacbfa; outline-offset:2px; }
+.form textarea { resize:vertical; }
+.form .consent { display:flex; align-items:flex-start; gap:12px; font-weight:400; line-height:1.6; }
+.consent input { width:20px; height:20px; flex-shrink:0; margin-top:2px; }
+.form button { justify-self:start; min-height:44px; }
+.form button:disabled { opacity:.65; cursor:default; }
+.note { font-size:14px; overflow-wrap:anywhere; }
+.feedback { padding:14px; background:#edf4fc; border-radius:10px; }
+.trap { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+@media(max-width:600px) { .fields { grid-template-columns:1fr; } .form { padding:20px; } }

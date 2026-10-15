@@ -1,7 +1,7 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele",
   "slug": "curatare-canapele",
   "kind": "service",
@@ -10,7 +10,7 @@
     "title": "Curățare canapele: servicii și furnizori locali",
     "description": "Descoperă unde sunt documentați furnizori de curățare canapele și ce informații să pregătești înainte de a cere o ofertă."
   },
-  "indexStatus": "noindex",
+  "indexStatus": "index",
   "intro": "Alege județul pentru a vedea localitățile și furnizorii documentați. Sunt documentate Brașov, Timișoara, Constanța și județul Ilfov; prezența unei firme aici nu reprezintă o recomandare și nu confirmă disponibilitatea pentru o programare.",
   "sources": [
     {
@@ -20,8 +20,9 @@
       "note": "Website oficial: nume comercial, telefon, curățare canapele, sediu declarat în Brașov și deplasare în Brașov."
     }
   ],
-  "editorialReviewed": false,
-  "serviceId": "curatare-canapele"
+  "editorialReviewed": true,
+  "serviceId": "curatare-canapele",
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat."
 }
 ---
 ## Ce să pregătești înainte de contact

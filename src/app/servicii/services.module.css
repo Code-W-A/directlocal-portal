@@ -1,0 +1,92 @@
+.page { padding-bottom:64px; }
+.heroBand { background:linear-gradient(115deg,#f7faff,#edf5ff); border-bottom:1px solid var(--line); }
+.heroContainer { padding-block:20px 44px; }
+.heroContainer nav a { display:inline-flex; align-items:center; min-height:44px; }
+.hero { display:flex; align-items:center; justify-content:space-between; gap:48px; margin-top:18px; }
+.hero>div { max-width:720px; }
+.hero h1 { font-size:clamp(2.3rem,4.2vw,3.4rem); font-weight:800; margin-bottom:18px; }
+.hero p { color:var(--muted); font-size:1.03rem; max-width:66ch; margin-bottom:0; }
+.hero>a { flex-shrink:0; }
+.content { padding-top:40px; }
+.content h2 { font-size:clamp(1.6rem,2.8vw,2rem); font-weight:800; margin-bottom:24px; }
+.serviceList { list-style:none; margin:0; padding:0; display:grid; gap:24px; }
+.serviceCard { display:block; border:1px solid #dce7f6; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 8px 28px #14386b05; }
+.serviceCopy { padding:32px 38px; min-width:0; }
+.roundIcon { display:inline-grid; place-items:center; width:48px; height:48px; color:var(--blue); background:#edf5ff; border-radius:12px; margin-bottom:16px; }
+.roundIcon svg { width:26px; height:26px; }
+.serviceCopy h3 { font-size:1.65rem; font-weight:800; margin-bottom:12px; }
+.serviceCopy h3 a { text-decoration:none; }
+.serviceCopy h3 a:hover { color:var(--blue); }
+.serviceCopy>p { color:var(--muted); font-size:.93rem; max-width:58ch; margin-bottom:22px; }
+.coverage { margin-bottom:24px; }
+.coverage h4 { font-size:.8rem; letter-spacing:0; margin:0 0 10px; font-weight:700; color:var(--muted); }
+.counties { list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:8px; }
+.counties a { display:flex; align-items:center; gap:7px; min-height:44px; border:1px solid #e0ebfb; border-radius:7px; padding:8px 11px; background:#f6faff; color:#1553ae; font-size:.83rem; font-weight:650; text-decoration:none; }
+.counties a:hover { background:#eaf3ff; border-color:#b8d2fa; }
+.counties svg { width:16px; height:16px; flex-shrink:0; }
+.serviceButton { font-size:.85rem; }
+.guide { margin-top:48px; padding:32px 36px; border:1px solid var(--line); border-radius:12px; background:#f7faff; }
+.guideHeading h2 { margin-bottom:12px; }
+.guideHeading>p { color:var(--muted); font-size:.92rem; margin-bottom:26px; max-width:80ch; }
+.steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; list-style:none; margin:0 0 20px; padding:0; }
+.steps li { display:flex; gap:14px; align-items:flex-start; }
+.steps li>span { flex-shrink:0; display:grid; place-items:center; width:42px; height:42px; border-radius:50%; background:#e5f0ff; color:var(--blue); font-size:1.1rem; font-weight:800; }
+.steps h3 { font-size:.98rem; margin:2px 0 7px; }
+.steps p { color:var(--muted); font-size:.85rem; margin:0; }
+.methodology { display:inline-flex; align-items:center; gap:9px; min-height:44px; color:#0754ce; font-size:.86rem; font-weight:650; }
+.methodology svg { width:18px; flex-shrink:0; }
+.empty { padding:28px; border:1px solid var(--line); border-radius:10px; color:var(--muted); }
+@media(max-width:1000px) {
+  .hero { gap:28px; }
+  .serviceCopy { padding:28px; }
+  .guide { padding:28px; }
+  .steps { gap:22px; }
+}
+@media(max-width:760px) {
+  .page { padding-bottom:40px; }
+  .heroContainer { padding-block:16px 30px; }
+  .hero { flex-direction:column; align-items:flex-start; gap:22px; margin-top:12px; }
+  .hero h1 { font-size:2.4rem; }
+  .hero p { font-size:.98rem; }
+  .content { padding-top:28px; }
+  .serviceCard { grid-template-columns:1fr; }
+  .serviceCopy { padding:26px; }
+  .steps { grid-template-columns:1fr; gap:22px; }
+  .guide { margin-top:32px; padding:26px; }
+}
+@media(max-width:480px) {
+  .serviceCopy,.guide { padding:22px; }
+  .serviceCopy h3 { font-size:1.45rem; }
+  .counties { gap:8px; }
+  .serviceButton { width:100%; }
+}
+
+/* A service card has a clear identity and a separate geographical navigation. */
+.serviceCard { border-radius:22px; background:linear-gradient(125deg,#f5f9ff 0%,#fff 52%); box-shadow:0 12px 32px #193e7108; transition:border-color .18s,box-shadow .18s; }
+.serviceCard:hover { border-color:#adc9ed; box-shadow:0 14px 36px #193e7110; }
+.serviceCopy { display:grid; grid-template-columns:minmax(0,1fr) minmax(260px,.8fr); column-gap:48px; padding:34px; }
+.serviceHeading { display:flex; align-items:center; gap:18px; grid-column:1; margin-bottom:20px; }
+.serviceHeading .roundIcon { width:80px; height:80px; border-radius:24px; margin:0; background:linear-gradient(145deg,#fff,#e4efff); border:1px solid #d2e3fa; box-shadow:inset 0 1px #fff,0 6px 15px #245aa00a; }
+.serviceHeading svg { width:62px; height:62px; }
+.catalogLabel { font-size:.7rem; font-weight:750; letter-spacing:.12em; color:#537196; }
+.serviceCopy h3 { grid-column:1; font-size:1.75rem; margin-bottom:12px; }
+.serviceCopy>p { grid-column:1; margin-bottom:22px; }
+.coverage { grid-column:2; grid-row:1/5; border-left:1px solid #e1eaf6; padding-left:32px; margin:0; align-self:stretch; display:flex; flex-direction:column; justify-content:center; }
+.coverage h4 { font-size:.8rem; margin-bottom:14px; }
+.counties { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.counties a { justify-content:space-between; background:#fff; border-radius:11px; padding:12px; min-height:48px; }
+.counties a svg:first-child { color:#6b8fbd; }
+.serviceButton { grid-column:1; justify-self:start; border-radius:10px; }
+@media(max-width:760px) {
+ .serviceCopy { grid-template-columns:1fr; padding:24px; gap:0; }
+ .serviceHeading { gap:14px; margin-bottom:20px; }
+ .serviceHeading .roundIcon { width:68px; height:68px; border-radius:20px; }
+ .serviceHeading svg { width:52px; height:52px; }
+ .coverage { grid-column:1; grid-row:auto; padding:20px 0 0; border-left:0; border-top:1px solid #e1eaf6; margin:0 0 22px; }
+ .serviceCopy h3 { font-size:1.5rem; }
+ .serviceButton { width:100%; }
+}
+@media(prefers-reduced-motion:reduce) { .serviceCard { transition:none; } }
+.serviceHeading .roundIcon { width:108px; height:108px; border-radius:28px; }
+.serviceHeading svg { width:90px; height:90px; }
+@media(max-width:760px) { .serviceHeading .roundIcon { width:92px; height:92px; }.serviceHeading svg { width:78px; height:78px; } }

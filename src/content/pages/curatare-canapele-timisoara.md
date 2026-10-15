@@ -1,16 +1,16 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele-timisoara",
   "slug": "curatare-canapele-timisoara",
   "kind": "local",
-  "title": "Curățare canapele la domiciliu în Timișoara",
+  "title": "Curățare canapele în Timișoara",
   "seo": {
-    "title": "Curățare canapele la domiciliu în Timișoara",
+    "title": "Curățare canapele în Timișoara — firme și contact",
     "description": "Cauți curățare canapele în Timișoara? Vezi contactul Zoom Cleaning, cum soliciți o ofertă și ce să clarifici înainte de intervenție."
   },
-  "intro": "Pentru curățarea unei canapele în Timișoara, poți contacta Zoom Cleaning, care declară intervenții la domiciliu în oraș. Firma pune la dispoziție telefon, e-mail și un formular pentru oferte personalizate pe website. Înainte să alegi o programare, pregătește câteva fotografii, dimensiunile canapelei și informațiile despre material de pe etichetă. Astfel poți cere o ofertă pentru obiectul tău, cu detalii despre etapele incluse. Mai jos găsești datele de contact și întrebările care te ajută să clarifici intervenția. Listarea este documentară și nu reprezintă o evaluare a calității lucrărilor.",
+  "intro": "Ai nevoie de curățarea canapelei în Timișoara? Consultă profilul furnizorului, zona declarată și telefonul. Solicită direct o ofertă și confirmă deplasarea la adresa ta.",
   "indexStatus": "index",
   "editorialReviewed": true,
   "sources": [
@@ -26,7 +26,7 @@
   "companyIds": [
     "zoom-cleaning"
   ],
-  "reviewNote": "Revizuire editorială 2026-10-12: serviciu și zonă susținute de surse, contact direct utilizabil, informații specifice pentru această zonă și delimitarea aspectelor de confirmat. Lista precede ghidul; text original fără promisiuni de rezultate."
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat."
 }
 ---
 ## Cum ceri o ofertă în Timișoara

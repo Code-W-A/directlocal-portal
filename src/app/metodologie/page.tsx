@@ -1,4 +1,4 @@
 import { contentFor, metadataFor } from "@/lib/content/public";
-import { ContentView } from "@/templates/ContentView";
+import { MethodologyPage } from "@/templates/MethodologyPage";
 export async function generateMetadata() { return metadataFor("/metodologie/"); }
-export default async function Page() { return <ContentView {...await contentFor("/metodologie/")} />; }
+export default async function Page() { return <MethodologyPage {...await contentFor("/metodologie/")} />; }

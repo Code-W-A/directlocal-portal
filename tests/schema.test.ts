@@ -19,3 +19,11 @@ test("schema validator rejects breadcrumbs that contradict visible navigation", 
   const $ = load('<nav aria-label="Fir de navigare"><ol><li>Servicii</li></ol></nav><script type="application/ld+json">{"@type":"BreadcrumbList","itemListElement":[]}</script>');
   assert.throws(() => verifyStructuredData($, "/servicii/", catalog), /Breadcrumb mismatch/);
 });
+
+test('WebSite requires homepage and configured origin', async () => {
+  const catalog = await loadCatalog();
+  const $ = load('<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://director.ro/#website","publisher":{"@id":"https://director.ro/#organization"},"name":"DirectLocal.ro","url":"https://director.ro/","inLanguage":"ro"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://director.ro/#organization","name":"Web Dynamicx","url":"https://webdynamicx.ro/","email":"webdynamicx@gmail.com"}</script>');
+  verifyStructuredData($, '/', catalog, 'https://director.ro');
+  assert.throws(() => verifyStructuredData($, '/', catalog), /WebSite count/);
+  assert.throws(() => verifyStructuredData($, '/cauta/', catalog, 'https://director.ro'), /WebSite count/);
+});

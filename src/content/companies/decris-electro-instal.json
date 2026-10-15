@@ -1,0 +1,87 @@
+{
+  "id": "decris-electro-instal",
+  "slug": "decris-electro-instal",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Decris Electro Instal",
+  "description": "Decris Electro Instal prezintă instalarea sistemelor fotovoltaice rezidențiale și comerciale în Argeș și Pitești. Punctul de lucru publicat este pe Calea Craiovei din Pitești.",
+  "seo": {
+    "title": "Decris Electro Instal — servicii și contact",
+    "description": "Decris Electro Instal prezintă instalarea sistemelor fotovoltaice rezidențiale și comerciale în Argeș și Pitești. Punctul de lucru publicat este pe Calea Craiovei din Pitești."
+  },
+  "website": "https://decris.ro/",
+  "phone": "0721576634",
+  "evidence": {
+    "name": [
+      "source-1",
+      "source-2"
+    ],
+    "description": [
+      "source-1",
+      "source-2"
+    ],
+    "website": [
+      "source-1",
+      "source-2"
+    ],
+    "phone": [
+      "source-1",
+      "source-2"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Pitești",
+    "county": "Argeș",
+    "street": "Calea Craiovei 97, Bloc Maia, demisol",
+    "sourceIds": [
+      "source-1",
+      "source-2"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ],
+      "coverage": [
+        {
+          "locationId": "pitesti",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "arges",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://decris.ro/",
+      "note": "Montaj sisteme rezidențiale/comerciale; titlul și descrierea website-ului numesc explicit Argeș și Pitești."
+    },
+    {
+      "id": "source-2",
+      "checkedAt": "2026-10-15",
+      "url": "https://decris.ro/contact/",
+      "note": "Telefon 0721 576 634 și punct de lucru Calea Craiovei 97, Bloc Maia, demisol, Pitești."
+    }
+  ],
+  "sponsored": false
+}

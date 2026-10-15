@@ -1,0 +1,65 @@
+{
+  "id": "prosig-trafic",
+  "slug": "prosig-trafic",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Prosig Trafic",
+  "description": "Prosig Trafic prezintă servicii ITP în Pucioasa. Website-ul mai descrie lucrări la tahografe, însă pagina din director se referă la inspecția tehnică periodică.",
+  "seo": {
+    "title": "Prosig Trafic — servicii și contact",
+    "description": "Prosig Trafic prezintă servicii ITP în Pucioasa. Website-ul mai descrie lucrări la tahografe, însă pagina din director se referă la inspecția tehnică periodică."
+  },
+  "website": "https://prosigtrafic.ro/",
+  "phone": "0723181291",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Pucioasa",
+    "county": "Dâmbovița",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "pucioasa",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://prosigtrafic.ro/",
+      "note": "ITP și Pucioasa în pagina oficială; telefonul afișat și tel: coincid, 0723 181 291. Emailul afișat diferă de mailto, de aceea nu publicăm email. Nu preluăm adresa stradală din directoare."
+    }
+  ],
+  "sponsored": false
+}

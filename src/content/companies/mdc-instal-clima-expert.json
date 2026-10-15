@@ -1,0 +1,130 @@
+{
+  "id": "mdc-instal-clima-expert",
+  "slug": "mdc-instal-clima-expert",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "MDC Instal Clima Expert",
+  "description": "MDC Instal Clima Expert declară montaj de aer condiționat, montaj hidraulic pentru pompe de căldură și lucrări electrice. Aria publicată include Târgoviște și Găești; Titu este prezentat drept zonă principală de servicii.",
+  "seo": {
+    "title": "MDC Instal Clima Expert — servicii și contact",
+    "description": "MDC Instal Clima Expert declară montaj de aer condiționat, montaj hidraulic pentru pompe de căldură și lucrări electrice. Aria publicată include Târgoviște și Găești; Titu este prezentat drept zonă principală de servicii."
+  },
+  "website": "https://www.mdcinstal.ro/",
+  "phone": "0726381592",
+  "email": "contact@mdcinstal.ro",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ],
+    "email": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "electricieni",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "montaj-aer-conditionat",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "montaj-pompe-de-caldura",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.mdcinstal.ro/",
+      "note": "Telefon și email publice; circuite, tablouri, prize, montaj split/multisplit și montaj hidraulic pompe de căldură. Sunt numite explicit Târgoviște, Găești și deplasarea în Dâmbovița. Zona principală Titu nu este tratată drept sediu."
+    }
+  ],
+  "sponsored": false
+}

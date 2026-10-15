@@ -1,0 +1,74 @@
+[
+  {
+    "id": "aspirare-canapea-bej",
+    "basename": "aspirare-canapea-bej",
+    "photoId": 30238384,
+    "author": "Mohammad abasi",
+    "sourceUrl": "https://www.pexels.com/photo/efficient-sofa-cleaning-with-handheld-vacuum-30238384/",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-10-12",
+    "alt": "Duza unui aspirator pe tapițeria unei canapele bej — imagine ilustrativă",
+    "illustrative": true,
+    "widths": [
+      360,
+      720,
+      1080
+    ],
+    "width": 1080,
+    "height": 720
+  },
+  {
+    "id": "curatare-fotoliu-verde",
+    "basename": "curatare-fotoliu-verde",
+    "photoId": 4401538,
+    "author": "Jesus Arias",
+    "sourceUrl": "https://www.pexels.com/photo/cleaner-vacuuming-a-sofa-chair-4401538/",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-10-12",
+    "alt": "Aspirarea șezutului unui fotoliu verde — imagine ilustrativă",
+    "illustrative": true,
+    "widths": [
+      360,
+      720,
+      1080
+    ],
+    "width": 1080,
+    "height": 720
+  },
+  {
+    "id": "curatare-perna-canapea",
+    "basename": "curatare-perna-canapea",
+    "photoId": 4401537,
+    "author": "Jesus Arias",
+    "sourceUrl": "https://www.pexels.com/photo/person-cleaning-a-throw-pillow-4401537/",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-10-12",
+    "alt": "Aspirarea unei perne decorative pe o canapea — imagine ilustrativă",
+    "illustrative": true,
+    "widths": [
+      360,
+      720,
+      1080
+    ],
+    "width": 1080,
+    "height": 720
+  },
+  {
+    "id": "canapea-albastra-living",
+    "basename": "canapea-albastra-living",
+    "photoId": 2986011,
+    "author": "shirin olyaei",
+    "sourceUrl": "https://www.pexels.com/photo/blue-sofa-2986011/",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "checkedAt": "2026-10-12",
+    "alt": "Canapea albastră cu perne verzi într-un living — imagine ilustrativă",
+    "illustrative": true,
+    "widths": [
+      360,
+      720,
+      1080
+    ],
+    "width": 1080,
+    "height": 720
+  }
+]

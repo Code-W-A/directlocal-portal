@@ -1,0 +1,70 @@
+{
+  "id": "electro-construct",
+  "slug": "electro-construct",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Electro & Construct",
+  "description": "Electro & Construct prezintă proiectarea și instalarea sistemelor fotovoltaice în Buzău. Punctul de lucru indicat pe website se află pe Șoseaua Nordului 45.",
+  "seo": {
+    "title": "Electro & Construct — servicii și contact",
+    "description": "Electro & Construct prezintă proiectarea și instalarea sistemelor fotovoltaice în Buzău. Punctul de lucru indicat pe website se află pe Șoseaua Nordului 45."
+  },
+  "website": "https://www.electro-cons.ro/",
+  "phone": "0338401002",
+  "email": "contact.electrocons@gmail.com",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ],
+    "email": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Buzău",
+    "county": "Buzău",
+    "street": "Șoseaua Nordului 45",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "buzau",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.electro-cons.ro/sisteme-fotovoltaice/",
+      "note": "Nume comercial/legal, telefon fix, contact.electrocons@gmail.com, punct de lucru Buzău și serviciul local explicit. Nu preluăm perioada de recuperare a investiției."
+    }
+  ],
+  "sponsored": false
+}

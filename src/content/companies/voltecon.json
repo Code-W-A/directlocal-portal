@@ -1,0 +1,61 @@
+{
+  "id": "voltecon",
+  "slug": "voltecon",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Voltecon",
+  "description": "Voltecon prezintă sisteme fotovoltaice pentru Bacău, cu servicii de consultanță și instalare. Sunt descrise configurații conectate la rețea și soluții cu stocare.",
+  "seo": {
+    "title": "Voltecon — servicii și contact",
+    "description": "Voltecon prezintă sisteme fotovoltaice pentru Bacău, cu servicii de consultanță și instalare. Sunt descrise configurații conectate la rețea și soluții cu stocare."
+  },
+  "website": "https://fotovoltaicebacau.ro/",
+  "phone": "0759076859",
+  "email": "office@voltecon.ro",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ],
+    "email": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "bacau",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://fotovoltaicebacau.ro/",
+      "note": "Brand Voltecon în footer, email office@voltecon.ro, telefon 0759 076 859; instalare sisteme în Bacău. Nu preluăm afirmația tehnică neclară despre panouri hibride care produc căldură."
+    }
+  ],
+  "sponsored": false
+}

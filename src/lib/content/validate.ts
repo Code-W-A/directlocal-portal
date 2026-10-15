@@ -44,7 +44,9 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
     renderMarkdown(p.body);
     if (p.indexStatus === "index" && (!p.editorialReviewed || !p.reviewNote)) throw new Error(`Index requires editorial review: ${p.id}`);
     if (p.kind === "editorial") {
-      if (!["despre-noi", "contact", "metodologie"].includes(p.slug)) throw new Error(`Unsupported editorial route: ${p.slug}`);
+      if (!["despre-noi", "contact", "metodologie", "inscriere-firma"].includes(p.slug)) throw new Error(`Unsupported editorial route: ${p.slug}`);
+      if (p.about && p.slug !== "despre-noi") throw new Error(`About layout belongs to despre-noi: ${p.id}`);
+      if (published && p.slug === "despre-noi" && !p.about) throw new Error(`About page needs structured content: ${p.id}`);
       continue;
     }
     ref(catalog.services, p.serviceId, published);
@@ -53,29 +55,30 @@ export function validateCatalog(input: { services: unknown[]; counties: unknown[
     if (p.kind === "county") {
       ref(catalog.counties, p.countyId, published);
       unique(p.companyIds, `company references in ${p.id}`);
+      if (p.indexStatus === "index" && !p.companyIds.length) throw new Error(`Index requires a sourced company: ${p.id}`);
       for (const id of p.companyIds) {
         const c = ref(catalog.companies, id, published);
         if (!c.offerings.some(o => o.serviceId === p.serviceId && (o.countyCoverage.some(a => a.countyId === p.countyId) || o.coverage.some(a => catalog.locations.find(l => l.id === a.locationId)?.countyId === p.countyId)))) throw new Error(`Company ${id} does not cover ${p.id}`);
       }
-      if (p.indexStatus === "index" && !p.companyIds.length) throw new Error(`Index requires a useful sourced listing: ${p.id}`);
       continue;
     }
     const location = ref(catalog.locations, p.locationId, published);
     if (published && !catalog.pages.some(parent => parent.kind === "county" && parent.serviceId === p.serviceId && parent.countyId === location.countyId && parent.status === "published")) throw new Error(`Needs published parent county: ${p.id}`);
     unique(p.companyIds, `company references in ${p.id}`);
+    if (p.indexStatus === "index" && !p.companyIds.length) throw new Error(`Index requires a sourced company: ${p.id}`);
     for (const id of p.companyIds) {
       const c = ref(catalog.companies, id, published);
       if (!c.offerings.some(o => o.serviceId === p.serviceId && o.coverage.some(a => a.locationId === p.locationId))) throw new Error(`Company ${id} does not cover ${p.id}`);
     }
     const count = p.intro.split(/\s+/).length;
-    if (count < 70 || count > 120) throw new Error(`Local introduction needs 70–120 words: ${p.id}`);
+    if (count < 20 || count > 60) throw new Error(`Local introduction needs 20–60 words: ${p.id}`);
   }
   unique([...catalog.companies.map(companyPath), ...catalog.pages.map(p => contentPath(p, catalog))], "page URL");
   const visible = [...catalog.companies, ...catalog.pages].filter(p => p.status === "published");
   unique(visible.map(p => normalize(p.seo.title)), "title"); unique(visible.map(p => normalize(p.seo.description)), "description");
   unique(visible.map(p => normalize("title" in p ? p.title : p.name)), "H1");
   for (const p of visible) {
-    const copy = "body" in p ? `${p.title} ${p.intro} ${p.body} ${p.seo.title} ${p.seo.description}` : `${p.name} ${p.description} ${p.seo.title} ${p.seo.description}`;
+    const copy = "body" in p ? `${p.title} ${p.intro} ${p.body} ${p.seo.title} ${p.seo.description} ${p.kind === "editorial" && p.about ? JSON.stringify(p.about) : ""}` : `${p.name} ${p.description} ${p.seo.title} ${p.seo.description}`;
     if (/\b(cea mai buna|cel mai bun|cei mai buni|cele mai bune|garantat|100 procent)\b/.test(normalize(copy))) throw new Error(`Forbidden claim: ${p.id}`);
     const dates = [p.updatedAt, ...p.sources.map(s => s.checkedAt)];
     if (dates.some(d => d > new Date().toISOString().slice(0, 10))) throw new Error(`Future verification date: ${p.id}`);

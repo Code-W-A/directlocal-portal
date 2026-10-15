@@ -1,0 +1,86 @@
+{
+  "id": "marsico-energy",
+  "slug": "marsico-energy",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Marsico Energy",
+  "description": "Marsico Energy prezintă instalarea sistemelor fotovoltaice din Focșani, cu proiecte în Vrancea și județele vecine. Firma descrie alegerea componentelor, montajul și sprijinul pentru documentația sistemului.",
+  "seo": {
+    "title": "Marsico Energy — servicii și contact",
+    "description": "Marsico Energy prezintă instalarea sistemelor fotovoltaice din Focșani, cu proiecte în Vrancea și județele vecine. Firma descrie alegerea componentelor, montajul și sprijinul pentru documentația sistemului."
+  },
+  "website": "https://marsicoenergy.ro/",
+  "phone": "0736656823",
+  "evidence": {
+    "name": [
+      "source-1",
+      "source-2"
+    ],
+    "description": [
+      "source-1",
+      "source-2"
+    ],
+    "website": [
+      "source-1",
+      "source-2"
+    ],
+    "phone": [
+      "source-1",
+      "source-2"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Focșani",
+    "county": "Vrancea",
+    "sourceIds": [
+      "source-1",
+      "source-2"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ],
+      "coverage": [
+        {
+          "locationId": "focsani",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "vrancea",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://marsicoenergy.ro/sisteme-fotovoltaice/instalare/",
+      "note": "Instalare fotovoltaice, birou și echipă în Focșani, proiecte Vrancea; nu importăm estimări de economii, granturi, recenzii sau autorizări."
+    },
+    {
+      "id": "source-2",
+      "checkedAt": "2026-10-15",
+      "url": "https://marsicoenergy.ro/contact/",
+      "note": "Contact public: Focșani, Vrancea și telefon 0736 656 823."
+    }
+  ],
+  "sponsored": false
+}

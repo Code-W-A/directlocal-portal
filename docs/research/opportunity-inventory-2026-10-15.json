@@ -1,0 +1,665 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/11XCIVzPbg_Wxrb0IhXRK3_GckqfyEbNmhpIhIezP0AI/edit",
+  "reviewedAt": "2026-10-15",
+  "policy": "Fără prag numeric; dovezi, contact și valoare distinctă.",
+  "opportunities": [
+    {
+      "number": 1,
+      "key": "service-city|instalatori|dambovita|targoviste|instalator-targoviste",
+      "service": "instalatori",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "instalator targoviste",
+      "targetUrl": "/servicii/instalatori/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "instalator-targoviste"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 2,
+      "key": "service-city|electricieni|dambovita|targoviste|electrician-targoviste",
+      "service": "electricieni",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "electrician targoviste",
+      "targetUrl": "/servicii/electricieni/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 3,
+      "key": "service-county|electricieni|dambovita||electrician-dambovita",
+      "service": "electricieni",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "electrician dambovita",
+      "targetUrl": "/servicii/electricieni/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 4,
+      "key": "service-city|electrician-auto|dambovita|targoviste|electrician-auto-targoviste",
+      "service": "electrician auto",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "electrician auto targoviste",
+      "targetUrl": "/servicii/electrician-auto/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "beda-impex",
+        "raiman-auto"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 5,
+      "key": "service-city|service-centrale|dambovita|targoviste|reparatii-centrale-termice-targoviste",
+      "service": "service centrale",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "reparatii centrale termice targoviste",
+      "targetUrl": "/servicii/service-centrale/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "jadcom",
+        "service-microcentrale"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 6,
+      "key": "service-city|montaj-centrale-termice|dambovita|targoviste|montaj-centrale-termice-targoviste",
+      "service": "montaj centrale termice",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "montaj centrale termice targoviste",
+      "targetUrl": "/servicii/montaj-centrale-termice/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "jadcom",
+        "service-microcentrale"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 7,
+      "key": "service-city|montaj-aer-conditionat|dambovita|targoviste|montaj-aer-conditionat-targoviste",
+      "service": "montaj aer condiționat",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "montaj aer conditionat targoviste",
+      "targetUrl": "/servicii/montaj-aer-conditionat/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "mdc-instal-clima-expert",
+        "clinica-de-frig",
+        "instal-aerocris"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 8,
+      "key": "service-county|montaj-aer-conditionat|dambovita||montaj-aer-conditionat-dambovita",
+      "service": "montaj aer condiționat",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "montaj aer conditionat dambovita",
+      "targetUrl": "/servicii/montaj-aer-conditionat/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "mdc-instal-clima-expert",
+        "clinica-de-frig",
+        "instal-aerocris"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 9,
+      "key": "service-city|service-aer-conditionat|dambovita|targoviste|reparatii-aer-conditionat-targoviste",
+      "service": "service aer condiționat",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "reparatii aer conditionat targoviste",
+      "targetUrl": "/servicii/service-aer-conditionat/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "clinica-de-frig",
+        "instal-aerocris"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 10,
+      "key": "service-city|incarcare-freon-aer-conditionat|dambovita|targoviste|incarcare-freon-aer-conditionat-targoviste",
+      "service": "încărcare freon aer condiționat",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "incarcare freon aer conditionat targoviste",
+      "targetUrl": null,
+      "indexStatus": "noindex",
+      "decision": "blocked",
+      "companyIds": [],
+      "reason": "Nu există încă dovadă suficientă pentru încărcare de agent frigorific la aparate rezidențiale în Târgoviște; climatizarea auto și articolele informative nu sunt echivalente.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 11,
+      "key": "service-city|montaj-pompe-de-caldura|dambovita|targoviste|montaj-pompe-de-caldura-targoviste",
+      "service": "montaj pompe de căldură",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "montaj pompe de caldura targoviste",
+      "targetUrl": "/servicii/montaj-pompe-de-caldura/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 12,
+      "key": "service-city|panouri-fotovoltaice|dambovita|targoviste|panouri-fotovoltaice-targoviste",
+      "service": "panouri fotovoltaice",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "panouri fotovoltaice targoviste",
+      "targetUrl": "/servicii/panouri-fotovoltaice/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "sol-x",
+        "ecosolaris"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 13,
+      "key": "service-county|panouri-fotovoltaice|dambovita||panouri-fotovoltaice-dambovita",
+      "service": "panouri fotovoltaice",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "panouri fotovoltaice dambovita",
+      "targetUrl": "/servicii/panouri-fotovoltaice/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "sol-x",
+        "ecosolaris",
+        "solaryus"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 14,
+      "key": "service-county|reparatii-acoperisuri|dambovita||reparatii-acoperisuri-dambovita",
+      "service": "reparații acoperișuri",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "reparatii acoperisuri dambovita",
+      "targetUrl": "/servicii/reparatii-acoperisuri/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "acoperisuri-reparatii",
+        "reparatii-best",
+        "acoperisuri-montaj",
+        "acoperisuri-pe-viata"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 15,
+      "key": "service-city|curatenie|dambovita|targoviste|firma-curatenie-targoviste",
+      "service": "curățenie",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "firma curatenie targoviste",
+      "targetUrl": "/servicii/curatenie/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "starcleaning",
+        "clean-trust"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 16,
+      "key": "service-city|curatenie-la-domiciliu|dambovita|targoviste|firma-curatenie-la-domiciliu-targoviste",
+      "service": "curățenie la domiciliu",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "firma curatenie la domiciliu targoviste",
+      "targetUrl": "/servicii/curatenie/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "starcleaning",
+        "clean-trust"
+      ],
+      "reason": "Aceeași intenție și aceiași furnizori: curățenia la domiciliu este tratată în pagina curățenie, fără pagină aproape duplicată.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 17,
+      "key": "service-city|service-auto|dambovita|targoviste|service-auto-targoviste",
+      "service": "service auto",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "service auto targoviste",
+      "targetUrl": "/servicii/service-auto/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "beda-impex",
+        "raiman-auto"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 18,
+      "key": "service-city|service-auto|dambovita|gaesti|service-auto-gaesti",
+      "service": "service auto",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "service auto gaesti",
+      "targetUrl": "/servicii/service-auto/dambovita/gaesti/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "amg-service-auto"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 19,
+      "key": "service-city|service-auto|dambovita|titu|service-auto-titu",
+      "service": "service auto",
+      "county": "Dâmbovița",
+      "city": "Titu",
+      "primaryKeyword": "service auto titu",
+      "targetUrl": null,
+      "indexStatus": "noindex",
+      "decision": "blocked",
+      "companyIds": [],
+      "reason": "EDT AutoMar apare în rezultate și directoare pentru Titu, dar contactul și atelierul nu sunt confirmate printr-o sursă primară accesibilă în această verificare.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 20,
+      "key": "service-county|service-auto|dambovita||service-auto-dambovita",
+      "service": "service auto",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "service auto dambovita",
+      "targetUrl": "/servicii/service-auto/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "beda-impex",
+        "raiman-auto",
+        "amg-service-auto"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 21,
+      "key": "service-city|vopsitorie-auto|dambovita|targoviste|vopsitorie-auto-targoviste",
+      "service": "vopsitorie auto",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "vopsitorie auto targoviste",
+      "targetUrl": "/servicii/vopsitorie-auto/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "beda-impex",
+        "raiman-auto"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 22,
+      "key": "service-city|itp|dambovita|targoviste|itp-targoviste",
+      "service": "ITP",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "itp targoviste",
+      "targetUrl": "/servicii/itp/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "beda-impex",
+        "autodet"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 23,
+      "key": "service-city|itp|dambovita|titu|itp-titu",
+      "service": "ITP",
+      "county": "Dâmbovița",
+      "city": "Titu",
+      "primaryKeyword": "itp titu",
+      "targetUrl": "/servicii/itp/dambovita/titu/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "itp-auto-visina"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 24,
+      "key": "service-city|itp|dambovita|pucioasa|itp-pucioasa",
+      "service": "ITP",
+      "county": "Dâmbovița",
+      "city": "Pucioasa",
+      "primaryKeyword": "itp pucioasa",
+      "targetUrl": "/servicii/itp/dambovita/pucioasa/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "prosig-trafic"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 25,
+      "key": "service-city|renovari-apartamente|dambovita|targoviste|renovari-apartamente-targoviste",
+      "service": "renovări apartamente",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "renovari apartamente targoviste",
+      "targetUrl": "/servicii/renovari-apartamente/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "constructii-dambovita"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 26,
+      "key": "service-city|amenajari-interioare|dambovita|targoviste|amenajari-interioare-targoviste",
+      "service": "amenajări interioare",
+      "county": "Dâmbovița",
+      "city": "Târgoviște",
+      "primaryKeyword": "amenajari interioare targoviste",
+      "targetUrl": "/servicii/amenajari-interioare/dambovita/targoviste/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "constructii-dambovita"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 27,
+      "key": "service-county|amenajari-interioare|dambovita||amenajari-interioare-dambovita",
+      "service": "amenajări interioare",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "amenajari interioare dambovita",
+      "targetUrl": "/servicii/amenajari-interioare/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "constructii-dambovita"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 28,
+      "key": "service-city|instalatori|dambovita|gaesti|instalatii-sanitare-gaesti",
+      "service": "instalatori",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "instalatii sanitare gaesti",
+      "targetUrl": "/servicii/instalatori/dambovita/gaesti/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "gaz-instal-proiect"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 29,
+      "key": "service-city|electricieni|dambovita|gaesti|electrician-gaesti",
+      "service": "electricieni",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "electrician gaesti",
+      "targetUrl": "/servicii/electricieni/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 30,
+      "key": "service-county|service-centrale|dambovita||reparatii-centrale-termice-dambovita",
+      "service": "service centrale",
+      "county": "Dâmbovița",
+      "city": null,
+      "primaryKeyword": "reparatii centrale termice dambovita",
+      "targetUrl": "/servicii/service-centrale/dambovita/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "jadcom",
+        "service-microcentrale"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 31,
+      "key": "service-city|service-centrale|dambovita|gaesti|service-centrale-gaesti",
+      "service": "service centrale",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "service centrale gaesti",
+      "targetUrl": "/servicii/service-centrale/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "jadcom",
+        "service-microcentrale"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 32,
+      "key": "service-city|montaj-aer-conditionat|dambovita|gaesti|montaj-aer-conditionat-gaesti",
+      "service": "montaj aer condiționat",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "montaj aer conditionat gaesti",
+      "targetUrl": "/servicii/montaj-aer-conditionat/dambovita/gaesti/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 33,
+      "key": "service-city|service-aer-conditionat|dambovita|gaesti|service-aer-conditionat-gaesti",
+      "service": "service aer condiționat",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "service aer conditionat gaesti",
+      "targetUrl": null,
+      "indexStatus": "noindex",
+      "decision": "blocked",
+      "companyIds": [],
+      "reason": "Firmele identificate declară întreținere în Găești sau reparații la nivel de județ; nu avem încă dovada explicită pentru reparații AC în Găești.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 34,
+      "key": "service-city|pompe-de-caldura|dambovita|gaesti|montaj-pompe-de-caldura-gaesti",
+      "service": "montaj pompe de căldură",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "montaj pompe de caldura gaesti",
+      "targetUrl": "/servicii/montaj-pompe-de-caldura/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "mdc-instal-clima-expert"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 35,
+      "key": "service-city|panouri-fotovoltaice|arges|pitesti|panouri-fotovoltaice-pitesti",
+      "service": "panouri fotovoltaice",
+      "county": "Argeș",
+      "city": "Pitești",
+      "primaryKeyword": "panouri fotovoltaice pitesti",
+      "targetUrl": "/servicii/panouri-fotovoltaice/arges/pitesti/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "decris-electro-instal"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 36,
+      "key": "service-city|panouri-fotovoltaice|bacau|bacau|panouri-fotovoltaice-bacau",
+      "service": "panouri fotovoltaice",
+      "county": "Bacău",
+      "city": "Bacău",
+      "primaryKeyword": "panouri fotovoltaice bacau",
+      "targetUrl": "/servicii/panouri-fotovoltaice/bacau/bacau/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "voltecon"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 37,
+      "key": "service-city|panouri-fotovoltaice|buzau|buzau|panouri-fotovoltaice-buzau",
+      "service": "panouri fotovoltaice",
+      "county": "Buzău",
+      "city": "Buzău",
+      "primaryKeyword": "panouri fotovoltaice buzau",
+      "targetUrl": "/servicii/panouri-fotovoltaice/buzau/buzau/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "electro-construct"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 38,
+      "key": "service-city|panouri-fotovoltaice|prahova|ploiesti|panouri-fotovoltaice-ploiesti",
+      "service": "panouri fotovoltaice",
+      "county": "Prahova",
+      "city": "Ploiești",
+      "primaryKeyword": "panouri fotovoltaice ploiesti",
+      "targetUrl": "/servicii/panouri-fotovoltaice/prahova/ploiesti/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "sol-x"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 39,
+      "key": "service-city|panouri-fotovoltaice|vrancea|focsani|panouri-fotovoltaice-focsani",
+      "service": "panouri fotovoltaice",
+      "county": "Vrancea",
+      "city": "Focșani",
+      "primaryKeyword": "panouri fotovoltaice focsani",
+      "targetUrl": "/servicii/panouri-fotovoltaice/vrancea/focsani/",
+      "indexStatus": "index",
+      "decision": "published",
+      "companyIds": [
+        "marsico-energy"
+      ],
+      "reason": "Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.",
+      "verifiedAt": "2026-10-15"
+    },
+    {
+      "number": 40,
+      "key": "service-city|panouri-fotovoltaice|dambovita|gaesti|panouri-fotovoltaice-gaesti",
+      "service": "panouri fotovoltaice",
+      "county": "Dâmbovița",
+      "city": "Găești",
+      "primaryKeyword": "panouri fotovoltaice gaesti",
+      "targetUrl": "/servicii/panouri-fotovoltaice/dambovita/",
+      "indexStatus": "index",
+      "decision": "mapped",
+      "companyIds": [
+        "sol-x",
+        "ecosolaris"
+      ],
+      "reason": "Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.",
+      "verifiedAt": "2026-10-15"
+    }
+  ]
+}

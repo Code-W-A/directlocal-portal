@@ -1,16 +1,16 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele-constanta",
   "slug": "curatare-canapele-constanta",
   "kind": "local",
-  "title": "Curățare canapele în Constanța — serviciu și contact",
+  "title": "Curățare canapele în Constanța",
   "seo": {
-    "title": "Curățare canapele în Constanța — serviciu și contact",
+    "title": "Curățare canapele în Constanța — firme și contact",
     "description": "Date de contact Alpha Cleaning pentru curățare canapele în Constanța, intervenția la domiciliu și informații de confirmat înainte de programare."
   },
-  "intro": "Dacă vrei să cureți o canapea în Constanța fără să o transporți, Alpha Cleaning declară că efectuează serviciul la domiciliul clientului. Poți discuta telefonic despre material, dimensiuni și tipul petelor înainte de a stabili intervenția. Firma publică și o adresă de contact în oraș, dar aceasta nu trebuie confundată cu un punct de predare a mobilierului. În această pagină găsești contactul, sursele consultate și câteva întrebări utile pentru solicitarea ofertei. Confirmă direct costul lucrării, pregătirea spațiului și momentul în care vei putea folosi din nou canapeaua.",
+  "intro": "Găsește datele de contact pentru curățarea canapelei la domiciliu în Constanța. Vezi furnizorul documentat și discută direct despre material, pete și costul intervenției.",
   "indexStatus": "index",
   "editorialReviewed": true,
   "sources": [
@@ -32,7 +32,7 @@
   "companyIds": [
     "alpha-cleaning"
   ],
-  "reviewNote": "Revizuire editorială 2026-10-12: serviciu și zonă susținute de surse, contact direct utilizabil, informații specifice pentru această zonă și delimitarea aspectelor de confirmat. Lista precede ghidul; text original fără promisiuni de rezultate."
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat."
 }
 ---
 ## Intervenție acasă sau deplasare la sediu?
@@ -48,12 +48,12 @@ Website-ul firmei prezintă estimări diferite pentru uscare. De aceea, nu publi
 
 ## Întrebări frecvente
 ### Unde găsesc numărul de programare?
-Telefonul public este 0724 304 419. Îl găsești și în profil, alături de website și sursa adresei de contact.
+Telefonul public este 0724 304 419. Îl găsești și în profil, alături de website-ul oficial.
 
 ### Serviciul acoperă toate localitățile județului Constanța?
 Pagina consultată confirmă serviciul în municipiul Constanța. Nu extindem automat această declarație la întreg județul.
 
 ### Prețul este stabilit de director?
-Nu. Oferta și condițiile intervenției se stabilesc direct cu Alpha Cleaning. Directorul publică informațiile de contact și sursele lor.
+Nu. Oferta și condițiile intervenției se stabilesc direct cu Alpha Cleaning. Directorul publică informațiile de contact consultate pe website-ul firmei.
 
 [Vezi metodologia verificării](/metodologie/).

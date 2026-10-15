@@ -1,4 +1,8 @@
 import { contentFor, metadataFor } from "@/lib/content/public";
-import { ContentView } from "@/templates/ContentView";
+import { AboutPage } from "@/templates/AboutPage";
 export async function generateMetadata() { return metadataFor("/despre-noi/"); }
-export default async function Page() { return <ContentView {...await contentFor("/despre-noi/")} />; }
+export default async function Page() {
+  const { page } = await contentFor("/despre-noi/");
+  if (page.kind !== "editorial" || !page.about) throw new Error("The about page needs its structured editorial content.");
+  return <AboutPage page={page} content={page.about} />;
+}

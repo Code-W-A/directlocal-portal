@@ -1,18 +1,18 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele-judet-constanta",
   "slug": "curatare-canapele-judet-constanta",
   "kind": "county",
-  "title": "Curățare canapele în județul Constanța — pagini locale",
+  "title": "Curățare canapele în județul Constanța",
   "seo": {
     "title": "Curățare canapele în județul Constanța — pagini locale",
     "description": "Catalogul paginilor documentate pentru curățare canapele în județul Constanța. Prima pagină disponibilă acoperă municipiul."
   },
-  "intro": "Pentru județul Constanța este disponibilă pagina municipiului Constanța. Acolo găsești contactul Alpha Cleaning și explicațiile despre serviciul la domiciliu.",
-  "indexStatus": "noindex",
-  "editorialReviewed": false,
+  "intro": "Alege pagina pentru Constanța și consultă furnizorul documentat. În acest moment, catalogul nu confirmă acoperirea întregului județ Constanța.",
+  "indexStatus": "index",
+  "editorialReviewed": true,
   "sources": [
     {
       "id": "alpha-serviciu",
@@ -28,7 +28,11 @@
     }
   ],
   "serviceId": "curatare-canapele",
-  "countyId": "constanta"
+  "countyId": "constanta",
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat.",
+  "companyIds": [
+    "alpha-cleaning"
+  ]
 }
 ---
 ## Municipiul și județul au acoperire diferită

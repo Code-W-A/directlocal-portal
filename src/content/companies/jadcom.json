@@ -1,0 +1,116 @@
+{
+  "id": "jadcom",
+  "slug": "jadcom",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "JADCOM",
+  "description": "JADCOM oferă service și montaj de centrale termice și menționează intervenții în județul Dâmbovița, inclusiv Târgoviște și Găești.",
+  "seo": {
+    "title": "JADCOM — servicii și contact",
+    "description": "JADCOM oferă service și montaj de centrale termice și menționează intervenții în județul Dâmbovița, inclusiv Târgoviște și Găești."
+  },
+  "website": "https://www.jadcom.ro/",
+  "phone": "0722795533",
+  "evidence": {
+    "name": [
+      "source-1",
+      "source-2"
+    ],
+    "description": [
+      "source-1",
+      "source-2"
+    ],
+    "website": [
+      "source-1",
+      "source-2"
+    ],
+    "phone": [
+      "source-1",
+      "source-2"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-centrale",
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "montaj-centrale-termice",
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1",
+            "source-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.jadcom.ro/",
+      "note": "Service centrale, telefon, montaj centrale și localitățile Târgoviște/Găești; acoperire declarată în Dâmbovița."
+    },
+    {
+      "id": "source-2",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.jadcom.ro/montaj-inlocuire-centrala-termica",
+      "note": "Montaj și înlocuire centrale termice. Prețurile, autorizările și termenele comerciale nu sunt preluate."
+    }
+  ],
+  "sponsored": false
+}

@@ -1,0 +1,844 @@
+{
+  "generatedAt": "2026-10-15",
+  "domain": "https://directlocal.ro",
+  "services": 17,
+  "companies": 31,
+  "counties": 10,
+  "cities": 12,
+  "publicPages": 104,
+  "indexablePages": 103,
+  "pages": [
+    {
+      "path": "/",
+      "title": "Firme și servicii locale în România",
+      "h1": "Găsește firme locale, simplu.",
+      "description": "Firme și servicii locale cu surse publice, date de contact și zone de acoperire documentate.",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/",
+      "title": "Catalog de servicii locale",
+      "h1": "Servicii locale",
+      "description": "Explorează serviciile documentate și paginile locale ale directorului.",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/cauta/",
+      "title": "Caută firme după serviciu și localitate",
+      "h1": "Caută o firmă",
+      "description": "Filtrează firmele documentate după serviciu, județ și oraș. Consultă profilurile și contactează direct furnizorii.",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "noindex"
+    },
+    {
+      "path": "/firme/acoperisuri-montaj/",
+      "title": "Acoperișuri Montaj — servicii și contact",
+      "description": "Acoperișuri Montaj declară lucrări de reparație și montaj la acoperișuri în Dâmbovița. Pagina județului include intervenții la învelitori, jgheaburi și burlane.",
+      "h1": "Acoperișuri Montaj",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/acoperisuri-pe-viata/",
+      "title": "Acoperișuri pe Viață — servicii și contact",
+      "description": "Acoperișuri pe Viață prezintă reparații la învelitori pentru locuințe și alte clădiri. Dâmbovița este inclus explicit în aria de lucru publicată.",
+      "h1": "Acoperișuri pe Viață",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/acoperisuri-reparatii/",
+      "title": "Acoperișuri-Reparații — servicii și contact",
+      "description": "Acoperișuri-Reparații prezintă intervenții la acoperișuri în județul Dâmbovița. Pagina de servicii menționează reparații la învelitori și lucrări cu tablă.",
+      "h1": "Acoperișuri-Reparații",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/alpha-cleaning/",
+      "title": "Alpha Cleaning — contact și curățare canapele",
+      "description": "Alpha Cleaning declară curățarea canapelelor la domiciliu în Constanța. Consultă telefonul, adresa declarată și website-ul firmei.",
+      "h1": "Alpha Cleaning",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/amg-service-auto/",
+      "title": "AMG Service Auto — servicii și contact",
+      "description": "AMG Service Auto prezintă un atelier în Găești și servicii de mecanică, revizie și diagnoză auto. Pentru lucrare este necesară programarea la atelier; tractările sunt un serviciu separat.",
+      "h1": "AMG Service Auto",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/autodet/",
+      "title": "AUTODET — servicii și contact",
+      "description": "AUTODET prezintă o stație ITP în Târgoviște, pe Calea București 80. Telefonul public poate fi folosit pentru a verifica programarea și tipul vehiculului acceptat.",
+      "h1": "AUTODET",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/beda-impex/",
+      "title": "BEDA IMPEX — servicii și contact",
+      "description": "BEDA IMPEX are un punct de lucru auto pe Bulevardul Eroilor 26 din Târgoviște. Website-ul prezintă mecanică, reparații electrice, tinichigerie-vopsitorie și ITP.",
+      "h1": "BEDA IMPEX",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/clean-trust/",
+      "title": "Clean Trust — servicii și contact",
+      "description": "Clean Trust prezintă curățenie la domiciliu și după constructor în Târgoviște și în județul Dâmbovița. Lista publicată include și alte localități, care se confirmă direct la programare.",
+      "h1": "Clean Trust",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/clinica-de-frig/",
+      "title": "Clinica de Frig — servicii și contact",
+      "description": "Clinica de Frig prezintă montaj, întreținere și reparații pentru aer condiționat în Târgoviște și Dâmbovița. Adresa de contact publicată este pe strada Cpt. Stănică Ilie din Târgoviște.",
+      "h1": "Clinica de Frig",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/constructii-dambovita/",
+      "title": "Construcții Dâmbovița — servicii și contact",
+      "description": "Construcții Dâmbovița prezintă renovări de apartamente și finisaje interioare în județul Dâmbovița, inclusiv Târgoviște și Găești. Lucrările descrise includ placări și zugrăveli.",
+      "h1": "Construcții Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/decris-electro-instal/",
+      "title": "Decris Electro Instal — servicii și contact",
+      "description": "Decris Electro Instal prezintă instalarea sistemelor fotovoltaice rezidențiale și comerciale în Argeș și Pitești. Punctul de lucru publicat este pe Calea Craiovei din Pitești.",
+      "h1": "Decris Electro Instal",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/detailing-mobil/",
+      "title": "Detailing Mobil — contact și curățare canapele",
+      "description": "Detailing Mobil declară curățarea canapelelor la client în Ilfov. Sediul este în București; firma nu are punct de predare a obiectelor pentru curățare.",
+      "h1": "Detailing Mobil",
+      "updatedAt": "2026-10-12",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/ecosolaris/",
+      "title": "EcoSolaris — servicii și contact",
+      "description": "EcoSolaris prezintă montaj de sisteme fotovoltaice în Dâmbovița, inclusiv Târgoviște și Găești. Firma declară sediul și depozitul în Clinceni, de unde organizează deplasările.",
+      "h1": "EcoSolaris",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/electro-construct/",
+      "title": "Electro & Construct — servicii și contact",
+      "description": "Electro & Construct prezintă proiectarea și instalarea sistemelor fotovoltaice în Buzău. Punctul de lucru indicat pe website se află pe Șoseaua Nordului 45.",
+      "h1": "Electro & Construct",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/gaz-instal-proiect/",
+      "title": "Gaz Instal Proiect Dâmbovița — servicii și contact",
+      "description": "Gaz Instal Proiect Dâmbovița declară un sediu în Găești și lucrări de instalații sanitare. Website-ul prezintă și instalații termice, separat de serviciul sanitar inclus aici.",
+      "h1": "Gaz Instal Proiect Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/igienizare-tapiterie/",
+      "title": "Igienizare Tapițerie — contact și acoperire declarată",
+      "description": "Telefonul și website-ul Igienizare Tapițerie, serviciul de curățare canapele în Brașov și data consultării informațiilor.",
+      "h1": "Igienizare Tapițerie",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/instal-aerocris/",
+      "title": "Instal AeroCris — servicii și contact",
+      "description": "Instal AeroCris oferă montaj și reparații de aer condiționat, având zona principală în București și Ilfov. Declară deplasări și în Târgoviște, în funcție de lucrare și de disponibilitatea echipei.",
+      "h1": "Instal AeroCris",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/instalator-targoviste/",
+      "title": "Instalator Târgoviște — servicii și contact",
+      "description": "Instalator Târgoviște prezintă lucrări la instalații sanitare și reparații pentru locuințe din Târgoviște, inclusiv intervenții la robinete și obiecte sanitare.",
+      "h1": "Instalator Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/itp-auto-visina/",
+      "title": "ITP Auto Vișina — servicii și contact",
+      "description": "ITP Auto Vișina prezintă stația de pe strada Mihai Viteazu 22, Vișina, pentru șoferii din Titu. Inspecția se face în Vișina; nu este o stație situată în orașul Titu.",
+      "h1": "ITP Auto Vișina",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/jadcom/",
+      "title": "JADCOM — servicii și contact",
+      "description": "JADCOM oferă service și montaj de centrale termice și menționează intervenții în județul Dâmbovița, inclusiv Târgoviște și Găești.",
+      "h1": "JADCOM",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/marsico-energy/",
+      "title": "Marsico Energy — servicii și contact",
+      "description": "Marsico Energy prezintă instalarea sistemelor fotovoltaice din Focșani, cu proiecte în Vrancea și județele vecine. Firma descrie alegerea componentelor, montajul și sprijinul pentru documentația sistemului.",
+      "h1": "Marsico Energy",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/mdc-instal-clima-expert/",
+      "title": "MDC Instal Clima Expert — servicii și contact",
+      "description": "MDC Instal Clima Expert declară montaj de aer condiționat, montaj hidraulic pentru pompe de căldură și lucrări electrice. Aria publicată include Târgoviște și Găești; Titu este prezentat drept zonă principală de servicii.",
+      "h1": "MDC Instal Clima Expert",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/prosig-trafic/",
+      "title": "Prosig Trafic — servicii și contact",
+      "description": "Prosig Trafic prezintă servicii ITP în Pucioasa. Website-ul mai descrie lucrări la tahografe, însă pagina din director se referă la inspecția tehnică periodică.",
+      "h1": "Prosig Trafic",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/raiman-auto/",
+      "title": "Raiman Auto — servicii și contact",
+      "description": "Raiman Auto prezintă service auto în Târgoviște, la Aleea Sinaia 6–8. Serviciile publicate includ mecanică, diagnosticare și reparații electrice, precum și tinichigerie-vopsitorie.",
+      "h1": "Raiman Auto",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/reparatii-best/",
+      "title": "Reparații Best — servicii și contact",
+      "description": "Reparații Best prezintă lucrări de reparație și renovare a acoperișurilor în județul Dâmbovița. Sunt menționate învelitori cu țiglă și tablă, alături de lucrări noi de acoperiș.",
+      "h1": "Reparații Best",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/service-microcentrale/",
+      "title": "Service Microcentrale — servicii și contact",
+      "description": "Service Microcentrale, firmă prezentată ca fiind din București, declară montaj și reparații de centrale termice în Dâmbovița. Târgoviște și Găești sunt numite în aria de intervenție.",
+      "h1": "Service Microcentrale",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/sol-x/",
+      "title": "SOL-X — servicii și contact",
+      "description": "SOL-X oferă instalarea sistemelor fotovoltaice și declară sediul central în Ploiești. Pagina pentru Dâmbovița include Târgoviște și Găești în aria de lucru.",
+      "h1": "SOL-X",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/solaryus/",
+      "title": "SOLARYUS — servicii și contact",
+      "description": "SOLARYUS prezintă proiectare și instalare de sisteme fotovoltaice în județul Dâmbovița. Adresa publicată a echipei este strada Regiei 12, Titu.",
+      "h1": "SOLARYUS",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/starcleaning/",
+      "title": "StarCleaning — servicii și contact",
+      "description": "StarCleaning prezintă servicii de curățenie în Târgoviște pentru locuințe și spații de lucru, inclusiv curățenie după constructor. Solicitările pot fi discutate prin website-ul firmei.",
+      "h1": "StarCleaning",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/voltecon/",
+      "title": "Voltecon — servicii și contact",
+      "description": "Voltecon prezintă sisteme fotovoltaice pentru Bacău, cu servicii de consultanță și instalare. Sunt descrise configurații conectate la rețea și soluții cu stocare.",
+      "h1": "Voltecon",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/firme/zoom-cleaning/",
+      "title": "Zoom Cleaning — contact și curățare canapele",
+      "description": "Zoom Cleaning oferă curățare canapele la domiciliu în Timișoara. Găsești aici telefonul, website-ul și serviciul declarat de furnizor.",
+      "h1": "Zoom Cleaning",
+      "updatedAt": "2026-10-12",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/amenajari-interioare/dambovita/",
+      "title": "Amenajări interioare în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de amenajări interioare documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Amenajări interioare în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/amenajari-interioare/dambovita/targoviste/",
+      "title": "Amenajări interioare în Târgoviște — firme și contact",
+      "description": "Amenajări interioare în Târgoviște: Construcții Dâmbovița. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Amenajări interioare în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/amenajari-interioare/",
+      "title": "Amenajări interioare — servicii și firme pe județe",
+      "description": "Execuție de finisaje interioare: zugrăveli, placări și alte lucrări declarate de firme. Alege județul și consultă profilurile furnizorilor pentru amenajări interioare.",
+      "h1": "Amenajări interioare",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/contact/",
+      "title": "Contact — întrebări, corecturi și propuneri de firme",
+      "description": "Scrie echipei DirectLocal.ro pentru întrebări despre director, corectarea informațiilor sau propunerea unei firme locale.",
+      "h1": "Contact DirectLocal.ro",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/constanta/constanta/",
+      "title": "Curățare canapele în Constanța — firme și contact",
+      "description": "Date de contact Alpha Cleaning pentru curățare canapele în Constanța, intervenția la domiciliu și informații de confirmat înainte de programare.",
+      "h1": "Curățare canapele în Constanța",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/ilfov/",
+      "title": "Curățare canapele în Ilfov — furnizor cu deplasare",
+      "description": "Contact Detailing Mobil pentru curățare canapele la domiciliu în Ilfov. Verifică deplasarea la adresa ta și diferența dintre sediu și zona deservită.",
+      "h1": "Curățare canapele în județul Ilfov",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/brasov/",
+      "title": "Curățare canapele în județul Brașov",
+      "description": "Localități documentate pentru curățarea canapelelor în județul Brașov. Acoperirea este indicată separat pentru fiecare furnizor.",
+      "h1": "Curățare canapele în județul Brașov",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/constanta/",
+      "title": "Curățare canapele în județul Constanța — pagini locale",
+      "description": "Catalogul paginilor documentate pentru curățare canapele în județul Constanța. Prima pagină disponibilă acoperă municipiul.",
+      "h1": "Curățare canapele în județul Constanța",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/timis/",
+      "title": "Curățare canapele în Timiș — localități documentate",
+      "description": "Vezi pagina Timișoarei pentru curățare canapele. Directorul indică separat localitățile documentate și limitele acoperirii.",
+      "h1": "Curățare canapele în județul Timiș",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/brasov/brasov/",
+      "title": "Curățare canapele în Brașov — firme și contact",
+      "description": "Găsește date de contact pentru curățare canapele în municipiul Brașov, acoperirea declarată și întrebări utile înainte de programare.",
+      "h1": "Curățare canapele în Brașov",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/timis/timisoara/",
+      "title": "Curățare canapele în Timișoara — firme și contact",
+      "description": "Cauți curățare canapele în Timișoara? Vezi contactul Zoom Cleaning, cum soliciți o ofertă și ce să clarifici înainte de intervenție.",
+      "h1": "Curățare canapele în Timișoara",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatare-canapele/",
+      "title": "Curățare canapele: servicii și furnizori locali",
+      "description": "Descoperă unde sunt documentați furnizori de curățare canapele și ce informații să pregătești înainte de a cere o ofertă.",
+      "h1": "Curățare canapele: servicii și furnizori locali",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatenie/dambovita/",
+      "title": "Curățenie în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de curățenie documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Curățenie în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatenie/dambovita/targoviste/",
+      "title": "Curățenie în Târgoviște — firme și contact",
+      "description": "Curățenie în Târgoviște: StarCleaning, Clean Trust. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Curățenie în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/curatenie/",
+      "title": "Curățenie — servicii și firme pe județe",
+      "description": "Servicii de curățenie pentru locuințe, spații de lucru și după constructor. Alege județul și consultă profilurile furnizorilor pentru curățenie.",
+      "h1": "Curățenie",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/despre-noi/",
+      "title": "Despre platformă și cum funcționează directorul",
+      "description": "Află cum funcționează DirectLocal.ro, cum documentăm firmele și zonele deservite și cum poți contacta direct furnizorii locali.",
+      "h1": "Despre DirectLocal.ro",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/electrician-auto/dambovita/",
+      "title": "Electrician auto în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de electrician auto documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Electrician auto în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/electrician-auto/dambovita/targoviste/",
+      "title": "Electrician auto în Târgoviște — firme și contact",
+      "description": "Electrician auto în Târgoviște: BEDA IMPEX, Raiman Auto. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Electrician auto în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/electrician-auto/",
+      "title": "Electrician auto — servicii și firme pe județe",
+      "description": "Ateliere cu diagnoză și reparații ale instalației electrice a mașinii. Alege județul și consultă profilurile furnizorilor pentru electrician auto.",
+      "h1": "Electrician auto",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/electricieni/dambovita/",
+      "title": "Electricieni în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de electricieni documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Electricieni în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/electricieni/",
+      "title": "Electricieni — servicii și firme pe județe",
+      "description": "Instalații electrice pentru locuințe și spații de lucru, cu serviciile fiecărei firme explicate separat. Alege județul și consultă profilurile furnizorilor pentru electricieni.",
+      "h1": "Electricieni",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/inscriere-firma/",
+      "title": "Înscrie firma în DirectLocal.ro",
+      "description": "Lasă numele firmei și un telefon de contact. Echipa DirectLocal.ro te contactează pentru detaliile înscrierii în director.",
+      "h1": "Înscrie firma în DirectLocal.ro",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/instalatori/dambovita/gaesti/",
+      "title": "Instalatori în Găești — firme și contact",
+      "description": "Instalatori în Găești: Gaz Instal Proiect Dâmbovița. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Instalatori în Găești",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/instalatori/dambovita/",
+      "title": "Instalatori în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de instalatori documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Instalatori în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/instalatori/dambovita/targoviste/",
+      "title": "Instalatori în Târgoviște — firme și contact",
+      "description": "Instalatori în Târgoviște: Instalator Târgoviște. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Instalatori în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/instalatori/",
+      "title": "Instalatori — servicii și firme pe județe",
+      "description": "Lucrări la instalații sanitare: reparații, înlocuiri și montaj de obiecte sanitare. Alege județul și consultă profilurile furnizorilor pentru instalatori.",
+      "h1": "Instalatori",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/itp/dambovita/",
+      "title": "ITP în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de itp documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "ITP în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/itp/dambovita/pucioasa/",
+      "title": "ITP în Pucioasa — firme și contact",
+      "description": "ITP în Pucioasa: Prosig Trafic. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "ITP în Pucioasa",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/itp/dambovita/targoviste/",
+      "title": "ITP în Târgoviște — firme și contact",
+      "description": "ITP în Târgoviște: BEDA IMPEX, AUTODET. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "ITP în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/itp/dambovita/titu/",
+      "title": "ITP pentru Titu — stație în Vișina și contact",
+      "description": "ITP în Titu: ITP Auto Vișina. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "ITP pentru șoferii din Titu",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/itp/",
+      "title": "ITP — servicii și firme pe județe",
+      "description": "Stații care declară inspecții tehnice periodice, cu adresa reală separată de orașul căutat. Alege județul și consultă profilurile furnizorilor pentru itp.",
+      "h1": "ITP",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/metodologie/",
+      "title": "Metodologia directorului",
+      "description": "Cum documentăm firmele, verificăm acoperirea, ordonăm listările și primim sesizări despre informații greșite.",
+      "h1": "Metodologia directorului",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-aer-conditionat/dambovita/gaesti/",
+      "title": "Montaj aer condiționat în Găești — firme și contact",
+      "description": "Montaj aer condiționat în Găești: MDC Instal Clima Expert. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Montaj aer condiționat în Găești",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-aer-conditionat/dambovita/",
+      "title": "Montaj aer condiționat în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de montaj aer condiționat documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Montaj aer condiționat în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-aer-conditionat/dambovita/targoviste/",
+      "title": "Montaj aer condiționat în Târgoviște — firme și contact",
+      "description": "Montaj aer condiționat în Târgoviște: MDC Instal Clima Expert, Clinica de Frig, Instal AeroCris. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Montaj aer condiționat în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-aer-conditionat/",
+      "title": "Montaj aer condiționat — servicii și firme pe județe",
+      "description": "Instalarea aparatelor split și multisplit, prin firme cu arie de lucru declarată. Alege județul și consultă profilurile furnizorilor pentru montaj aer condiționat.",
+      "h1": "Montaj aer condiționat",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-centrale-termice/dambovita/",
+      "title": "Montaj centrale termice în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de montaj centrale termice documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Montaj centrale termice în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-centrale-termice/dambovita/targoviste/",
+      "title": "Montaj centrale termice în Târgoviște — firme și contact",
+      "description": "Montaj centrale termice în Târgoviște: JADCOM, Service Microcentrale. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Montaj centrale termice în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-centrale-termice/",
+      "title": "Montaj centrale termice — servicii și firme pe județe",
+      "description": "Montarea sau înlocuirea centralelor termice, separată de serviciile de reparații. Alege județul și consultă profilurile furnizorilor pentru montaj centrale termice.",
+      "h1": "Montaj centrale termice",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-pompe-de-caldura/dambovita/",
+      "title": "Montaj pompe de căldură în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de montaj pompe de căldură documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Montaj pompe de căldură în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/montaj-pompe-de-caldura/",
+      "title": "Montaj pompe de căldură — servicii și firme pe județe",
+      "description": "Firme care prezintă montaj și integrare a pompelor de căldură în instalația clădirii. Alege județul și consultă profilurile furnizorilor pentru montaj pompe de căldură.",
+      "h1": "Montaj pompe de căldură",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/bacau/bacau/",
+      "title": "Panouri fotovoltaice în Bacău — firme și contact",
+      "description": "Panouri fotovoltaice în Bacău: Voltecon. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Panouri fotovoltaice în Bacău",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/buzau/buzau/",
+      "title": "Panouri fotovoltaice în Buzău — firme și contact",
+      "description": "Panouri fotovoltaice în Buzău: Electro & Construct. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Panouri fotovoltaice în Buzău",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/vrancea/focsani/",
+      "title": "Panouri fotovoltaice în Focșani — firme și contact",
+      "description": "Panouri fotovoltaice în Focșani: Marsico Energy. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Panouri fotovoltaice în Focșani",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/arges/",
+      "title": "Panouri fotovoltaice în județul Argeș — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Argeș, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Argeș",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/bacau/",
+      "title": "Panouri fotovoltaice în județul Bacău — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Bacău, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Bacău",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/buzau/",
+      "title": "Panouri fotovoltaice în județul Buzău — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Buzău, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Buzău",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/dambovita/",
+      "title": "Panouri fotovoltaice în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/prahova/",
+      "title": "Panouri fotovoltaice în județul Prahova — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Prahova, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Prahova",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/vrancea/",
+      "title": "Panouri fotovoltaice în județul Vrancea — firme și zone",
+      "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Vrancea, localitățile disponibile și contactele directe.",
+      "h1": "Panouri fotovoltaice în județul Vrancea",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/arges/pitesti/",
+      "title": "Panouri fotovoltaice în Pitești — firme și contact",
+      "description": "Panouri fotovoltaice în Pitești: Decris Electro Instal. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Panouri fotovoltaice în Pitești",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/prahova/ploiesti/",
+      "title": "Panouri fotovoltaice în Ploiești — firme și contact",
+      "description": "Panouri fotovoltaice în Ploiești: SOL-X. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Panouri fotovoltaice în Ploiești",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/",
+      "title": "Panouri fotovoltaice — servicii și firme pe județe",
+      "description": "Firme pentru instalarea sistemelor fotovoltaice, cu contacte și localități documentate. Alege județul și consultă profilurile furnizorilor pentru panouri fotovoltaice.",
+      "h1": "Panouri fotovoltaice",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/renovari-apartamente/dambovita/",
+      "title": "Renovări apartamente în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de renovări apartamente documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Renovări apartamente în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/renovari-apartamente/dambovita/targoviste/",
+      "title": "Renovări apartamente în Târgoviște — firme și contact",
+      "description": "Renovări apartamente în Târgoviște: Construcții Dâmbovița. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Renovări apartamente în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/renovari-apartamente/",
+      "title": "Renovări apartamente — servicii și firme pe județe",
+      "description": "Firme care prezintă lucrări de renovare a apartamentelor, cu acoperire locală documentată. Alege județul și consultă profilurile furnizorilor pentru renovări apartamente.",
+      "h1": "Renovări apartamente",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/reparatii-acoperisuri/dambovita/",
+      "title": "Reparații acoperișuri în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de reparații acoperișuri documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Reparații acoperișuri în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/reparatii-acoperisuri/",
+      "title": "Reparații acoperișuri — servicii și firme pe județe",
+      "description": "Furnizori care declară intervenții la acoperișuri și învelitori, în zonele prezentate. Alege județul și consultă profilurile furnizorilor pentru reparații acoperișuri.",
+      "h1": "Reparații acoperișuri",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-aer-conditionat/dambovita/",
+      "title": "Service aer condiționat în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de service aer condiționat documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Service aer condiționat în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-aer-conditionat/dambovita/targoviste/",
+      "title": "Service aer condiționat în Târgoviște — firme și contact",
+      "description": "Service aer condiționat în Târgoviște: Clinica de Frig, Instal AeroCris. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Service aer condiționat în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-aer-conditionat/",
+      "title": "Service aer condiționat — servicii și firme pe județe",
+      "description": "Întreținere și reparații de climatizare; verifică operațiunile disponibile la fiecare furnizor. Alege județul și consultă profilurile furnizorilor pentru service aer condiționat.",
+      "h1": "Service aer condiționat",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-auto/dambovita/gaesti/",
+      "title": "Service auto în Găești — firme și contact",
+      "description": "Service auto în Găești: AMG Service Auto. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Service auto în Găești",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-auto/dambovita/",
+      "title": "Service auto în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de service auto documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Service auto în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-auto/dambovita/targoviste/",
+      "title": "Service auto în Târgoviște — firme și contact",
+      "description": "Service auto în Târgoviște: BEDA IMPEX, Raiman Auto. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Service auto în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-auto/",
+      "title": "Service auto — servicii și firme pe județe",
+      "description": "Ateliere pentru mecanică, revizii și diagnoză, cu localitatea atelierului afișată. Alege județul și consultă profilurile furnizorilor pentru service auto.",
+      "h1": "Service auto",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-centrale/dambovita/",
+      "title": "Service centrale termice în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de service centrale termice documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Service centrale termice în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/service-centrale/",
+      "title": "Service centrale termice — servicii și firme pe județe",
+      "description": "Firme care declară întreținere și reparații de centrale termice, cu zone de intervenție documentate. Alege județul și consultă profilurile furnizorilor pentru service centrale termice.",
+      "h1": "Service centrale termice",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/vopsitorie-auto/dambovita/",
+      "title": "Vopsitorie auto în județul Dâmbovița — firme și zone",
+      "description": "Consultă furnizorii de vopsitorie auto documentați pentru județul Dâmbovița, localitățile disponibile și contactele directe.",
+      "h1": "Vopsitorie auto în județul Dâmbovița",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/vopsitorie-auto/dambovita/targoviste/",
+      "title": "Vopsitorie auto în Târgoviște — firme și contact",
+      "description": "Vopsitorie auto în Târgoviște: BEDA IMPEX, Raiman Auto. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.",
+      "h1": "Vopsitorie auto în Târgoviște",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    },
+    {
+      "path": "/servicii/vopsitorie-auto/",
+      "title": "Vopsitorie auto — servicii și firme pe județe",
+      "description": "Ateliere care prezintă lucrări de vopsitorie și tinichigerie auto. Alege județul și consultă profilurile furnizorilor pentru vopsitorie auto.",
+      "h1": "Vopsitorie auto",
+      "updatedAt": "2026-10-15",
+      "indexStatus": "index"
+    }
+  ]
+}

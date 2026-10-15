@@ -8,7 +8,7 @@ export function pageMetadata(input: { path: string; title: string; description: 
     title: input.title, description: input.description,
     alternates: url && !input.omitCanonical ? { canonical: url } : undefined,
     robots: { index, follow: true },
-    openGraph: { title: input.title, description: input.description, siteName: config.name, locale: config.locale, type: "website", ...(url ? { url } : {}) },
-    twitter: { card: "summary", title: input.title, description: input.description },
+    openGraph: { title: input.title, description: input.description, siteName: config.name, locale: config.locale, type: "website", ...(url ? { url } : {}), ...(url && input.path === "/" ? { images: [{ url: absoluteUrl("/images/directlocal-social.jpg", config.url!), width: 1200, height: 630, alt: "Harta ilustrativă a României și DirectLocal.ro" }] } : {}) },
+    twitter: { card: url && input.path === "/" ? "summary_large_image" : "summary", ...(url && input.path === "/" ? { images: [absoluteUrl("/images/directlocal-social.jpg", config.url!)] } : {}), title: input.title, description: input.description },
   };
 }

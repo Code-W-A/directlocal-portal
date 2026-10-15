@@ -1,13 +1,11 @@
-import Link from "next/link";
-import { site } from "@/config/site";
-import styles from "./layout.module.css";
+import { site, addCompanyHref } from '@/config/site';
+import { PrimaryNav } from './PrimaryNav';
+import { Brand } from './Brand';
+import styles from './layout.module.css';
 export function SiteHeader() {
-  return <header className={styles.header}>
-    <div className={`container ${styles.bar}`}>
-      <Link href="/" className={styles.brand} aria-label={`${site.name} — acasă`}>
-        <span className={styles.mark} aria-hidden="true">d.</span><span>{site.name}</span>
-      </Link>
-      <nav aria-label="Navigare principală">{site.navigation.map(item => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
-    </div>
-  </header>;
+  return <header className={styles.header}><div className={`container ${styles.bar}`}>
+    <Brand />
+    <PrimaryNav items={site.navigation} />
+    <a className={`button ${styles.add}`} href={addCompanyHref}>Înscrie firma</a>
+  </div></header>;
 }

@@ -1,0 +1,53 @@
+{
+  "id": "starcleaning",
+  "slug": "starcleaning",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "StarCleaning",
+  "description": "StarCleaning prezintă servicii de curățenie în Târgoviște pentru locuințe și spații de lucru, inclusiv curățenie după constructor. Solicitările pot fi discutate prin website-ul firmei.",
+  "seo": {
+    "title": "StarCleaning — servicii și contact",
+    "description": "StarCleaning prezintă servicii de curățenie în Târgoviște pentru locuințe și spații de lucru, inclusiv curățenie după constructor. Solicitările pot fi discutate prin website-ul firmei."
+  },
+  "website": "https://starcleaning.ro/",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatenie",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://starcleaning.ro/",
+      "note": "Brand și servicii rezidențiale, comerciale și după constructor în Târgoviște. Website public; nu adăugăm numere din directoare."
+    }
+  ],
+  "sponsored": false
+}

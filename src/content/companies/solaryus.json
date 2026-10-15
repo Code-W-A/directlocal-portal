@@ -1,0 +1,66 @@
+{
+  "id": "solaryus",
+  "slug": "solaryus",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "SOLARYUS",
+  "description": "SOLARYUS prezintă proiectare și instalare de sisteme fotovoltaice în județul Dâmbovița. Adresa publicată a echipei este strada Regiei 12, Titu.",
+  "seo": {
+    "title": "SOLARYUS — servicii și contact",
+    "description": "SOLARYUS prezintă proiectare și instalare de sisteme fotovoltaice în județul Dâmbovița. Adresa publicată a echipei este strada Regiei 12, Titu."
+  },
+  "website": "https://solaryus.ro/",
+  "phone": "0765243069",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Titu",
+    "county": "Dâmbovița",
+    "street": "Strada Regiei 12",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://solaryus.ro/sisteme-fotovoltaice-dambovita/",
+      "note": "Telefon și adresa Titu; montaj fotovoltaice la nivel de județ. Nu deducem orașe din această arie și nu publicăm economii ori ore de soare."
+    }
+  ],
+  "sponsored": false
+}

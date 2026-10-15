@@ -15,7 +15,7 @@ import { similarity } from "../src/lib/content/validate";
 export function fixture(): Catalog {
   const base = { status: "published" as const, updatedAt: "2026-10-07" };
   const source = { id: "source", url: "https://example.org/", checkedAt: "2026-10-07", note: "Test evidence only" };
-  const editorial = { ...base, indexStatus: "noindex" as const, intro: Array.from({ length: 75 }, (_, i) => `cuvant${i}`).join(" "), sources: [source], editorialReviewed: false };
+  const editorial = { ...base, indexStatus: "noindex" as const, intro: Array.from({ length: 35 }, (_, i) => `cuvant${i}`).join(" "), sources: [source], editorialReviewed: false };
   return {
     services: [{ ...base, id: "test-service", slug: "test-service", name: "Serviciu de test", summary: "Exclusiv pentru teste." }],
     counties: [{ ...base, id: "test-county", slug: "test-county", name: "Județ de test" }],
@@ -28,11 +28,13 @@ export function fixture(): Catalog {
     ],
   };
 }
-test("extended catalog has eighteen routes and six editorially eligible pages", async () => {
+test("expanded catalog retains existing URLs and reviewed profiles", async () => {
   const catalog = await loadCatalog();
-  assert.equal(catalog.companies.length, 4); assert.equal(catalog.locations.length, 3);
+  assert(catalog.services.length > 10);
+  assert(catalog.companies.length > 20);
   const pages = getPublicPages(catalog, site);
-  assert.equal(pages.length, 18); assert.equal(pages.filter(p => p.indexStatus === "index").length, 6);
+  for (const route of ['/firme/alpha-cleaning/', '/servicii/curatare-canapele/brasov/brasov/', '/servicii/panouri-fotovoltaice/', '/servicii/itp/dambovita/titu/']) assert(pages.some(p => p.path === route));
+  assert(catalog.companies.every(c => c.editorialReviewed && c.reviewNote));
 });
 test("published pages derive stable service, county, local and company URLs", () => {
   const paths = getPublicPages(validateCatalog(fixture()), site).map(p => p.path);
@@ -110,12 +112,13 @@ test("reject missing sources and invalid verification dates", () => {
   const future = fixture(); future.companies[0].sources[0].checkedAt = "2999-01-01"; assert.throws(() => validateCatalog(future), /Future/);
   const noDate = fixture(); noDate.companies[0].sources[0].checkedAt = ""; assert.throws(() => validateCatalog(noDate));
 });
-test("one sourced company is eligible only after documented review", () => {
+test("local indexing requires documented editorial review and sourced companies", () => {
   const data = fixture(); data.pages[1].indexStatus = "index";
   assert.throws(() => validateCatalog(data), /review/);
   data.pages[1].editorialReviewed = true; assert.throws(() => validateCatalog(data), /review/);
   data.pages[1].reviewNote = "Source, contact, distinct useful content checked.";
   assert.doesNotThrow(() => validateCatalog(data));
+  data.pages[1].indexStatus = "noindex";
   data.companies[0].indexStatus = "index";
   assert.throws(() => validateCatalog(data), /review/);
   data.companies[0].editorialReviewed = true; data.companies[0].reviewNote = "Contact and service coverage documented.";
@@ -149,4 +152,17 @@ test("duplicate local editorial copy blocks publication", () => {
   assert.throws(() => validateCatalog(data), /similarity/);
   assert.equal(similarity("unu doi trei patru cinci", "unu doi trei patru cinci"), 1);
   assert(similarity("unu doi trei patru cinci", "alte vorbe fara legatura aici") < .8);
+});
+
+test('reviewed county indexing supports one or more sourced companies', () => {
+  const data = fixture();
+  const original = data.companies[0];
+  data.companies.push(...[2,3].map(n => ({ ...structuredClone(original), id: `test-company-${n}`, slug: `test-company-${n}`, name: `Firmă test ${n}`, seo: { title: `Firmă test ${n}`, description: `Descriere distinctă ${n}` } })));
+  for (const p of data.pages) if (p.kind === 'local' || p.kind === 'county') {
+    p.companyIds = data.companies.map(c => c.id); p.indexStatus = 'index'; p.editorialReviewed = true; p.reviewNote = 'Sources and distinct content reviewed for test.';
+  }
+  assert.doesNotThrow(() => validateCatalog(data));
+  const county = data.pages.find(p => p.kind === 'county')!;
+  if (county.kind === 'county') county.companyIds.pop();
+  assert.doesNotThrow(() => validateCatalog(data));
 });

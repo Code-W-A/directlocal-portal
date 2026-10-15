@@ -1,0 +1,66 @@
+{
+  "id": "autodet",
+  "slug": "autodet",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "AUTODET",
+  "description": "AUTODET prezintă o stație ITP în Târgoviște, pe Calea București 80. Telefonul public poate fi folosit pentru a verifica programarea și tipul vehiculului acceptat.",
+  "seo": {
+    "title": "AUTODET — servicii și contact",
+    "description": "AUTODET prezintă o stație ITP în Târgoviște, pe Calea București 80. Telefonul public poate fi folosit pentru a verifica programarea și tipul vehiculului acceptat."
+  },
+  "website": "https://itpautodet.ro/",
+  "phone": "0722675203",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Calea București 80",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://itpautodet.ro/",
+      "note": "Nume, telefon, adresa stației și serviciul ITP. Nu preluăm tarife, termene legale sau autorizări neverificate independent."
+    }
+  ],
+  "sponsored": false
+}

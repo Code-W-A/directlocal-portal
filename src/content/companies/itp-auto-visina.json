@@ -1,0 +1,66 @@
+{
+  "id": "itp-auto-visina",
+  "slug": "itp-auto-visina",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "ITP Auto Vișina",
+  "description": "ITP Auto Vișina prezintă stația de pe strada Mihai Viteazu 22, Vișina, pentru șoferii din Titu. Inspecția se face în Vișina; nu este o stație situată în orașul Titu.",
+  "seo": {
+    "title": "ITP Auto Vișina — servicii și contact",
+    "description": "ITP Auto Vișina prezintă stația de pe strada Mihai Viteazu 22, Vișina, pentru șoferii din Titu. Inspecția se face în Vișina; nu este o stație situată în orașul Titu."
+  },
+  "website": "https://visinaitp.ro/",
+  "phone": "0762688734",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Vișina",
+    "county": "Dâmbovița",
+    "street": "Strada Mihai Viteazu 22",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "titu",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://visinaitp.ro/itp-titu",
+      "note": "Pagina vizează explicit șoferii din Titu, dar publică stația în Vișina, Str. Mihai Viteazu 22, și telefon 0762 688 734. Localitatea reală este păstrată vizibil."
+    }
+  ],
+  "sponsored": false
+}

@@ -1,16 +1,16 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele-ilfov",
   "slug": "curatare-canapele-ilfov",
   "kind": "county",
-  "title": "Curățare canapele în Ilfov — furnizor cu deplasare",
+  "title": "Curățare canapele în județul Ilfov",
   "seo": {
     "title": "Curățare canapele în Ilfov — furnizor cu deplasare",
     "description": "Contact Detailing Mobil pentru curățare canapele la domiciliu în Ilfov. Verifică deplasarea la adresa ta și diferența dintre sediu și zona deservită."
   },
-  "intro": "Pentru curățarea canapelelor în Ilfov, Detailing Mobil declară că se deplasează la adresa clientului cu echipament propriu. Firma are sediul în București, dar publică separat Ilfov ca zonă de prestare a serviciului. Nu primește obiecte la sediu pentru curățare. Dacă vrei o ofertă, transmite localitatea, adresa și detaliile canapelei, apoi confirmă deplasarea pentru acea lucrare. Mai jos ai contactul și informațiile de verificat înainte de programare. Pagina prezintă un furnizor documentat, fără să pretindă că acoperă toate opțiunile disponibile în județ.",
+  "intro": "Consultă furnizorul care declară deplasări în județul Ilfov. Localitățile nu sunt enumerate individual în sursa consultată: confirmă direct adresa, disponibilitatea și costul deplasării.",
   "indexStatus": "index",
   "editorialReviewed": true,
   "sources": [
@@ -26,7 +26,7 @@
   "companyIds": [
     "detailing-mobil"
   ],
-  "reviewNote": "Revizuire editorială 2026-10-12: serviciu și zonă susținute de surse, contact direct utilizabil, informații specifice pentru această zonă și delimitarea aspectelor de confirmat. Lista precede ghidul; text original fără promisiuni de rezultate."
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat."
 }
 ---
 ## Cum verifici deplasarea în Ilfov

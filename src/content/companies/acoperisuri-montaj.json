@@ -1,0 +1,57 @@
+{
+  "id": "acoperisuri-montaj",
+  "slug": "acoperisuri-montaj",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Acoperișuri Montaj",
+  "description": "Acoperișuri Montaj declară lucrări de reparație și montaj la acoperișuri în Dâmbovița. Pagina județului include intervenții la învelitori, jgheaburi și burlane.",
+  "seo": {
+    "title": "Acoperișuri Montaj — servicii și contact",
+    "description": "Acoperișuri Montaj declară lucrări de reparație și montaj la acoperișuri în Dâmbovița. Pagina județului include intervenții la învelitori, jgheaburi și burlane."
+  },
+  "website": "https://acoperisuri-montaj.ro/",
+  "phone": "0758407587",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://acoperisuri-montaj.ro/judet-dambovita",
+      "note": "Denumire comercială a site-ului, telefon și lucrări de reparație în Dâmbovița; identitatea juridică nu este dedusă."
+    }
+  ],
+  "sponsored": false
+}

@@ -1,32 +1,26 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "contact",
   "slug": "contact",
   "kind": "editorial",
-  "title": "Contact și corectarea informațiilor",
+  "title": "Contact DirectLocal.ro",
   "seo": {
-    "title": "Contact și corectarea informațiilor",
-    "description": "Contactează administratorul directorului pentru corecturi, surse și observații despre paginile publicate."
+    "title": "Contact — întrebări, corecturi și propuneri de firme",
+    "description": "Scrie echipei DirectLocal.ro pentru întrebări despre director, corectarea informațiilor sau propunerea unei firme locale."
   },
-  "indexStatus": "noindex",
-  "intro": "Pentru o informație greșită sau o propunere de completare, scrie la adresa de mai jos. Pentru programări și oferte de servicii, contactează direct firma din profil.",
-  "sources": [
-    {
-      "id": "website",
-      "url": "https://www.igienizaretapiterie.ro/",
-      "checkedAt": "2026-10-12",
-      "note": "Website oficial: nume comercial, telefon, curățare canapele, sediu declarat în Brașov și deplasare în Brașov."
-    }
-  ],
-  "editorialReviewed": false
+  "indexStatus": "index",
+  "intro": "Ai o întrebare despre director, ai găsit o informație greșită sau vrei să propui o firmă? Scrie-ne și include detaliile care ne ajută să înțelegem solicitarea.",
+  "sources": [],
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat."
 }
 ---
-## Scrie-ne
-[webdynamicx@gmail.com](mailto:webdynamicx@gmail.com)
+### Pentru o corectură
+- Adresa paginii în care ai observat problema.
+- Informația greșită și modificarea propusă.
+- O sursă publică pentru verificarea modificării.
 
-Linkul deschide aplicația ta de e-mail. Site-ul nu trimite mesaje și nu colectează solicitări printr-un formular.
-
-## Ce să incluzi într-o sesizare
-Trimite adresa paginii, informația care trebuie corectată și sursa publică a modificării. Evită trimiterea datelor personale care nu sunt necesare pentru corectură.
+### Pentru o firmă nouă
+Folosește [formularul de înscriere](/inscriere-firma/): sunt suficiente numele firmei, numele tău și telefonul. Te contactăm pentru a discuta serviciile, zonele și sursele necesare profilului.

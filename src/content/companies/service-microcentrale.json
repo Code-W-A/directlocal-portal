@@ -1,0 +1,105 @@
+{
+  "id": "service-microcentrale",
+  "slug": "service-microcentrale",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Service Microcentrale",
+  "description": "Service Microcentrale, firmă prezentată ca fiind din București, declară montaj și reparații de centrale termice în Dâmbovița. Târgoviște și Găești sunt numite în aria de intervenție.",
+  "seo": {
+    "title": "Service Microcentrale — servicii și contact",
+    "description": "Service Microcentrale, firmă prezentată ca fiind din București, declară montaj și reparații de centrale termice în Dâmbovița. Târgoviște și Găești sunt numite în aria de intervenție."
+  },
+  "website": "https://www.servicemicrocentrale.ro/",
+  "phone": "0212011114",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "locality": "București",
+    "county": "București",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-centrale",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "montaj-centrale-termice",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.servicemicrocentrale.ro/",
+      "note": "Nume, telefon unic, montaj/reparații centrale și localitățile Târgoviște/Găești. Același dispecerat apare la Future Line Instal: aceasta nu este importată ca alternativă independentă."
+    }
+  ],
+  "sponsored": false
+}

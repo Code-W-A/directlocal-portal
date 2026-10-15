@@ -1,0 +1,57 @@
+{
+  "id": "acoperisuri-pe-viata",
+  "slug": "acoperisuri-pe-viata",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Acoperișuri pe Viață",
+  "description": "Acoperișuri pe Viață prezintă reparații la învelitori pentru locuințe și alte clădiri. Dâmbovița este inclus explicit în aria de lucru publicată.",
+  "seo": {
+    "title": "Acoperișuri pe Viață — servicii și contact",
+    "description": "Acoperișuri pe Viață prezintă reparații la învelitori pentru locuințe și alte clădiri. Dâmbovița este inclus explicit în aria de lucru publicată."
+  },
+  "website": "https://acoperisuripeviata.ro/",
+  "phone": "0727294121",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://acoperisuripeviata.ro/reparatii-acoperisuri",
+      "note": "Brandul website-ului, telefon, reparații și acoperire în Dâmbovița. Nu importăm promisiuni privind rezistența sau disponibilitatea."
+    }
+  ],
+  "sponsored": false
+}

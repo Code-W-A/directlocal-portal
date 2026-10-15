@@ -1,0 +1,57 @@
+{
+  "id": "instalator-targoviste",
+  "slug": "instalator-targoviste",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Instalator Târgoviște",
+  "description": "Instalator Târgoviște prezintă lucrări la instalații sanitare și reparații pentru locuințe din Târgoviște, inclusiv intervenții la robinete și obiecte sanitare.",
+  "seo": {
+    "title": "Instalator Târgoviște — servicii și contact",
+    "description": "Instalator Târgoviște prezintă lucrări la instalații sanitare și reparații pentru locuințe din Târgoviște, inclusiv intervenții la robinete și obiecte sanitare."
+  },
+  "website": "https://instalatortargoviste.ro/",
+  "phone": "0729270835",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "instalatori",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://instalatortargoviste.ro/",
+      "note": "Denumire comercială a website-ului, telefon 0729 270 835, lucrări sanitare și Târgoviște menționat explicit. Nu preluăm promisiuni de intervenție imediată."
+    }
+  ],
+  "sponsored": false
+}

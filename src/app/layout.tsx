@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   ...(site.url ? { metadataBase: new URL(site.url) } : {}),
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ro"><body>
+  return <html lang="ro"><head><link rel="preload" href="/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" /><link rel="preload" href="/fonts/manrope-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" /></head><body>
     <a href="#continut" className="skip-link">Sari la conținut</a>
     <SiteHeader />
     <main id="continut" tabIndex={-1}>{children}</main>

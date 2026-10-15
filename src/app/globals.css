@@ -1,5 +1,5 @@
 @import "./fonts.css";
-:root { --ink:#183a34; --muted:#506660; --paper:#f8f7f2; --line:#d8e0d9; --accent:#bfde63; --white:#fff; }
+:root { --ink:#0a173c; --muted:#566681; --paper:#fff; --line:#e4edf8; --accent:#eaf3ff; --blue:#075bea; --white:#fff; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--ink); background:var(--paper); font-family:"Director Sans",system-ui,sans-serif; line-height:1.65; }
@@ -27,9 +27,8 @@ main { min-height:65vh; }
 .content-page h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
 .content-page li { margin-block: 1rem; }
 .sofa-image { max-width: 100%; height: auto; margin-top: 1.5rem; }
-.search-filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; margin-block: 2rem; }
-.search-filters label, .filter-field { display: grid; gap: .5rem; font-weight: 600; }
-.search-filters select, .search-filters input, .search-filters button { width: 100%; min-height: 48px; padding: .7rem; border: 1px solid #647268; border-radius: 8px; font: inherit; background: white; color: #142d23; }
-.search-filters button { cursor: pointer; background: #173f30; color: white; align-self: end; }
-.search-results { list-style: none; padding: 0; }
-.search-results li { border: 1px solid #cad3cd; padding: 1.25rem; border-radius: 12px; }
+
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+.button { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:44px; padding:13px 24px; border:1px solid #075bea; border-radius:10px; background:#075bea; color:white; font:inherit; font-size:.9rem; font-weight:700; text-decoration:none; cursor:pointer; box-shadow:0 3px 0 #064ed014; }
+.button:hover { background:#064bc3; color:white; }
+.button svg { width:19px; height:19px; flex-shrink:0; }

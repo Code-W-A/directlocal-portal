@@ -1,0 +1,98 @@
+// Curated import: only the reviewed facts in the dated evidence file are used.
+import fs from 'node:fs';
+import path from 'node:path';
+const root = path.resolve('src/content');
+const date = '2026-10-15';
+const facts = JSON.parse(fs.readFileSync('docs/research/verified-companies-2026-10-15.json')).companies;
+const snapshot = JSON.parse(fs.readFileSync('docs/research/registry-2026-10-15.json'));
+const slug = value => value.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const base = id => ({id,slug:id,status:'published',updatedAt:date});
+const reviewed = {indexStatus:'index',editorialReviewed:true,reviewNote:'Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.'};
+const write = (folder,id,data) => fs.writeFileSync(path.join(root,folder,id+'.json'),JSON.stringify(data,null,2)+'\n');
+const page = p => {const {body,...meta}=p;fs.writeFileSync(path.join(root,'pages',p.id+'.md'),'---\n'+JSON.stringify(meta,null,2)+'\n---\n'+body+'\n');};
+const definitions = {
+ 'instalatori':['Instalatori','Lucrări la instalații sanitare: reparații, înlocuiri și montaj de obiecte sanitare.','Descrie problema, obiectul sanitar și locul intervenției. Fotografiile și informațiile despre acces ajută firma să stabilească ce trebuie verificat.','Ce să clarifici în ofertă','Întreabă dacă devizul separă manopera, piesele și deplasarea. Pentru o înlocuire, precizează dacă ai cumpărat deja obiectul sanitar și cine se ocupă de materialele auxiliare.'],
+ 'electricieni':['Electricieni','Instalații electrice pentru locuințe și spații de lucru, cu serviciile fiecărei firme explicate separat.','Spune dacă ai nevoie de un circuit nou, de modificarea tabloului sau de alimentarea unui echipament. Cere evaluarea instalației existente înainte de stabilirea soluției.','Pregătirea discuției cu electricianul','Menționează tipul imobilului și puterea echipamentelor implicate. Solicită detalii despre documentele necesare lucrării și verificările incluse la predare; nu încerca reparații la instalații aflate sub tensiune.'],
+ 'electrician-auto':['Electrician auto','Ateliere cu diagnoză și reparații ale instalației electrice a mașinii.','Comunică marca, modelul, anul și simptomele: pornire, martori în bord sau consumatori care nu funcționează. Întreabă dacă atelierul lucrează cu modelul tău.','Diagnoză și deviz','Cere să fie separate verificarea inițială, manopera și piesele propuse. Un cod de eroare nu este suficient pentru a stabili de la distanță ce componentă trebuie schimbată.'],
+ 'service-centrale':['Service centrale termice','Firme care declară întreținere și reparații de centrale termice, cu zone de intervenție documentate.','Pregătește marca, modelul și codul de eroare afișat de centrală. Descrie problema fără să desfaci echipamentul și cere confirmarea lucrului cu modelul respectiv.','Reparație, întreținere sau verificare','Precizează ce serviciu soliciți: acestea pot presupune operațiuni și documente diferite. Întreabă ce verificări sunt incluse, cine furnizează piesele și care este costul deplasării.'],
+ 'montaj-centrale-termice':['Montaj centrale termice','Montarea sau înlocuirea centralelor termice, separată de serviciile de reparații.','Spune dacă înlocuiești o centrală existentă sau pregătești o instalație nouă. Transmite modelul ales și cere evaluarea conexiunilor și a locului de montaj.','Delimitarea lucrărilor','Solicită o ofertă care precizează demontarea, montajul, materialele și documentele de predare. Clarifică separat punerea în funcțiune și persoana care o realizează.'],
+ 'montaj-aer-conditionat':['Montaj aer condiționat','Instalarea aparatelor split și multisplit, prin firme cu arie de lucru declarată.','Comunică modelul aparatului, etajul și pozițiile dorite pentru unități. Accesul la fațadă și traseul dintre unități trebuie discutate înaintea ofertei.','Ce include montajul','Întreabă ce lungime de traseu și ce materiale intră în ofertă, cum se tratează evacuarea condensului și dacă alimentarea electrică necesită o lucrare separată.'],
+ 'service-aer-conditionat':['Service aer condiționat','Întreținere și reparații de climatizare; verifică operațiunile disponibile la fiecare furnizor.','Descrie simptomele aparatului și transmite marca și modelul. Igienizarea și reparația unei defecțiuni sunt solicitări diferite și trebuie confirmate separat.','Înainte de programare','Spune când a fost făcută ultima întreținere și dacă apar erori sau zgomote. Cere un diagnostic înainte de a accepta schimbarea pieselor ori completarea agentului frigorific.'],
+ 'montaj-pompe-de-caldura':['Montaj pompe de căldură','Firme care prezintă montaj și integrare a pompelor de căldură în instalația clădirii.','Pregătește datele clădirii, sistemul de încălzire existent și modelul de pompă, dacă este ales. Dimensionarea finală trebuie stabilită prin evaluarea proiectului.','Limitele ofertei de instalare','Clarifică dacă sunt incluse montajul hidraulic, racordurile electrice, configurarea și punerea în funcțiune. Aceste etape pot fi realizate de furnizori diferiți.'],
+ 'panouri-fotovoltaice':['Panouri fotovoltaice','Firme pentru instalarea sistemelor fotovoltaice, cu contacte și localități documentate.','Pregătește consumul din facturi, tipul acoperișului și eventualele nevoi de stocare. Solicită evaluarea amplasamentului înainte de alegerea puterii sistemului.','Compararea ofertelor','Compară modelele componentelor, lucrările incluse și condițiile de service. Întreabă separat despre documentația de racordare; nu presupune că finanțarea sau economiile estimate sunt confirmate.'],
+ 'reparatii-acoperisuri':['Reparații acoperișuri','Furnizori care declară intervenții la acoperișuri și învelitori, în zonele prezentate.','Descrie problema și tipul învelitorii, folosind fotografii făcute dintr-un loc sigur. Evaluarea la fața locului poate delimita reparația de înlocuirea unor elemente.','Devizul pentru reparație','Cere lista suprafețelor și materialelor, modul de evacuare a deșeurilor și condițiile de recepție. Nu urca pe acoperiș pentru a pregăti solicitarea.'],
+ 'curatenie':['Curățenie','Servicii de curățenie pentru locuințe, spații de lucru și după constructor.','Precizează tipul spațiului, suprafața aproximativă și starea acestuia. O curățenie de întreținere are altă întindere decât intervenția după renovare.','Operațiuni incluse','Cere lista camerelor și suprafețelor tratate, inclusiv geamuri, mobilier și electrocasnice. Clarifică cine asigură consumabilele și accesul la apă sau electricitate.'],
+ 'service-auto':['Service auto','Ateliere pentru mecanică, revizii și diagnoză, cu localitatea atelierului afișată.','Comunică marca, modelul, motorizarea și problema observată. Întreabă dacă mașina poate fi adusă direct sau dacă este necesară o programare pentru constatare.','Reparația la atelier','Cere acordul asupra devizului înainte de începerea lucrării. Clarifică proveniența pieselor, timpul estimat și documentele oferite la predarea mașinii.'],
+ 'vopsitorie-auto':['Vopsitorie auto','Ateliere care prezintă lucrări de vopsitorie și tinichigerie auto.','Indică elementele afectate și trimite fotografii pentru o discuție inițială. Constatarea la atelier poate identifica lucrări de pregătire care nu se văd în imagini.','Ce se stabilește înainte de lucrare','Clarifică repararea elementelor, pregătirea suprafeței și vopsirea. Cere un deviz pe operațiuni și un termen estimat pentru predare, stabilit de atelier.'],
+ 'itp':['ITP','Stații care declară inspecții tehnice periodice, cu adresa reală separată de orașul căutat.','Precizează tipul vehiculului și verifică adresa stației înainte de deplasare. Întreabă direct ce documente trebuie prezentate și dacă este necesară programarea.','Alegerea stației','Serviciul se desfășoară la stație. Confirmă că aceasta poate inspecta categoria vehiculului tău și verifică autorizarea curentă în sursa oficială RAR.'],
+ 'renovari-apartamente':['Renovări apartamente','Firme care prezintă lucrări de renovare a apartamentelor, cu acoperire locală documentată.','Pregătește lista încăperilor și a lucrărilor dorite. Spune dacă apartamentul este locuit și ce restricții de acces ori de program există în imobil.','Organizarea renovării','Cere un deviz pe etape, cu materiale și manoperă separate. Stabilește cine coordonează lucrările, cine evacuează deșeurile și cum se recepționează fiecare etapă.'],
+ 'amenajari-interioare':['Amenajări interioare','Execuție de finisaje interioare: zugrăveli, placări și alte lucrări declarate de firme.','Descrie suprafețele și finisajele dorite, împreună cu starea suportului. Precizează dacă materialele sunt deja cumpărate sau trebuie incluse în ofertă.','Finisaje și renovare completă','Alege acest serviciu pentru lucrări de finisare. Pentru un proiect cu mai multe intervenții și coordonarea etapelor, consultă separat categoria renovări apartamente.'],
+};
+const counties = {dambovita:'Dâmbovița',arges:'Argeș',bacau:'Bacău',buzau:'Buzău',prahova:'Prahova',vrancea:'Vrancea'};
+const cities = {targoviste:['Târgoviște','dambovita'],gaesti:['Găești','dambovita'],titu:['Titu','dambovita'],pucioasa:['Pucioasa','dambovita'],pitesti:['Pitești','arges'],bacau:['Bacău','bacau'],buzau:['Buzău','buzau'],ploiesti:['Ploiești','prahova'],focsani:['Focșani','vrancea']};
+for(const [id,name] of Object.entries(counties)) write('counties',id,{...base(id),name});
+for(const [id,[name,countyId]] of Object.entries(cities)) write('locations',id,{...base(id),name,countyId});
+for(const [id,[name,summary]] of Object.entries(definitions)) write('services',id,{...base(id),name,summary});
+const companies = facts.map(f=> {
+ const sources=f.sources.map((s,i)=>({id:`source-${i+1}`,checkedAt:date,...s}));
+ const refs=sources.map(s=>s.id);
+ return {...base(f.id),...reviewed,name:f.name,description:f.description,seo:{title:`${f.name} — servicii și contact`,description:f.description},website:f.website,...(f.phone?{phone:f.phone}:{}),...(f.email?{email:f.email}:{}),evidence:{name:refs,description:refs,website:refs,...(f.phone?{phone:refs}:{}),...(f.email?{email:refs}:{})},...(f.headquarters?{headquarters:{...f.headquarters,sourceIds:refs}}:{}),offerings:f.offers.map(([serviceId,locations,regions])=>({serviceId,sourceIds:refs,coverage:locations.map(locationId=>({locationId,sourceIds:refs})),countyCoverage:regions.map(countyId=>({countyId,sourceIds:refs}))})),sources,sponsored:false};
+});
+for(const c of companies) write('companies',c.id,c);
+const sourcesFor = cs => cs.flatMap(c=>c.sources.map(s=>({...s,id:`${c.id}-${s.id}`})));
+const opportunityRows = snapshot.sheets.Oportunitati_SEO.slice(1);
+const inventory=[];
+const publishedLocal=new Map();
+const blockers={10:'Nu există încă dovadă suficientă pentru încărcare de agent frigorific la aparate rezidențiale în Târgoviște; climatizarea auto și articolele informative nu sunt echivalente.',19:'EDT AutoMar apare în rezultate și directoare pentru Titu, dar contactul și atelierul nu sunt confirmate printr-o sursă primară accesibilă în această verificare.',33:'Firmele identificate declară întreținere în Găești sau reparații la nivel de județ; nu avem încă dovada explicită pentru reparații AC în Găești.'};
+for(const [i,r] of opportunityRows.entries()) {
+ const id=i+1, serviceId=slug(r[4])==='curatenie-la-domiciliu'?'curatenie':slug(r[4]);
+ const countyId=slug(r[5]), cityId=slug(r[6]);
+ const matching=companies.filter(c=>c.offerings.some(o=>o.serviceId===serviceId&&(cityId?o.coverage.some(a=>a.locationId===cityId):o.countyCoverage.some(a=>a.countyId===countyId)||o.coverage.some(a=>cities[a.locationId]?.[1]===countyId))));
+ const url=matching.length&&!blockers[id]?`/servicii/${serviceId}/${countyId}/${cityId?cityId+'/':''}`:null;
+ inventory.push({number:id,key:r[0],service:r[4],county:r[5],city:r[6]||null,primaryKeyword:r[7],targetUrl:url,indexStatus:url?'index':'noindex',decision:url?(id===16?'mapped':'published'):'blocked',companyIds:url?matching.map(c=>c.id):[],reason:blockers[id]||(id===16?'Aceeași intenție și aceiași furnizori: curățenia la domiciliu este tratată în pagina curățenie, fără pagină aproape duplicată.':'Serviciu și arie confirmate documentar; contact public utilizabil și conținut local bazat pe firme.'),verifiedAt:date});
+ if(url&&cityId)publishedLocal.set(url,{serviceId,countyId,cityId,matching});
+}
+// Do not publish duplicate city templates for the same provider set.
+const groups = new Map();
+for (const [url, local] of publishedLocal) {
+ const key = local.serviceId + '/' + local.countyId + '/' + local.matching.map(c => c.id).sort().join(',');
+ groups.set(key, [...(groups.get(key) || []), url]);
+}
+for (const urls of groups.values()) if (urls.length > 1) {
+ for (const url of urls) {
+  const local = publishedLocal.get(url);
+  const target = `/servicii/${local.serviceId}/${local.countyId}/`;
+  for (const entry of inventory.filter(e => e.targetUrl === url)) {
+   entry.targetUrl = target; entry.decision = 'mapped';
+   entry.reason = 'Aceiași furnizori și aceleași informații pentru orașe. Intenția este acoperită de pagina județului; nu publicăm clone locale fără valoare distinctă.';
+  }
+  // Only remove files created by this importer, never existing production URLs.
+  const generated = path.join(root, 'pages', `${local.serviceId}-${local.cityId}.md`);
+  if (fs.existsSync(generated)) fs.unlinkSync(generated);
+  publishedLocal.delete(url);
+ }
+}
+for(const {serviceId,cityId,matching} of publishedLocal.values()) {
+ const [service,,prep,heading,advice]=definitions[serviceId], city=cities[cityId][0];
+ const id=`${serviceId}-${cityId}`;
+ let intro=`Pentru ${service.toLocaleLowerCase('ro')} în ${city}, găsești mai jos ${matching.length===1?'un furnizor documentat':'furnizori documentați'}, datele de contact și serviciile declarate. Verifică detaliile fiecărei firme și discută direct lucrarea înainte de programare.`;
+ if(serviceId==='itp'&&cityId==='titu')intro='Cauți ITP pentru o mașină din Titu? Stația documentată aici este în Vișina, pe strada Mihai Viteazu 22. Consultă contactul și confirmă programarea înainte de a te deplasa la stație.';
+ const factsText=matching.map(c=>`### ${c.name}\n${c.description}\n\n[Contact și profil ${c.name}](/firme/${c.slug}/)`).join('\n\n');
+ const specific=serviceId==='curatenie'?'\n\n### Curățenie la domiciliu în Târgoviște\nStarCleaning prezintă curățenia locuințelor alături de servicii pentru spații de lucru. Pentru apartament sau casă, transmite numărul camerelor, suprafața și dacă dorești întreținere ori curățenie după renovare.':serviceId==='itp'&&cityId==='titu'?'\n\n### Unde trebuie dus vehiculul?\nLa stația din Vișina, nu la o adresă din Titu. Pagina furnizorului este destinată șoferilor din Titu, iar localitatea reală a stației este afișată în profil. Nu am confirmat în această selecție o stație amplasată în Titu.':'';
+ page({...base(id),...reviewed,kind:'local',serviceId,locationId:cityId,companyIds:matching.map(c=>c.id),title:serviceId==='itp'&&cityId==='titu'?'ITP pentru șoferii din Titu':`${service} în ${city}`,seo:{title:serviceId==='itp'&&cityId==='titu'?'ITP pentru Titu — stație în Vișina și contact':`${service} în ${city} — firme și contact`,description:`${service} în ${city}: ${matching.map(c=>c.name).join(', ')}. Vezi serviciile declarate, zona și contactele pentru o solicitare directă.`},intro,sources:sourcesFor(matching),body:`## Opțiuni documentate pentru ${city}\n\n${factsText}${specific}\n\n## ${heading}\n${advice}\n\n### Ce informații trimit când cer o ofertă?\n${prep}`});
+}
+for(const [serviceId,[service,summary,prep,heading,advice]] of Object.entries(definitions)) {
+ const cs=companies.filter(c=>c.offerings.some(o=>o.serviceId===serviceId));
+ const regions=[...new Set(cs.flatMap(c=>c.offerings.filter(o=>o.serviceId===serviceId).flatMap(o=>[...o.countyCoverage.map(a=>a.countyId),...o.coverage.map(a=>cities[a.locationId][1])])) )];
+ page({...base(serviceId),...reviewed,kind:'service',serviceId,title:service,seo:{title:`${service} — servicii și firme pe județe`,description:`${summary} Alege județul și consultă profilurile furnizorilor pentru ${service.toLocaleLowerCase('ro')}.`},intro:summary+' Alege județul pentru lista de firme și datele de contact.',sources:sourcesFor(cs),body:`## Pregătește solicitarea\n${prep}\n\n## ${heading}\n${advice}\n\n## Cum ajungi la o firmă\nAlege județul și apoi localitatea disponibilă. Profilul reunește serviciile documentate și contactele aceleiași firme, chiar dacă aceasta apare în mai multe categorii.`});
+ for(const countyId of regions) {
+  const county=counties[countyId], countyCompanies=cs.filter(c=>c.offerings.some(o=>o.serviceId===serviceId&&(o.countyCoverage.some(a=>a.countyId===countyId)||o.coverage.some(a=>cities[a.locationId][1]===countyId))));
+  const local=[...publishedLocal.values()].filter(l=>l.serviceId===serviceId&&l.countyId===countyId);
+  const countyWide=countyCompanies.filter(c=>c.offerings.some(o=>o.serviceId===serviceId&&o.countyCoverage.some(a=>a.countyId===countyId)));
+  const localLinks=local.map(l=>`- [${service} în ${cities[l.cityId][0]}](/servicii/${serviceId}/${countyId}/${l.cityId}/)`).join('\n');
+  const scope=countyWide.length?`${countyWide.map(c=>c.name).join(', ')} declară acoperire în județul ${county}. Cere confirmarea adresei exacte când programezi lucrarea.`:`Selecția cuprinde furnizori documentați pentru ${[...new Set(countyCompanies.flatMap(c=>c.offerings.filter(o=>o.serviceId===serviceId).flatMap(o=>o.coverage.filter(a=>cities[a.locationId][1]===countyId).map(a=>cities[a.locationId][0]))))].join(', ')}. Prezența în lista județului ${county} nu înseamnă că fiecare firmă lucrează în toate localitățile.`;
+  page({...base(`${serviceId}-judet-${countyId}`),...reviewed,kind:'county',serviceId,countyId,companyIds:countyCompanies.map(c=>c.id),title:`${service} în județul ${county}`,seo:{title:`${service} în județul ${county} — firme și zone`,description:`Consultă furnizorii de ${service.toLocaleLowerCase('ro')} documentați pentru județul ${county}, localitățile disponibile și contactele directe.`},intro:`Lista pentru județul ${county} reunește ${countyCompanies.length===1?'o firmă documentată':'firme documentate'} pentru ${service.toLocaleLowerCase('ro')}. Alege o localitate disponibilă sau consultă aria publicată de furnizor înainte să soliciți o ofertă.`,sources:sourcesFor(countyCompanies),body:`## Cum este acoperit județul ${county}\n${scope}\n\n## ${heading}\n${advice}\n\n${localLinks?`## Pagini locale\n${localLinks}\n\n`:''}## Ce poți compara în această listă\n${countyCompanies.map(c=>`- **${c.name}**: ${c.headquarters?`${c.headquarters.kind==='workplace'?'punct de lucru':'sediu declarat'} în ${c.headquarters.locality}`:'consultă localitățile declarate în profil' }. Contactul și serviciile sunt reunite în [profil](/firme/${c.slug}/).`).join('\n')}\n\n### Cum aleg pagina potrivită?\nPagina județului oferă o vedere de ansamblu. Pagina orașului restrânge selecția la firme cu o asociere documentată pentru localitatea respectivă; nu extindem automat o arie de lucru doar din adresa sediului.`});
+ }
+}
+fs.writeFileSync('docs/research/opportunity-inventory-2026-10-15.json',JSON.stringify({source:snapshot.source||snapshot.sourceUrl,reviewedAt:date,policy:'Fără prag numeric; dovezi, contact și valoare distinctă.',opportunities:inventory},null,2)+'\n');
+console.log({companies:companies.length,services:Object.keys(definitions).length,opportunities:inventory.length,published:inventory.filter(x=>x.targetUrl).length,blocked:inventory.filter(x=>!x.targetUrl).map(x=>x.number)});

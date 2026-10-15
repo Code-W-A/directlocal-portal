@@ -55,3 +55,12 @@ test("global indexing never overrides per-page noindex", () => {
   assert.deepEqual(meta.robots, { index: false, follow: true });
   assert.deepEqual(meta.alternates, { canonical: "https://director.ro/servicii/test/" });
 });
+
+test('homepage social images require configured origin and retain noindex', () => {
+  const home = { path: '/', title: 'Firme locale', description: 'Director', indexStatus: 'noindex' as const };
+  const absent = pageMetadata(home, resolveSiteConfig({}));
+  assert.equal((absent.openGraph as { images?: unknown }).images, undefined);
+  const configured = pageMetadata(home, resolveSiteConfig({ SITE_URL: 'https://director.ro', INDEXING_ENABLED: 'true' }));
+  assert.deepEqual(configured.robots, { index: false, follow: true });
+  assert.deepEqual((configured.openGraph as { images: unknown }).images, [{ url: 'https://director.ro/images/directlocal-social.jpg', width: 1200, height: 630, alt: 'Harta ilustrativă a României și DirectLocal.ro' }]);
+});

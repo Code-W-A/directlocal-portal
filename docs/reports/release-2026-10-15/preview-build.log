@@ -1,0 +1,82 @@
+
+> porta-director@0.1.0 prebuild
+> npm run validate:content
+
+
+> porta-director@0.1.0 validate:content
+> tsx scripts/validate-content.ts
+
+Content valid: 17 services, 12 locations, 31 companies, 70 editorial pages.
+Public pages: 104. Indexing: disabled.
+
+> porta-director@0.1.0 build
+> next build --webpack && npm run verify:export
+
+▲ Next.js 16.4.0 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 21ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.3s
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next-preview/types/**/*.ts'
+  	- include was updated to add '.next-preview/dev/types/**/*.ts'
+
+  Finished TypeScript in 2.4s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/110) ...
+  Generating static pages using 9 workers (27/110) 
+  Generating static pages using 9 workers (54/110) 
+  Generating static pages using 9 workers (82/110) 
+✓ Generating static pages using 9 workers (110/110) in 8.3s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/contact
+├ ○ /cauta
+├ ○ /contact
+├ ○ /despre-noi
+├   /firme/[firma]
+│ ├ ● /firme/acoperisuri-montaj
+│ ├ ● /firme/acoperisuri-pe-viata
+│ ├ ● /firme/acoperisuri-reparatii
+│ └ ● [+28 more paths]
+├ ○ /icon.svg
+├ ○ /inscriere-firma
+├ ○ /metodologie
+├ ○ /robots.txt
+├ ○ /servicii
+├   /servicii/[serviciu]
+│ ├ ● /servicii/amenajari-interioare
+│ ├ ● /servicii/curatare-canapele
+│ ├ ● /servicii/curatenie
+│ └ ● [+14 more paths]
+├   /servicii/[serviciu]/[judet]
+│ ├ ● /servicii/amenajari-interioare/dambovita
+│ ├ ● /servicii/curatare-canapele/ilfov
+│ ├ ● /servicii/curatare-canapele/brasov
+│ └ ● [+22 more paths]
+├   /servicii/[serviciu]/[judet]/[oras]
+│ ├ ● /servicii/amenajari-interioare/dambovita/targoviste
+│ ├ ● /servicii/curatare-canapele/constanta/constanta
+│ ├ ● /servicii/curatare-canapele/brasov/brasov
+│ └ ● [+21 more paths]
+└ ○ /sitemap.xml
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> porta-director@0.1.0 verify:export
+> NODE_ENV=production tsx scripts/verify-export.ts
+
+Prerendered pages verified: 104 public HTML page(s), 404, internal links, metadata, JSON-LD and sitemap parity.

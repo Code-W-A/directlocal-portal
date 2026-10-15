@@ -13,7 +13,7 @@ export function verifyStructuredData($: CheerioAPI, path: string, catalog: Catal
   const business = data.filter(d => d['@type'] === "LocalBusiness");
   assert.equal(business.length, company ? 1 : 0, `LocalBusiness outside company profile: ${path}`);
   if (company) {
-    const expected = { '@context': 'https://schema.org', '@type': 'LocalBusiness', name: company.name, description: company.description,
+    const expected = { '@context': 'https://schema.org', '@type': 'LocalBusiness', ...(origin ? { '@id': url(companyPath(company)) + '#business' } : {}), name: company.name, description: company.description,
       ...(company.website ? { url: company.website } : {}), ...(company.phone ? { telephone: company.phone } : {}), ...(company.email ? { email: company.email } : {}),
       ...(company.headquarters ? { address: { '@type': 'PostalAddress', addressLocality: company.headquarters.locality, addressRegion: company.headquarters.county, addressCountry: 'RO', ...(company.headquarters.street ? { streetAddress: company.headquarters.street } : {}) } } : {}),
       areaServed: catalog.locations.filter(l => company.offerings.some(o => o.coverage.some(a => a.locationId === l.id))).map(l => ({ '@type': 'City', name: l.name })).concat(catalog.counties.filter(c => company.offerings.some(o => o.countyCoverage.some(a => a.countyId === c.id))).map(c => ({ '@type': 'AdministrativeArea', name: c.name }))) };
@@ -25,13 +25,23 @@ export function verifyStructuredData($: CheerioAPI, path: string, catalog: Catal
   }
   const local = catalog.pages.find(p => (p.kind === "local" || (p.kind === "county" && p.companyIds.length > 0)) && contentPath(p, catalog) === path);
   const itemLists = data.filter(d => d['@type'] === 'ItemList');
-  const pageLinks = $('[data-item-list] a').toArray();
-  assert.equal(itemLists.length, (local ? 1 : 0) + (pageLinks.length ? 1 : 0), `ItemList count: ${path}`);
-  if (pageLinks.length) assert.deepEqual(itemLists[local ? 1 : 0].itemListElement, pageLinks.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: $(a).text(), url: url($(a).attr('href')!) })), `Page list mismatch: ${path}`);
+  const groups = $('[data-item-list]').toArray();
+  assert.equal(itemLists.length, (local ? 1 : 0) + groups.length, `ItemList count: ${path}`);
+  groups.forEach((group, index) => {
+    const marked = $(group).find('a[data-list-entry]');
+    const pageLinks = (marked.length ? marked : $(group).find('a')).toArray();
+    assert.deepEqual(itemLists[index + (local ? 1 : 0)].itemListElement, pageLinks.map((a, i) => ({ '@type': 'ListItem', position: i + 1, name: $(a).text(), url: url($(a).attr('href')!) })), `Page list mismatch: ${path}`);
+  });
   if (local && (local.kind === "local" || local.kind === "county")) {
     const companies = catalog.companies.filter(c => local.companyIds.includes(c.id)).toSorted((a,b) => a.name.localeCompare(b.name, 'ro'));
     assert.deepEqual(itemLists[0].itemListElement, companies.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, url: url(companyPath(c)) })), `ItemList mismatch: ${path}`);
     for (const c of companies) assert($('h3 a').toArray().some(a => $(a).attr('href') === companyPath(c) && $(a).text() === c.name));
   }
-  assert(data.every(d => ['BreadcrumbList', 'ItemList', 'LocalBusiness'].includes(d['@type'])), `Unsupported schema: ${path}`);
+  const websites = data.filter(d => d['@type'] === 'WebSite');
+  assert.equal(websites.length, origin && path === '/' ? 1 : 0, `WebSite count: ${path}`);
+  if (websites.length) assert.deepEqual(websites[0], { '@context': 'https://schema.org', '@type': 'WebSite', '@id': origin + '/#website', publisher: { '@id': origin + '/#organization' }, name: 'DirectLocal.ro', url: origin + '/', inLanguage: 'ro' });
+  const organizations = data.filter(d => d['@type'] === 'Organization');
+  assert.equal(organizations.length, origin && path === '/' ? 1 : 0);
+  if (organizations.length) assert.deepEqual(organizations[0], { '@context':'https://schema.org', '@type':'Organization', '@id':origin+'/#organization', name:'Web Dynamicx', url:'https://webdynamicx.ro/', email:'webdynamicx@gmail.com' });
+  assert(data.every(d => ['BreadcrumbList', 'ItemList', 'LocalBusiness', 'WebSite', 'Organization'].includes(d['@type'])), `Unsupported schema: ${path}`);
 }

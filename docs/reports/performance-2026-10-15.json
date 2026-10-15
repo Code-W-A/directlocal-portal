@@ -1,0 +1,470 @@
+{
+  "testedAt": "2026-10-15",
+  "environment": "Local production build; simulated mobile, not field Core Web Vitals",
+  "results": [
+    {
+      "name": "home",
+      "path": "/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1212.2642,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2547.3963,
+          "display": "2.5 s"
+        },
+        "total-blocking-time": {
+          "value": 79,
+          "display": "80 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1212.2642,
+          "display": "1.2 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 150 ms"
+        }
+      ]
+    },
+    {
+      "name": "home-repeat",
+      "path": "/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1206.1215,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2109.18225,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 49,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1206.1215,
+          "display": "1.2 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "4.6 s"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "display": "4.1 s"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 150 ms"
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "path": "/cauta/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1353.7475,
+          "display": "1.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2504.62125,
+          "display": "2.5 s"
+        },
+        "total-blocking-time": {
+          "value": 49,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1353.7475,
+          "display": "1.4 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 300 ms"
+        }
+      ]
+    },
+    {
+      "name": "local",
+      "path": "/servicii/panouri-fotovoltaice/bacau/bacau/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1053.8052,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2204.6103999999996,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 47,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1053.8052,
+          "display": "1.1 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "4.6 s"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "display": "4.1 s"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 300 ms"
+        }
+      ]
+    }
+  ],
+  "initialResults": [
+    {
+      "name": "home",
+      "path": "/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 82,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1736.9759999999997,
+          "display": "1.7 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3319.161599999999,
+          "display": "3.3 s"
+        },
+        "total-blocking-time": {
+          "value": 49,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 13379.674280000876,
+          "display": "13.4 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 150 ms"
+        }
+      ]
+    },
+    {
+      "name": "local",
+      "path": "/servicii/panouri-fotovoltaice/bacau/bacau/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1053.8052,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2204.6103999999996,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 47,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1053.8052,
+          "display": "1.1 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "4.6 s"
+        },
+        {
+          "id": "bootup-time",
+          "title": "Reduce JavaScript execution time",
+          "score": 0,
+          "display": "4.1 s"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 300 ms"
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "path": "/cauta/",
+      "mode": "mobile simulated",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1353.8663,
+          "display": "1.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2105.79945,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 48,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1353.8663,
+          "display": "1.4 s"
+        }
+      },
+      "issues": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 51 KiB"
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 12 KiB"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 300 ms"
+        }
+      ]
+    }
+  ]
+}

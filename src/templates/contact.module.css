@@ -1,0 +1,56 @@
+.hero { background:linear-gradient(115deg,#f2f7ff,#f8fbff); border-bottom:1px solid var(--line); padding:24px 0 54px; }
+.hero nav { margin-bottom:30px; }
+.eyebrow { color:#3467b3; font-size:.72rem; font-weight:750; letter-spacing:.1em; margin-bottom:14px; }
+.hero h1 { font-size:clamp(2.15rem,4.3vw,3.5rem); line-height:1.14; font-weight:800; margin-bottom:18px; letter-spacing:-.045em; }
+.intro { color:var(--muted); font-size:1.06rem; line-height:1.75; max-width:660px; margin:0; }
+.content { padding-top:40px; padding-bottom:64px; }
+.contactGrid { display:grid; grid-template-columns:1fr 1.12fr; gap:24px; align-items:stretch; }
+.emailCard { border:1px solid #dce9fc; border-radius:14px; background:linear-gradient(130deg,#f3f8ff,#fff); padding:34px; display:flex; flex-direction:column; align-items:flex-start; }
+.emailIcon { display:grid; place-items:center; background:#e4efff; color:var(--blue); width:62px; height:62px; border-radius:16px; margin-bottom:22px; }
+.emailIcon svg { width:29px; height:29px; }
+.emailCard h2 { font-size:1.7rem; margin-bottom:14px; font-weight:800; }
+.emailCard>p { font-size:.91rem; color:var(--muted); margin-bottom:14px; max-width:390px; line-height:1.8; }
+.emailAddress { color:var(--blue); font-size:clamp(1rem,1.6vw,1.22rem); font-weight:750; text-decoration:none; overflow-wrap:anywhere; min-height:44px; display:inline-flex; align-items:center; margin-bottom:15px; }
+.emailButton { margin-bottom:16px; }
+.emailCard .emailNote { font-size:.75rem; line-height:1.75; max-width:350px; margin-bottom:0; }
+.actions { display:grid; gap:20px; }
+.actionCard { border:1px solid var(--line); border-radius:12px; padding:26px; display:flex; gap:18px; background:white; }
+.icon { display:grid; place-items:center; width:46px; height:46px; border-radius:12px; background:#edf5ff; color:var(--blue); flex-shrink:0; }
+.icon svg { width:23px; height:23px; }
+.actionCard h2 { font-size:1.17rem; font-weight:750; line-height:1.4; margin:1px 0 9px; letter-spacing:-.02em; }
+.actionCard p { color:var(--muted); font-size:.85rem; line-height:1.8; margin-bottom:7px; }
+.textLink { display:inline-flex; align-items:center; gap:9px; min-height:44px; text-decoration:none; color:var(--blue); font-size:.83rem; font-weight:700; }
+.textLink svg { width:17px; height:17px; }
+.textLink:hover,.emailAddress:hover { text-decoration:underline; }
+.messageGuide { margin-top:36px; padding:30px 34px 24px; border:1px solid var(--line); border-radius:12px; }
+.guideHeading { display:flex; gap:16px; align-items:center; margin-bottom:23px; }
+.guideHeading h2 { font-size:1.45rem; font-weight:800; margin-bottom:7px; }
+.guideHeading p { color:var(--muted); font-size:.85rem; margin:0; }
+.guideBody { columns:2; column-gap:60px; }
+.guideBody h3 { font-size:.95rem; font-weight:750; letter-spacing:0; margin:0 0 9px; break-after:avoid; }
+.guideBody ul { padding-left:20px; margin:0 0 22px; break-inside:avoid; font-size:.85rem; color:var(--muted); }
+.guideBody li { margin-bottom:6px; padding-left:3px; }
+.privacyNote { display:flex; align-items:flex-start; gap:9px; font-size:.75rem; color:var(--muted); padding-top:18px; margin:0; border-top:1px solid var(--line); }
+.privacyNote svg { width:17px; height:21px; color:#4b719d; flex-shrink:0; }
+.providerNote { display:flex; align-items:center; gap:18px; margin-top:28px; padding:24px 28px; background:#f1f7ff; border-radius:12px; }
+.providerNote>div { flex:1; }
+.providerNote h2 { font-size:1.1rem; margin-bottom:7px; letter-spacing:-.02em; }
+.providerNote p { font-size:.83rem; color:var(--muted); margin:0; line-height:1.8; }
+.providerNote>a { flex-shrink:0; }
+.sources { border-top:1px solid var(--line); margin-top:34px; padding-top:18px; color:var(--muted); font-size:.77rem; }
+.sources summary { min-height:44px; cursor:pointer; padding:9px 0; color:#425d82; }
+.sources[open] summary { margin-bottom:12px; }
+.sources h2 { font-size:1.15rem; margin:24px 0 16px; }
+.sources li { margin-bottom:18px; }
+.sources p { max-width:76ch; }
+.sources a { color:#2a5fa9; }
+@media(max-width:900px) { .contactGrid { gap:18px; grid-template-columns:1fr 1fr; }.emailCard { padding:26px; }.actionCard { padding:22px; gap:13px; }.actionCard h2 { font-size:1.03rem; }.guideBody { column-gap:32px; } }
+@media(max-width:700px) { .hero { padding-bottom:34px; }.hero nav { margin-bottom:23px; }.eyebrow { font-size:.65rem; letter-spacing:.07em; }.intro { font-size:.95rem; }.content { padding-top:26px; padding-bottom:40px; }.contactGrid { grid-template-columns:1fr; gap:18px; }.emailCard { padding:27px; }.emailCard>p { max-width:none; }.actions { gap:16px; }.actionCard { padding:23px; }.actionCard h2 { font-size:1.1rem; }.messageGuide { margin-top:26px; padding:24px; }.guideBody { columns:1; }.guideHeading { align-items:flex-start; gap:12px; }.guideHeading h2 { font-size:1.23rem; }.providerNote { flex-wrap:wrap; padding:23px; gap:13px; }.providerNote>div { flex-basis:calc(100% - 60px); }.providerNote>a { margin-left:59px; }.sources { margin-top:26px; } }
+@media(max-width:380px) { .emailCard,.messageGuide,.providerNote { padding:22px; }.actionCard { padding:20px; gap:12px; }.actionCard>.icon { width:38px; height:38px; border-radius:10px; }.guideHeading>.icon { display:none; } }
+.formSection { margin-top:36px; padding-top:30px; border-top:1px solid var(--line); scroll-margin-top:24px; }
+.formSection>h2,.dataSection h2 { font-size:clamp(1.4rem,2.3vw,1.8rem); line-height:1.3; margin:0 0 14px; }
+.formSection>p { margin:0; color:var(--muted); font-size:.9rem; }.formSection>p a { min-height:44px; display:inline-flex; align-items:center; color:var(--blue); }
+.dataSection { padding:28px; border:1px solid var(--line); border-radius:20px; background:#f7faff; margin-top:28px; scroll-margin-top:24px; }
+.dataSection p { color:var(--muted); font-size:.9rem; line-height:1.8; max-width:90ch; }.dataSection p:last-child { margin-bottom:0; }.dataSection a { overflow-wrap:anywhere; }
+.emailCard { border-radius:20px; }.actionCard,.messageGuide { border-radius:18px; }
+@media(max-width:600px) { .dataSection { padding:20px; }.formSection { margin-top:26px; padding-top:24px; } }

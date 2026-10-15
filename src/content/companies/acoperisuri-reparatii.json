@@ -1,0 +1,57 @@
+{
+  "id": "acoperisuri-reparatii",
+  "slug": "acoperisuri-reparatii",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Acoperișuri-Reparații",
+  "description": "Acoperișuri-Reparații prezintă intervenții la acoperișuri în județul Dâmbovița. Pagina de servicii menționează reparații la învelitori și lucrări cu tablă.",
+  "seo": {
+    "title": "Acoperișuri-Reparații — servicii și contact",
+    "description": "Acoperișuri-Reparații prezintă intervenții la acoperișuri în județul Dâmbovița. Pagina de servicii menționează reparații la învelitori și lucrări cu tablă."
+  },
+  "website": "https://acoperisuri-reparatii.ro/",
+  "phone": "0751359560",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://acoperisuri-reparatii.ro/reparatii-acoperisuri-dambovita.php",
+      "note": "Brandul website-ului, telefon 0751 359 560 și reparații în Dâmbovița. Nu stabilim un sediu din simpla acoperire comercială."
+    }
+  ],
+  "sponsored": false
+}

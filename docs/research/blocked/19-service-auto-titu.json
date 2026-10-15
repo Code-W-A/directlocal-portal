@@ -1,0 +1,85 @@
+{
+  "briefVersion": "1.0",
+  "status": "draft",
+  "generatedAt": "2026-10-15",
+  "market": {
+    "country": "Romania",
+    "countryCode": "RO",
+    "language": "ro",
+    "searchEngine": "google.ro",
+    "currency": "RON"
+  },
+  "page": {
+    "type": "service-city",
+    "service": "service auto",
+    "serviceSlug": "service-auto",
+    "county": "Dâmbovița",
+    "countySlug": "dambovita",
+    "city": "Titu",
+    "citySlug": "titu",
+    "targetUrl": null,
+    "indexStatus": "noindex"
+  },
+  "seo": {
+    "primaryKeyword": "service auto titu",
+    "secondaryKeywords": [],
+    "searchIntent": "Găsirea unui furnizor local și contactarea acestuia.",
+    "searchVolume": null,
+    "seoDifficulty": null,
+    "cpc": null,
+    "opportunityScore": null,
+    "dataStatus": "Nu am făcut o măsurătoare nouă a cererii; estimările anterioare sunt în snapshot, cu sursa și moneda originale.",
+    "seasonality": null
+  },
+  "serpAnalysis": {
+    "mainCompetitors": [],
+    "contentGaps": [],
+    "risks": [
+      "EDT AutoMar apare în rezultate și directoare pentru Titu, dar contactul și atelierul nu sunt confirmate printr-o sursă primară accesibilă în această verificare."
+    ],
+    "recommendation": "Reverificare documentară înainte de redactare sau publicare."
+  },
+  "companies": [],
+  "contentRequirements": {
+    "requiredSections": [
+      "Furnizori verificați și contact",
+      "Serviciu și arie documentate"
+    ],
+    "localFacts": [],
+    "allowedClaims": [],
+    "forbiddenClaims": [
+      "cea mai bună firmă",
+      "cele mai mici prețuri",
+      "intervenție în aceeași zi"
+    ],
+    "faqTopics": []
+  },
+  "internalLinks": {
+    "relatedServices": [],
+    "nearbyLocations": [],
+    "companyProfiles": []
+  },
+  "image": {
+    "required": false,
+    "type": "decorative-icon",
+    "searchQuery": "",
+    "mustStoreSourceAndLicense": true,
+    "mustNotRepresentCompany": true
+  },
+  "publishingDecision": {
+    "recommended": false,
+    "indexStatus": "noindex",
+    "reason": "EDT AutoMar apare în rezultate și directoare pentru Titu, dar contactul și atelierul nu sunt confirmate printr-o sursă primară accesibilă în această verificare.",
+    "missingRequirements": [
+      "Sursă primară suficientă pentru serviciul și localitatea solicitate",
+      "Contact utilizabil asociat firmei verificate"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://docs.google.com/spreadsheets/d/11XCIVzPbg_Wxrb0IhXRK3_GckqfyEbNmhpIhIezP0AI/edit",
+      "checkedAt": "2026-10-15",
+      "note": "Registru de candidați, nu probă de acoperire."
+    }
+  ]
+}

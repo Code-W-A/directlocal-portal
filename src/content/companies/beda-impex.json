@@ -1,0 +1,111 @@
+{
+  "id": "beda-impex",
+  "slug": "beda-impex",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "BEDA IMPEX",
+  "description": "BEDA IMPEX are un punct de lucru auto pe Bulevardul Eroilor 26 din Târgoviște. Website-ul prezintă mecanică, reparații electrice, tinichigerie-vopsitorie și ITP.",
+  "seo": {
+    "title": "BEDA IMPEX — servicii și contact",
+    "description": "BEDA IMPEX are un punct de lucru auto pe Bulevardul Eroilor 26 din Târgoviște. Website-ul prezintă mecanică, reparații electrice, tinichigerie-vopsitorie și ITP."
+  },
+  "website": "https://www.bedaimpex.ro/",
+  "phone": "0345100051",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Bulevardul Eroilor 26",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "electrician-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "vopsitorie-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "itp",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.bedaimpex.ro/service-auto-targoviste-beda-impex/",
+      "note": "Nume, telefon fix, adresa atelierului, mecanică/electrică auto, vopsitorie și ITP. Autorizarea RAR nu a fost verificată în registrul autorității și nu este prezentată ca certificare a directorului."
+    }
+  ],
+  "sponsored": false
+}

@@ -1,3 +1,5 @@
+> Istoric: raport anterior extinderii din 15.10.2026. Cifrele, exportul static și politica noindex descriu versiunea de atunci. Politica actuală este în docs/seo/SEO-PLAYBOOK.md și auditul datat.
+
 > Raport istoric al PoC-ului inițial. Pentru starea extinsă și politica editorială actuală, vezi [extinderea](research/three-local-opportunities.md).
 
 # Verificare locală — 12 octombrie 2026

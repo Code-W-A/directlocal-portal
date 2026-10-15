@@ -1,0 +1,77 @@
+{
+  "id": "ecosolaris",
+  "slug": "ecosolaris",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "EcoSolaris",
+  "description": "EcoSolaris prezintă montaj de sisteme fotovoltaice în Dâmbovița, inclusiv Târgoviște și Găești. Firma declară sediul și depozitul în Clinceni, de unde organizează deplasările.",
+  "seo": {
+    "title": "EcoSolaris — servicii și contact",
+    "description": "EcoSolaris prezintă montaj de sisteme fotovoltaice în Dâmbovița, inclusiv Târgoviște și Găești. Firma declară sediul și depozitul în Clinceni, de unde organizează deplasările."
+  },
+  "website": "https://ecosolaris.ro/",
+  "phone": "0314337099",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "locality": "Clinceni",
+    "county": "Ilfov",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://ecosolaris.ro/panouri-fotovoltaice-targoviste/",
+      "note": "Nume, telefon, sediu/depozit Clinceni, montaj și localități explicite. Nu importăm durate de drum, performanțe, economii sau autorizări."
+    }
+  ],
+  "sponsored": false
+}

@@ -1,0 +1,90 @@
+{
+  "id": "constructii-dambovita",
+  "slug": "constructii-dambovita",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Construcții Dâmbovița",
+  "description": "Construcții Dâmbovița prezintă renovări de apartamente și finisaje interioare în județul Dâmbovița, inclusiv Târgoviște și Găești. Lucrările descrise includ placări și zugrăveli.",
+  "seo": {
+    "title": "Construcții Dâmbovița — servicii și contact",
+    "description": "Construcții Dâmbovița prezintă renovări de apartamente și finisaje interioare în județul Dâmbovița, inclusiv Târgoviște și Găești. Lucrările descrise includ placări și zugrăveli."
+  },
+  "website": "https://constructiidambovita.ro/",
+  "phone": "0773282786",
+  "email": "contact@constructiidambovita.ro",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ],
+    "email": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "renovari-apartamente",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "amenajari-interioare",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://constructiidambovita.ro/servicii",
+      "note": "Brandul comercial al website-ului, telefon 0773 282 786, contact@constructiidambovita.ro, renovări/finisaje și aria explicită. Identitatea juridică nu este dedusă din domeniu."
+    }
+  ],
+  "sponsored": false
+}

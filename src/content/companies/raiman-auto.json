@@ -1,0 +1,100 @@
+{
+  "id": "raiman-auto",
+  "slug": "raiman-auto",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Raiman Auto",
+  "description": "Raiman Auto prezintă service auto în Târgoviște, la Aleea Sinaia 6–8. Serviciile publicate includ mecanică, diagnosticare și reparații electrice, precum și tinichigerie-vopsitorie.",
+  "seo": {
+    "title": "Raiman Auto — servicii și contact",
+    "description": "Raiman Auto prezintă service auto în Târgoviște, la Aleea Sinaia 6–8. Serviciile publicate includ mecanică, diagnosticare și reparații electrice, precum și tinichigerie-vopsitorie."
+  },
+  "website": "https://www.raiman.ro/",
+  "phone": "0374606000",
+  "email": "service@raiman.ro",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ],
+    "email": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Aleea Sinaia 6–8",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "electrician-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "vopsitorie-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.raiman.ro/",
+      "note": "Telefon, service@raiman.ro, adresa service-ului Aleea Sinaia 6–8 și serviciile mecanică/electrică/vopsitorie. Magazinele de piese din alte localități nu sunt interpretate ca ateliere."
+    }
+  ],
+  "sponsored": false
+}

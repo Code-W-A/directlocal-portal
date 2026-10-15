@@ -1,0 +1,847 @@
+{
+  "checkedAt": "2026-10-15",
+  "method": "Verificare documentară a website-urilor oficiale prin Firecrawl; nu confirmare telefonică sau certificare.",
+  "companies": [
+    {
+      "id": "instalator-targoviste",
+      "name": "Instalator Târgoviște",
+      "website": "https://instalatortargoviste.ro/",
+      "phone": "0729270835",
+      "description": "Instalator Târgoviște prezintă lucrări la instalații sanitare și reparații pentru locuințe din Târgoviște, inclusiv intervenții la robinete și obiecte sanitare.",
+      "sources": [
+        {
+          "url": "https://instalatortargoviste.ro/",
+          "note": "Denumire comercială a website-ului, telefon 0729 270 835, lucrări sanitare și Târgoviște menționat explicit. Nu preluăm promisiuni de intervenție imediată."
+        }
+      ],
+      "offers": [
+        [
+          "instalatori",
+          [
+            "targoviste"
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "id": "mdc-instal-clima-expert",
+      "name": "MDC Instal Clima Expert",
+      "website": "https://www.mdcinstal.ro/",
+      "phone": "0726381592",
+      "description": "MDC Instal Clima Expert declară montaj de aer condiționat, montaj hidraulic pentru pompe de căldură și lucrări electrice. Aria publicată include Târgoviște și Găești; Titu este prezentat drept zonă principală de servicii.",
+      "sources": [
+        {
+          "url": "https://www.mdcinstal.ro/",
+          "note": "Telefon și email publice; circuite, tablouri, prize, montaj split/multisplit și montaj hidraulic pompe de căldură. Sunt numite explicit Târgoviște, Găești și deplasarea în Dâmbovița. Zona principală Titu nu este tratată drept sediu."
+        }
+      ],
+      "offers": [
+        [
+          "electricieni",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "montaj-aer-conditionat",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "montaj-pompe-de-caldura",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "email": "contact@mdcinstal.ro"
+    },
+    {
+      "id": "jadcom",
+      "name": "JADCOM",
+      "website": "https://www.jadcom.ro/",
+      "phone": "0722795533",
+      "description": "JADCOM oferă service și montaj de centrale termice și menționează intervenții în județul Dâmbovița, inclusiv Târgoviște și Găești.",
+      "sources": [
+        {
+          "url": "https://www.jadcom.ro/",
+          "note": "Service centrale, telefon, montaj centrale și localitățile Târgoviște/Găești; acoperire declarată în Dâmbovița."
+        },
+        {
+          "url": "https://www.jadcom.ro/montaj-inlocuire-centrala-termica",
+          "note": "Montaj și înlocuire centrale termice. Prețurile, autorizările și termenele comerciale nu sunt preluate."
+        }
+      ],
+      "offers": [
+        [
+          "service-centrale",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "montaj-centrale-termice",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "service-microcentrale",
+      "name": "Service Microcentrale",
+      "website": "https://www.servicemicrocentrale.ro/",
+      "phone": "0212011114",
+      "description": "Service Microcentrale, firmă prezentată ca fiind din București, declară montaj și reparații de centrale termice în Dâmbovița. Târgoviște și Găești sunt numite în aria de intervenție.",
+      "sources": [
+        {
+          "url": "https://www.servicemicrocentrale.ro/",
+          "note": "Nume, telefon unic, montaj/reparații centrale și localitățile Târgoviște/Găești. Același dispecerat apare la Future Line Instal: aceasta nu este importată ca alternativă independentă."
+        }
+      ],
+      "offers": [
+        [
+          "service-centrale",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "montaj-centrale-termice",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "locality": "București",
+        "county": "București"
+      }
+    },
+    {
+      "id": "gaz-instal-proiect",
+      "name": "Gaz Instal Proiect Dâmbovița",
+      "website": "https://gazinstalproiect.ro/",
+      "phone": "0754252845",
+      "description": "Gaz Instal Proiect Dâmbovița declară un sediu în Găești și lucrări de instalații sanitare. Website-ul prezintă și instalații termice, separat de serviciul sanitar inclus aici.",
+      "sources": [
+        {
+          "url": "https://gazinstalproiect.ro/",
+          "note": "Denumire, telefon, sediu Găești și servicii sanitare. Nu importăm certificări, recenzii sau disponibilitate non-stop."
+        }
+      ],
+      "offers": [
+        [
+          "instalatori",
+          [
+            "gaesti"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "locality": "Găești",
+        "county": "Dâmbovița"
+      }
+    },
+    {
+      "id": "clinica-de-frig",
+      "name": "Clinica de Frig",
+      "website": "https://clinicadefrig.ro/",
+      "phone": "0742541172",
+      "description": "Clinica de Frig prezintă montaj, întreținere și reparații pentru aer condiționat în Târgoviște și Dâmbovița. Adresa de contact publicată este pe strada Cpt. Stănică Ilie din Târgoviște.",
+      "sources": [
+        {
+          "url": "https://clinicadefrig.ro/",
+          "note": "Servicii de montaj, reparații și întreținere climatizare în Târgoviște și județul Dâmbovița. Găești nu este confirmat separat."
+        },
+        {
+          "url": "https://clinicadefrig.ro/contact/",
+          "note": "Contact public: 0742 541 172, clinicadefrig@gmail.com și Str. Cpt. Stănică Ilie, Târgoviște."
+        }
+      ],
+      "offers": [
+        [
+          "montaj-aer-conditionat",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "service-aer-conditionat",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "email": "clinicadefrig@gmail.com",
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Târgoviște",
+        "county": "Dâmbovița",
+        "street": "Strada Cpt. Stănică Ilie"
+      }
+    },
+    {
+      "id": "sol-x",
+      "name": "SOL-X",
+      "website": "https://sol-x.ro/",
+      "phone": "0729733448",
+      "description": "SOL-X oferă instalarea sistemelor fotovoltaice și declară sediul central în Ploiești. Pagina pentru Dâmbovița include Târgoviște și Găești în aria de lucru.",
+      "sources": [
+        {
+          "url": "https://sol-x.ro/",
+          "note": "Denumire, telefon, sediu Ploiești și servicii fotovoltaice; nu preluăm economii, recenzii, finanțări sau performanțe promise."
+        },
+        {
+          "url": "https://sol-x.ro/fotovoltaice-targoviste.html",
+          "note": "Montaj fotovoltaice în Târgoviște."
+        },
+        {
+          "url": "https://sol-x.ro/fotovoltaice-dambovita.html",
+          "note": "Acoperire Dâmbovița, inclusiv Găești."
+        },
+        {
+          "url": "https://sol-x.ro/fotovoltaice-ploiesti.html",
+          "note": "Pagina oficială confirmă explicit instalarea completă în Ploiești și contactul. Nu preluăm timpi de intervenție, estimări de producție ori finanțări."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "targoviste",
+            "gaesti",
+            "ploiesti"
+          ],
+          [
+            "dambovita",
+            "prahova"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "locality": "Ploiești",
+        "county": "Prahova"
+      }
+    },
+    {
+      "id": "decris-electro-instal",
+      "name": "Decris Electro Instal",
+      "website": "https://decris.ro/",
+      "phone": "0721576634",
+      "description": "Decris Electro Instal prezintă instalarea sistemelor fotovoltaice rezidențiale și comerciale în Argeș și Pitești. Punctul de lucru publicat este pe Calea Craiovei din Pitești.",
+      "sources": [
+        {
+          "url": "https://decris.ro/",
+          "note": "Montaj sisteme rezidențiale/comerciale; titlul și descrierea website-ului numesc explicit Argeș și Pitești."
+        },
+        {
+          "url": "https://decris.ro/contact/",
+          "note": "Telefon 0721 576 634 și punct de lucru Calea Craiovei 97, Bloc Maia, demisol, Pitești."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "pitesti"
+          ],
+          [
+            "arges"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Pitești",
+        "county": "Argeș",
+        "street": "Calea Craiovei 97, Bloc Maia, demisol"
+      }
+    },
+    {
+      "id": "voltecon",
+      "name": "Voltecon",
+      "website": "https://fotovoltaicebacau.ro/",
+      "phone": "0759076859",
+      "description": "Voltecon prezintă sisteme fotovoltaice pentru Bacău, cu servicii de consultanță și instalare. Sunt descrise configurații conectate la rețea și soluții cu stocare.",
+      "sources": [
+        {
+          "url": "https://fotovoltaicebacau.ro/",
+          "note": "Brand Voltecon în footer, email office@voltecon.ro, telefon 0759 076 859; instalare sisteme în Bacău. Nu preluăm afirmația tehnică neclară despre panouri hibride care produc căldură."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "bacau"
+          ],
+          []
+        ]
+      ],
+      "email": "office@voltecon.ro"
+    },
+    {
+      "id": "electro-construct",
+      "name": "Electro & Construct",
+      "website": "https://www.electro-cons.ro/",
+      "phone": "0338401002",
+      "description": "Electro & Construct prezintă proiectarea și instalarea sistemelor fotovoltaice în Buzău. Punctul de lucru indicat pe website se află pe Șoseaua Nordului 45.",
+      "sources": [
+        {
+          "url": "https://www.electro-cons.ro/sisteme-fotovoltaice/",
+          "note": "Nume comercial/legal, telefon fix, contact.electrocons@gmail.com, punct de lucru Buzău și serviciul local explicit. Nu preluăm perioada de recuperare a investiției."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "buzau"
+          ],
+          []
+        ]
+      ],
+      "email": "contact.electrocons@gmail.com",
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Buzău",
+        "county": "Buzău",
+        "street": "Șoseaua Nordului 45"
+      }
+    },
+    {
+      "id": "beda-impex",
+      "name": "BEDA IMPEX",
+      "website": "https://www.bedaimpex.ro/",
+      "phone": "0345100051",
+      "description": "BEDA IMPEX are un punct de lucru auto pe Bulevardul Eroilor 26 din Târgoviște. Website-ul prezintă mecanică, reparații electrice, tinichigerie-vopsitorie și ITP.",
+      "sources": [
+        {
+          "url": "https://www.bedaimpex.ro/service-auto-targoviste-beda-impex/",
+          "note": "Nume, telefon fix, adresa atelierului, mecanică/electrică auto, vopsitorie și ITP. Autorizarea RAR nu a fost verificată în registrul autorității și nu este prezentată ca certificare a directorului."
+        }
+      ],
+      "offers": [
+        [
+          "service-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ],
+        [
+          "electrician-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ],
+        [
+          "vopsitorie-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ],
+        [
+          "itp",
+          [
+            "targoviste"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Târgoviște",
+        "county": "Dâmbovița",
+        "street": "Bulevardul Eroilor 26"
+      }
+    },
+    {
+      "id": "raiman-auto",
+      "name": "Raiman Auto",
+      "website": "https://www.raiman.ro/",
+      "phone": "0374606000",
+      "description": "Raiman Auto prezintă service auto în Târgoviște, la Aleea Sinaia 6–8. Serviciile publicate includ mecanică, diagnosticare și reparații electrice, precum și tinichigerie-vopsitorie.",
+      "sources": [
+        {
+          "url": "https://www.raiman.ro/",
+          "note": "Telefon, service@raiman.ro, adresa service-ului Aleea Sinaia 6–8 și serviciile mecanică/electrică/vopsitorie. Magazinele de piese din alte localități nu sunt interpretate ca ateliere."
+        }
+      ],
+      "offers": [
+        [
+          "service-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ],
+        [
+          "electrician-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ],
+        [
+          "vopsitorie-auto",
+          [
+            "targoviste"
+          ],
+          []
+        ]
+      ],
+      "email": "service@raiman.ro",
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Târgoviște",
+        "county": "Dâmbovița",
+        "street": "Aleea Sinaia 6–8"
+      }
+    },
+    {
+      "id": "autodet",
+      "name": "AUTODET",
+      "website": "https://itpautodet.ro/",
+      "phone": "0722675203",
+      "description": "AUTODET prezintă o stație ITP în Târgoviște, pe Calea București 80. Telefonul public poate fi folosit pentru a verifica programarea și tipul vehiculului acceptat.",
+      "sources": [
+        {
+          "url": "https://itpautodet.ro/",
+          "note": "Nume, telefon, adresa stației și serviciul ITP. Nu preluăm tarife, termene legale sau autorizări neverificate independent."
+        }
+      ],
+      "offers": [
+        [
+          "itp",
+          [
+            "targoviste"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Târgoviște",
+        "county": "Dâmbovița",
+        "street": "Calea București 80"
+      }
+    },
+    {
+      "id": "amg-service-auto",
+      "name": "AMG Service Auto",
+      "website": "https://www.amgserviceauto.ro/",
+      "phone": "0766245765",
+      "description": "AMG Service Auto prezintă un atelier în Găești și servicii de mecanică, revizie și diagnoză auto. Pentru lucrare este necesară programarea la atelier; tractările sunt un serviciu separat.",
+      "sources": [
+        {
+          "url": "https://www.amgserviceauto.ro/",
+          "note": "Telefon 0766 245 765 și atelier Găești cu mecanică/revizii/diagnoză. Aria tractărilor nu devine acoperire pentru reparații mobile."
+        }
+      ],
+      "offers": [
+        [
+          "service-auto",
+          [
+            "gaesti"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Găești",
+        "county": "Dâmbovița"
+      }
+    },
+    {
+      "id": "itp-auto-visina",
+      "name": "ITP Auto Vișina",
+      "website": "https://visinaitp.ro/",
+      "phone": "0762688734",
+      "description": "ITP Auto Vișina prezintă stația de pe strada Mihai Viteazu 22, Vișina, pentru șoferii din Titu. Inspecția se face în Vișina; nu este o stație situată în orașul Titu.",
+      "sources": [
+        {
+          "url": "https://visinaitp.ro/itp-titu",
+          "note": "Pagina vizează explicit șoferii din Titu, dar publică stația în Vișina, Str. Mihai Viteazu 22, și telefon 0762 688 734. Localitatea reală este păstrată vizibil."
+        }
+      ],
+      "offers": [
+        [
+          "itp",
+          [
+            "titu"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Vișina",
+        "county": "Dâmbovița",
+        "street": "Strada Mihai Viteazu 22"
+      }
+    },
+    {
+      "id": "prosig-trafic",
+      "name": "Prosig Trafic",
+      "website": "https://prosigtrafic.ro/",
+      "phone": "0723181291",
+      "description": "Prosig Trafic prezintă servicii ITP în Pucioasa. Website-ul mai descrie lucrări la tahografe, însă pagina din director se referă la inspecția tehnică periodică.",
+      "sources": [
+        {
+          "url": "https://prosigtrafic.ro/",
+          "note": "ITP și Pucioasa în pagina oficială; telefonul afișat și tel: coincid, 0723 181 291. Emailul afișat diferă de mailto, de aceea nu publicăm email. Nu preluăm adresa stradală din directoare."
+        }
+      ],
+      "offers": [
+        [
+          "itp",
+          [
+            "pucioasa"
+          ],
+          []
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Pucioasa",
+        "county": "Dâmbovița"
+      }
+    },
+    {
+      "id": "starcleaning",
+      "name": "StarCleaning",
+      "website": "https://starcleaning.ro/",
+      "description": "StarCleaning prezintă servicii de curățenie în Târgoviște pentru locuințe și spații de lucru, inclusiv curățenie după constructor. Solicitările pot fi discutate prin website-ul firmei.",
+      "sources": [
+        {
+          "url": "https://starcleaning.ro/",
+          "note": "Brand și servicii rezidențiale, comerciale și după constructor în Târgoviște. Website public; nu adăugăm numere din directoare."
+        }
+      ],
+      "offers": [
+        [
+          "curatenie",
+          [
+            "targoviste"
+          ],
+          []
+        ]
+      ]
+    },
+    {
+      "id": "constructii-dambovita",
+      "name": "Construcții Dâmbovița",
+      "website": "https://constructiidambovita.ro/",
+      "phone": "0773282786",
+      "description": "Construcții Dâmbovița prezintă renovări de apartamente și finisaje interioare în județul Dâmbovița, inclusiv Târgoviște și Găești. Lucrările descrise includ placări și zugrăveli.",
+      "sources": [
+        {
+          "url": "https://constructiidambovita.ro/servicii",
+          "note": "Brandul comercial al website-ului, telefon 0773 282 786, contact@constructiidambovita.ro, renovări/finisaje și aria explicită. Identitatea juridică nu este dedusă din domeniu."
+        }
+      ],
+      "offers": [
+        [
+          "renovari-apartamente",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "amenajari-interioare",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "email": "contact@constructiidambovita.ro"
+    },
+    {
+      "id": "acoperisuri-reparatii",
+      "name": "Acoperișuri-Reparații",
+      "website": "https://acoperisuri-reparatii.ro/",
+      "phone": "0751359560",
+      "description": "Acoperișuri-Reparații prezintă intervenții la acoperișuri în județul Dâmbovița. Pagina de servicii menționează reparații la învelitori și lucrări cu tablă.",
+      "sources": [
+        {
+          "url": "https://acoperisuri-reparatii.ro/reparatii-acoperisuri-dambovita.php",
+          "note": "Brandul website-ului, telefon 0751 359 560 și reparații în Dâmbovița. Nu stabilim un sediu din simpla acoperire comercială."
+        }
+      ],
+      "offers": [
+        [
+          "reparatii-acoperisuri",
+          [],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "clean-trust",
+      "name": "Clean Trust",
+      "website": "https://cleantrust.ro/",
+      "description": "Clean Trust prezintă curățenie la domiciliu și după constructor în Târgoviște și în județul Dâmbovița. Lista publicată include și alte localități, care se confirmă direct la programare.",
+      "sources": [
+        {
+          "url": "https://cleantrust.ro/",
+          "note": "Brand, curățenie generală, la domiciliu și după constructor; Târgoviște și Dâmbovița numite explicit. Fără recenzii ori promisiuni de rezultate preluate."
+        }
+      ],
+      "offers": [
+        [
+          "curatenie",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "instal-aerocris",
+      "name": "Instal AeroCris",
+      "website": "https://instal-aerocris.ro/",
+      "phone": "0769335627",
+      "description": "Instal AeroCris oferă montaj și reparații de aer condiționat, având zona principală în București și Ilfov. Declară deplasări și în Târgoviște, în funcție de lucrare și de disponibilitatea echipei.",
+      "sources": [
+        {
+          "url": "https://instal-aerocris.ro/",
+          "note": "Telefon, montaj/reparații AC și deplasarea explicită în Târgoviște/Dâmbovița condiționată de lucrare și disponibilitate. Sediu social declarat în Voluntari. Articolul despre freon nu devine dovadă de serviciu local separat."
+        }
+      ],
+      "offers": [
+        [
+          "montaj-aer-conditionat",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ],
+        [
+          "service-aer-conditionat",
+          [
+            "targoviste"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "locality": "Voluntari",
+        "county": "Ilfov",
+        "street": "Strada Marin Drăcea 9B"
+      }
+    },
+    {
+      "id": "marsico-energy",
+      "name": "Marsico Energy",
+      "website": "https://marsicoenergy.ro/",
+      "phone": "0736656823",
+      "description": "Marsico Energy prezintă instalarea sistemelor fotovoltaice din Focșani, cu proiecte în Vrancea și județele vecine. Firma descrie alegerea componentelor, montajul și sprijinul pentru documentația sistemului.",
+      "sources": [
+        {
+          "url": "https://marsicoenergy.ro/sisteme-fotovoltaice/instalare/",
+          "note": "Instalare fotovoltaice, birou și echipă în Focșani, proiecte Vrancea; nu importăm estimări de economii, granturi, recenzii sau autorizări."
+        },
+        {
+          "url": "https://marsicoenergy.ro/contact/",
+          "note": "Contact public: Focșani, Vrancea și telefon 0736 656 823."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "focsani"
+          ],
+          [
+            "vrancea"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Focșani",
+        "county": "Vrancea"
+      }
+    },
+    {
+      "id": "ecosolaris",
+      "name": "EcoSolaris",
+      "website": "https://ecosolaris.ro/",
+      "phone": "0314337099",
+      "description": "EcoSolaris prezintă montaj de sisteme fotovoltaice în Dâmbovița, inclusiv Târgoviște și Găești. Firma declară sediul și depozitul în Clinceni, de unde organizează deplasările.",
+      "sources": [
+        {
+          "url": "https://ecosolaris.ro/panouri-fotovoltaice-targoviste/",
+          "note": "Nume, telefon, sediu/depozit Clinceni, montaj și localități explicite. Nu importăm durate de drum, performanțe, economii sau autorizări."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [
+            "targoviste",
+            "gaesti"
+          ],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "locality": "Clinceni",
+        "county": "Ilfov"
+      }
+    },
+    {
+      "id": "solaryus",
+      "name": "SOLARYUS",
+      "website": "https://solaryus.ro/",
+      "phone": "0765243069",
+      "description": "SOLARYUS prezintă proiectare și instalare de sisteme fotovoltaice în județul Dâmbovița. Adresa publicată a echipei este strada Regiei 12, Titu.",
+      "sources": [
+        {
+          "url": "https://solaryus.ro/sisteme-fotovoltaice-dambovita/",
+          "note": "Telefon și adresa Titu; montaj fotovoltaice la nivel de județ. Nu deducem orașe din această arie și nu publicăm economii ori ore de soare."
+        }
+      ],
+      "offers": [
+        [
+          "panouri-fotovoltaice",
+          [],
+          [
+            "dambovita"
+          ]
+        ]
+      ],
+      "headquarters": {
+        "kind": "workplace",
+        "locality": "Titu",
+        "county": "Dâmbovița",
+        "street": "Strada Regiei 12"
+      }
+    },
+    {
+      "id": "reparatii-best",
+      "name": "Reparații Best",
+      "website": "https://reparatiibest.ro/",
+      "phone": "0734704026",
+      "description": "Reparații Best prezintă lucrări de reparație și renovare a acoperișurilor în județul Dâmbovița. Sunt menționate învelitori cu țiglă și tablă, alături de lucrări noi de acoperiș.",
+      "sources": [
+        {
+          "url": "https://reparatiibest.ro/judete/dambovita",
+          "note": "Nume, telefon, serviciul și acoperire Dâmbovița. Fără sediu dedus, termene promise sau garanții importate."
+        }
+      ],
+      "offers": [
+        [
+          "reparatii-acoperisuri",
+          [],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "acoperisuri-montaj",
+      "name": "Acoperișuri Montaj",
+      "website": "https://acoperisuri-montaj.ro/",
+      "phone": "0758407587",
+      "description": "Acoperișuri Montaj declară lucrări de reparație și montaj la acoperișuri în Dâmbovița. Pagina județului include intervenții la învelitori, jgheaburi și burlane.",
+      "sources": [
+        {
+          "url": "https://acoperisuri-montaj.ro/judet-dambovita",
+          "note": "Denumire comercială a site-ului, telefon și lucrări de reparație în Dâmbovița; identitatea juridică nu este dedusă."
+        }
+      ],
+      "offers": [
+        [
+          "reparatii-acoperisuri",
+          [],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "acoperisuri-pe-viata",
+      "name": "Acoperișuri pe Viață",
+      "website": "https://acoperisuripeviata.ro/",
+      "phone": "0727294121",
+      "description": "Acoperișuri pe Viață prezintă reparații la învelitori pentru locuințe și alte clădiri. Dâmbovița este inclus explicit în aria de lucru publicată.",
+      "sources": [
+        {
+          "url": "https://acoperisuripeviata.ro/reparatii-acoperisuri",
+          "note": "Brandul website-ului, telefon, reparații și acoperire în Dâmbovița. Nu importăm promisiuni privind rezistența sau disponibilitatea."
+        }
+      ],
+      "offers": [
+        [
+          "reparatii-acoperisuri",
+          [],
+          [
+            "dambovita"
+          ]
+        ]
+      ]
+    }
+  ]
+}

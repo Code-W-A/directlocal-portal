@@ -1,0 +1,57 @@
+{
+  "id": "reparatii-best",
+  "slug": "reparatii-best",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Reparații Best",
+  "description": "Reparații Best prezintă lucrări de reparație și renovare a acoperișurilor în județul Dâmbovița. Sunt menționate învelitori cu țiglă și tablă, alături de lucrări noi de acoperiș.",
+  "seo": {
+    "title": "Reparații Best — servicii și contact",
+    "description": "Reparații Best prezintă lucrări de reparație și renovare a acoperișurilor în județul Dâmbovița. Sunt menționate învelitori cu țiglă și tablă, alături de lucrări noi de acoperiș."
+  },
+  "website": "https://reparatiibest.ro/",
+  "phone": "0734704026",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://reparatiibest.ro/judete/dambovita",
+      "note": "Nume, telefon, serviciul și acoperire Dâmbovița. Fără sediu dedus, termene promise sau garanții importate."
+    }
+  ],
+  "sponsored": false
+}

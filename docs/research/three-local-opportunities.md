@@ -1,3 +1,5 @@
+> Raport istoric din 12 octombrie. Numărul paginilor și verdictul de atunci nu descriu starea curentă. Politica în vigoare: [SEO-PLAYBOOK](../seo/SEO-PLAYBOOK.md), revizuită la 15 octombrie 2026.
+
 # Extindere: Timișoara, Constanța și Ilfov — 2026-10-12
 
 ## Cercetare Semrush România

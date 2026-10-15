@@ -1,7 +1,7 @@
 ---
 {
   "status": "published",
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-15",
   "id": "curatare-canapele-judet-brasov",
   "slug": "curatare-canapele-judet-brasov",
   "kind": "county",
@@ -10,8 +10,8 @@
     "title": "Curățare canapele în județul Brașov",
     "description": "Localități documentate pentru curățarea canapelelor în județul Brașov. Acoperirea este indicată separat pentru fiecare furnizor."
   },
-  "indexStatus": "noindex",
-  "intro": "Această pagină organizează localitățile documentate din județul Brașov. În etapa actuală este disponibil municipiul Brașov. O listare într-un oraș nu înseamnă că firma deservește automat întreg județul.",
+  "indexStatus": "index",
+  "intro": "Alege pagina pentru Brașov și consultă furnizorul documentat. În acest moment, catalogul nu confirmă acoperirea întregului județ Brașov.",
   "sources": [
     {
       "id": "website",
@@ -20,9 +20,13 @@
       "note": "Website oficial: nume comercial, telefon, curățare canapele, sediu declarat în Brașov și deplasare în Brașov."
     }
   ],
-  "editorialReviewed": false,
+  "editorialReviewed": true,
   "serviceId": "curatare-canapele",
-  "countyId": "brasov"
+  "countyId": "brasov",
+  "reviewNote": "Revizie editorială 15.10.2026 conform politicii aprobate: contact și arie documentate, conținut util. Data consultării surselor este păstrată separat.",
+  "companyIds": [
+    "igienizare-tapiterie"
+  ]
 }
 ---
 ## Acoperire documentată, localitate cu localitate

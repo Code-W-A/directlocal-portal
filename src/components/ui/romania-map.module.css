@@ -1,0 +1,5 @@
+.map { width:100%; height:auto; max-height:390px; display:block; pointer-events:none; }
+.counties { fill:#fcfdff; stroke:#6c8bb7; stroke-width:1.15; stroke-linejoin:round; }
+.labels { fill:#17437d; font-size:16px; font-weight:650; text-anchor:middle; dominant-baseline:central; stroke:#fcfdff; stroke-width:1.8; stroke-linejoin:round; paint-order:stroke; }
+.capital { font-size:13px; }
+@media(max-width:760px) { .map { display:none; }.labels { display:none; } }

@@ -1,48 +1,60 @@
-# Reguli editoriale și SEO
+# DirectLocal — ghid editorial și SEO
 
-1. Satisface intenția de găsire și comparare a firmelor; nu pretinde comparație completă când există un singur profil.
-2. Lista firmelor apare înaintea textului editorial lung.
-3. Introducerea locală are 70–120 de cuvinte.
-4. Folosește expresia principală natural, fără densitate prestabilită.
-5. Nu folosi keyword stuffing.
-6. Nu introduce informații turistice irelevante.
-7. Nu copia și nu rescrie textele concurenților.
-8. Nu publica pagini care diferă doar prin numele orașului.
-9. Nu inventa prețuri sau statistici.
-10. Susține orice afirmație concretă despre o firmă cu surse.
-11. Nu utiliza superlative nesusținute.
-12. Include numai secțiuni cu informație utilă.
-13. Fiecare pagină locală trebuie să aibă valoare distinctă.
-14. Marchează explicit listările sponsorizate. PoC-ul nu are sponsorizări.
-15. Informațiile insuficiente impun `noindex`.
+Politică aprobată la 15 octombrie 2026. Acest fișier prevalează asupra rapoartelor istorice. Citește-l înainte de research, redactare și modificări SEO.
 
 ## Publicare și indexare
 
-`status: published` produce HTML; `indexStatus: index` cere eligibilitate și revizuire editorială. O pagină poate avea o singură firmă dacă oferă contact utilizabil, serviciu și zonă susținute de surse, informații distincte și fără afirmații nesusținute. Numărul de firme nu este o cerință Google și nu mai constituie un prag automat. Paginile și profilurile eligibile necesită editorialReviewed și reviewNote cu justificarea verificării. Indexarea efectivă cere și `INDEXING_ENABLED=true`, domeniu real și mediu non-preview. Indexarea globală rămâne dezactivată; eligibilitatea din date nu activează singură indexarea HTML.
+Nu există prag numeric obligatoriu de firme. O pagină poate fi indexabilă cu un furnizor dacă are contact utilizabil, serviciu și zonă documentate, informație distinctă și revizuire editorială justificată. Nu pretinde comparație completă cu o singură firmă. Paginile fără furnizori confirmați rămân brief-uri interne; nu publicăm liste goale. `status` și `indexStatus` sunt independente. Căutarea, API-ul, erorile și preview-urile rămân neindexabile. Producția folosește https://directlocal.ro. Activarea indexării este autorizată pentru paginile aprobate, nu pentru toate rândurile unui registru.
 
-Similarity: Jaccard pe secvențe de cinci cuvinte, text normalizat din introducere și corp pentru toate paginile de oraș și județ; componentele comune nu intră în comparație. Pragul ≥0,80 blochează publicarea. Această euristică nu înlocuiește revizuirea umană și verificarea factuală.
+## Principii de redactare în română
 
-## URL și metadata
+- Search intent: fiecare URL răspunde unei nevoi distincte. Firma înaintea textului lung.
+- Keyword research: metricile sunt estimări datate, cu sursă; lipsa datelor nu înseamnă zero. Nu presupune moneda CPC.
+- Keyword mapping: sinonimele aceleiași intenții au un singur URL; județul, orașul și profilul au roluri diferite.
+- Helpful content: contact, ofertă declarată, acoperire și pași practici. Fără introduceri turistice, jargon și umplutură.
+- Information gain: diferențe verificabile între furnizori, prestare la client vs punct de lucru, limite ale serviciului. Reformularea nu înseamnă informație nouă.
+- E-E-A-T: precizează cine editează, cum documentăm și ce nu am verificat. Nu pretinde experiență directă, certificare sau testarea lucrărilor. Nu este un scor public Google.
+- Topical authority / clusters: aprofundăm servicii reale și legăm subiecte utile; nu promitem scoruri sau clasări din numărul paginilor.
+- Freshness: schimbă data numai la o modificare factuală ori o reverificare reală, niciodată la fiecare build.
+- Cannibalization / duplication: verifică suprapunerea intenției înainte să adaugi URL-uri. Nu crea pagini prin schimbarea orașului în același text.
+- Diacritice și exprimare naturală. Introducerea de 20–60 de cuvinte este convenția layoutului, nu o cerință Google. Nu există densitate de keyword sau lungime totală obligatorie.
+- Fără superlative, prețuri, rezultate, recenzii, autorizații ori disponibilitate inventate. Autorizațiile și afirmațiile de siguranță cer dovezi specifice; textul comercial al firmei nu dovedește validitatea lor.
+- FAQ numai pentru întrebări reale despre alegere și contact, fără repetarea inutilă a avertismentelor platformei.
 
-Sluguri ASCII lowercase, cratime și slash final. O singură adresă pentru fiecare intenție. Canonical propriu și OG URL numai cu domeniu real. Căutarea nu are canonical și rămâne noindex; stările filtrelor nu schimbă URL-ul. Sitemap derivat din registru, numai pagini efectiv indexabile. Roboții trebuie să poată citi noindex.
+## Principii pe categorii
 
-## Imagini
+| Categorie | Aplicare |
+|---|---|
+| Technical SEO | HTML accesibil, status HTTP corect, canonical absolut, sitemap din registru, robots coerent, performanță măsurată separat în laborator și producție. |
+| On-page | Titluri și H1 clare, descrieri utile, sluguri ASCII cu cratime și slash final. |
+| Off-page | Mențiuni reale și relații editoriale. Fără cumpărare/schimb artificial de linkuri. Linkurile plătite se marchează sponsored. |
+| Content | Text original, dovezi și răspuns rapid la intenție; fără lungime artificială. |
+| Local | Sediul/punctul de lucru nu implică deplasare în tot județul. Un director nu este furnizor cu sedii în fiecare oraș. |
+| Semantic / Entity | Profil unic pentru firmă, servicii și locații legate prin ID; identitatea directorului separată de furnizori. |
+| Programmatic | Automatizăm structura, nu inventarea datelor. Un raport pentru fiecare oportunitate; deduplicare și revizuire umană. |
+| International | România și limba română; hreflang doar dacă apar versiuni lingvistice reale. |
+| Image | SVG decorativ aria-hidden, imagini utile cu alt și dimensiuni, proveniență/licență. Fără fotografii generice prezentate ca sediu sau echipă. |
+| Mobile / UX | Firme și contact ușor accesibile, filtre utilizabile, fără overflow; harta decorativă doar desktop. |
+| Internal linking | Serviciu → județ → oraș → profil și legături inverse/contextuale în HTML, numai către destinații publicate. |
 
-Numai imagini proprii ori licențe comerciale explicite verificate. Fișiere locale WebP/AVIF, dimensiuni și alt descriptiv; proveniența include autor, sursă, licență și data consultării/creării. Fără fotografii generice prezentate ca echipa ori sediul firmei.
+## Verificare editorială
 
-## Limitele automatizării
+Pentru fiecare afirmație păstrează URL-ul sursei, data consultării și asocierea cu faptul verificat. Identitatea juridică nu se deduce din numele comercial. Website-ul și telefonul public sunt contact, nu dovadă de certificare. Sursele detaliate rămân în date; profilurile afișează website-ul, data consultării și corectura. Verificatorul automat controlează referințe, nu adevărul afirmațiilor. Similaritatea Jaccard ≥0,80 blochează texte geografice excesiv de asemănătoare, dar nu înlocuiește evaluarea sensului.
 
-Validarea surselor verifică prezența și legăturile lor, nu adevărul unei propoziții. Lista de expresii interzise detectează exemple, nu toate exagerările. Confirmarea factuală și aprobarea indexării rămân editoriale.
+## Surse metodologice consultate la 2026-10-15
 
+1. https://developers.google.com/search/docs/fundamentals/creating-helpful-content — prioritate: utilitate, originalitate, cine/cum/de ce; fără număr preferat de cuvinte.
+2. https://developers.google.com/search/docs/essentials/spam-policies — doorway abuse, scaled content abuse și link spam.
+3. https://ahrefs.com/blog/programmatic-seo/ — șabloane și date reale, nu pagini multiplicate mecanic.
+4. https://www.brightlocal.com/learn/location-pages/ — informație locală distinctă și justificarea existenței paginii.
+5. https://www.semrush.com/blog/location-page-seo/ — organizarea contactului și conversiei; recomandările pentru sedii se adaptează unui director.
+6. https://ahrefs.com/blog/location-pages/ — structură și acțiuni utile pe paginile geografice.
+7. https://developers.google.com/search/docs/fundamentals/seo-starter-guide — crawling, structură, imagini și prezentare în rezultate.
+8. https://developers.google.com/search/docs/appearance/structured-data/local-business — schema trebuie să reflecte datele vizibile; eligibilitatea nu garantează afișare.
+9. https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls — domeniul canonic, redirecturi și sitemap consecvente.
 
-## Redactare naturală și surse metodologice
+Sursele sunt în engleză; redactarea proiectului rămâne în română. Recomandările Google prevalează asupra convențiilor comerciale din ghidurile secundare. Nu aplicăm mecanic limite de caractere, fotografii obligatorii sau promisiuni de rezultate.
 
-Scrie pentru o persoană care caută un furnizor: contact, acoperire, ce include serviciul și ce trebuie clarificat. Folosește paragrafe scurte și verbe concrete. Evită jargonul, introducerile promoționale și repetarea artificială a expresiei serviciu–oraș. Revizuiește fiecare pagină independent; nu folosi numai înlocuirea numelui localității.
+## Inspirație med.ro
 
-Introducerea de 70–120 de cuvinte este un reper editorial al proiectului, nu o regulă de clasare Google. Nu umple paginile pentru a atinge un număr de cuvinte. Nu promite poziții SEO pe baza KD.
-
-Surse consultate la 2026-10-12:
-- https://developers.google.com/search/docs/fundamentals/creating-helpful-content — utilitate, originalitate, surse și lipsa unui număr preferat de cuvinte.
-- https://developers.google.com/search/docs/essentials/spam-policies#doorway-abuse — evitarea paginilor similare care intermediază inutil accesul la informație.
-
-Aplicare: paginile țintă oferă contact și detalii direct; paginile părinte restrânse rămân noindex. Scrierea naturală nu constituie dovadă de verificare factuală și nu garantează clasarea.
+Consultate: homepage, /dentist/id/, /dentist/implant-dentar-brasov/, /clinici-private/clinici-private-brasov/, /inscriere-clinica/, /clinici-partenere/. Preluăm navigarea tematică/geografică, listările înaintea explicațiilor și înscrierea separată. Nu copiem conținut, topuri, tarife sau declarații de audiență. Cercetarea nu măsoară traficul, veniturile ori cauza succesului med.ro.

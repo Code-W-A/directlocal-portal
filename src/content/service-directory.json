@@ -1,0 +1,20 @@
+{
+  "title": "Servicii locale",
+  "intro": "Alege serviciul de care ai nevoie și explorează județele și localitățile documentate. Consultă profilurile și contactează direct furnizorii.",
+  "searchLabel": "Caută o firmă",
+  "catalogTitle": "Servicii disponibile",
+  "countiesLabel": "Județe documentate",
+  "serviceLabel": "Vezi serviciul",
+  "photoCaption": "Fotografie ilustrativă",
+  "emptyMessage": "Momentan nu există servicii publicate în catalog.",
+  "guide": {
+    "title": "De la serviciu la firma potrivită",
+    "intro": "Paginile locale te ajută să consulți furnizorii din catalog. Confirmă oferta și disponibilitatea direct cu firma.",
+    "steps": [
+      { "title": "Alegi serviciul", "description": "Deschizi pagina serviciului pentru a vedea informațiile și zonele documentate." },
+      { "title": "Selectezi zona", "description": "Alegi județul și, unde există o pagină publicată, localitatea care te interesează." },
+      { "title": "Consulți profilul", "description": "Verifici serviciile declarate, aria deservită și datele de contact ale firmei." }
+    ],
+    "methodologyLabel": "Cum documentăm informațiile"
+  }
+}

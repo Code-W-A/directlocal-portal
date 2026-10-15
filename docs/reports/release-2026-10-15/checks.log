@@ -1,0 +1,154 @@
+
+> porta-director@0.1.0 check
+> npm run lint && npm run test && npm run build && npm run typecheck
+
+
+> porta-director@0.1.0 lint
+> eslint .
+
+
+> porta-director@0.1.0 test
+> tsx --test tests/*.test.ts
+
+✔ platform content can omit unrelated external sources while provider evidence stays required (402.43525ms)
+✔ content validation also rejects unsupported claims in about cards (228.739791ms)
+✔ verified recipient is server resolved, administrator copied, reply-to visitor (370.61325ms)
+✔ submission only goes to administrator and includes review details (197.649666ms)
+✔ reject missing email, arbitrary recipient, honeypot and incomplete submissions (169.751833ms)
+✔ SMTP error or rejected company recipient never reports success; copy rejection distinct (170.131125ms)
+✔ limiter expires, isolates clients and blocks sixth request (0.185583ms)
+✔ API rejects cross-origin, invalid JSON and oversized payload before SMTP (3.059917ms)
+✔ API without SMTP returns unavailable without pretending success (0.377459ms)
+✔ minimal signup accepts phone without email or message and keeps other forms strict (167.343958ms)
+✔ expanded catalog retains existing URLs and reviewed profiles (398.708125ms)
+✔ published pages derive stable service, county, local and company URLs (0.772958ms)
+✔ draft content never enters public registry (0.229916ms)
+✔ reject duplicate IDs, non-ASCII slugs and missing fields (1.065958ms)
+✔ same city name in different counties is allowed (0.359625ms)
+✔ reject duplicate page URLs even with distinct IDs and slugs (0.260583ms)
+✔ reject missing references and published references to drafts (0.338709ms)
+✔ local page requires a published parent service page (0.232125ms)
+✔ local listing requires matching service coverage (0.258125ms)
+✔ metadata timestamps do not become build timestamps (6.143708ms)
+✔ Markdown frontmatter is loaded and validated from files (28.110375ms)
+✔ Markdown disallows H1, raw HTML and javascript links (0.4345ms)
+✔ reject missing sources and invalid verification dates (0.804ms)
+✔ local indexing requires documented editorial review and sourced companies (0.860709ms)
+✔ county-only coverage needs source and county reference; no city is inferred (0.491416ms)
+✔ reject duplicate titles, H1 and unsupported claims (0.561542ms)
+✔ duplicate local editorial copy blocks publication (2.232458ms)
+✔ reviewed county indexing supports one or more sourced companies (0.93775ms)
+✔ home search resolves only exact published destinations (378.105458ms)
+✔ draft pages never appear in homepage search (211.454959ms)
+✔ retained illustrations have licensed sources and optimized derivatives (366.8055ms)
+✔ company photos are optional while referenced images require valid provenance (186.293708ms)
+✔ approved production defaults and preview override keep the canonical origin consistent (7.406291ms)
+✔ www redirect preserves root, trailing slash, files and query without touching localhost (3.868792ms)
+✔ production forms ignore stale localhost configuration and untrusted request host (0.129125ms)
+✔ all 40 registry opportunities have an accountable decision and no blocked URL is published (369.000791ms)
+✔ schema validator rejects business schema on non-profile pages (268.907584ms)
+✔ schema validator rejects list entries absent from visible list (177.57425ms)
+✔ schema validator rejects breadcrumbs that contradict visible navigation (171.596666ms)
+✔ WebSite requires homepage and configured origin (170.282375ms)
+✔ search supports real catalog, accents, empty results and combined filters (394.73975ms)
+✔ sitemap selector excludes noindex even with global indexing enabled (222.332833ms)
+✔ county filter finds Ilfov without fabricating cities (171.663125ms)
+✔ default is noindex with no fictional canonical or OG URL (22.751083ms)
+✔ indexing requires a real HTTPS domain (2.995ms)
+✔ production config enables self canonical metadata (2.030917ms)
+✔ Vercel previews and development stay noindex even if production flag leaks (0.109584ms)
+✔ search omits canonical while noindex content keeps a self canonical (0.097ms)
+✔ URL builder rejects external paths (0.071583ms)
+✔ JSON-LD cannot break out of the script element (0.144208ms)
+✔ global indexing never overrides per-page noindex (0.08975ms)
+✔ homepage social images require configured origin and retain noindex (0.163125ms)
+✔ directory omits unpublished service destinations and counties (304.759708ms)
+ℹ tests 53
+ℹ suites 0
+ℹ pass 53
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1544.949583
+
+> porta-director@0.1.0 prebuild
+> npm run validate:content
+
+
+> porta-director@0.1.0 validate:content
+> tsx scripts/validate-content.ts
+
+Content valid: 17 services, 12 locations, 31 companies, 70 editorial pages.
+Public pages: 104. Indexing: disabled.
+
+> porta-director@0.1.0 build
+> next build --webpack && npm run verify:export
+
+▲ Next.js 16.4.0 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 19ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1399ms
+  Running TypeScript ...
+  Finished TypeScript in 1393ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/110) ...
+  Generating static pages using 9 workers (27/110) 
+  Generating static pages using 9 workers (54/110) 
+  Generating static pages using 9 workers (82/110) 
+✓ Generating static pages using 9 workers (110/110) in 8.8s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/contact
+├ ○ /cauta
+├ ○ /contact
+├ ○ /despre-noi
+├   /firme/[firma]
+│ ├ ● /firme/acoperisuri-montaj
+│ ├ ● /firme/acoperisuri-pe-viata
+│ ├ ● /firme/acoperisuri-reparatii
+│ └ ● [+28 more paths]
+├ ○ /icon.svg
+├ ○ /inscriere-firma
+├ ○ /metodologie
+├ ○ /robots.txt
+├ ○ /servicii
+├   /servicii/[serviciu]
+│ ├ ● /servicii/amenajari-interioare
+│ ├ ● /servicii/curatare-canapele
+│ ├ ● /servicii/curatenie
+│ └ ● [+14 more paths]
+├   /servicii/[serviciu]/[judet]
+│ ├ ● /servicii/amenajari-interioare/dambovita
+│ ├ ● /servicii/curatare-canapele/ilfov
+│ ├ ● /servicii/curatare-canapele/brasov
+│ └ ● [+22 more paths]
+├   /servicii/[serviciu]/[judet]/[oras]
+│ ├ ● /servicii/amenajari-interioare/dambovita/targoviste
+│ ├ ● /servicii/curatare-canapele/constanta/constanta
+│ ├ ● /servicii/curatare-canapele/brasov/brasov
+│ └ ● [+21 more paths]
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> porta-director@0.1.0 verify:export
+> NODE_ENV=production tsx scripts/verify-export.ts
+
+Prerendered pages verified: 104 public HTML page(s), 404, internal links, metadata, JSON-LD and sitemap parity.
+
+> porta-director@0.1.0 typecheck
+> tsc --noEmit
+

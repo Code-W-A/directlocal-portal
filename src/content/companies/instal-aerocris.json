@@ -1,0 +1,94 @@
+{
+  "id": "instal-aerocris",
+  "slug": "instal-aerocris",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "Instal AeroCris",
+  "description": "Instal AeroCris oferă montaj și reparații de aer condiționat, având zona principală în București și Ilfov. Declară deplasări și în Târgoviște, în funcție de lucrare și de disponibilitatea echipei.",
+  "seo": {
+    "title": "Instal AeroCris — servicii și contact",
+    "description": "Instal AeroCris oferă montaj și reparații de aer condiționat, având zona principală în București și Ilfov. Declară deplasări și în Târgoviște, în funcție de lucrare și de disponibilitatea echipei."
+  },
+  "website": "https://instal-aerocris.ro/",
+  "phone": "0769335627",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "locality": "Voluntari",
+    "county": "Ilfov",
+    "street": "Strada Marin Drăcea 9B",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "montaj-aer-conditionat",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    },
+    {
+      "serviceId": "service-aer-conditionat",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://instal-aerocris.ro/",
+      "note": "Telefon, montaj/reparații AC și deplasarea explicită în Târgoviște/Dâmbovița condiționată de lucrare și disponibilitate. Sediu social declarat în Voluntari. Articolul despre freon nu devine dovadă de serviciu local separat."
+    }
+  ],
+  "sponsored": false
+}

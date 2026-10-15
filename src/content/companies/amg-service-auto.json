@@ -1,0 +1,65 @@
+{
+  "id": "amg-service-auto",
+  "slug": "amg-service-auto",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "AMG Service Auto",
+  "description": "AMG Service Auto prezintă un atelier în Găești și servicii de mecanică, revizie și diagnoză auto. Pentru lucrare este necesară programarea la atelier; tractările sunt un serviciu separat.",
+  "seo": {
+    "title": "AMG Service Auto — servicii și contact",
+    "description": "AMG Service Auto prezintă un atelier în Găești și servicii de mecanică, revizie și diagnoză auto. Pentru lucrare este necesară programarea la atelier; tractările sunt un serviciu separat."
+  },
+  "website": "https://www.amgserviceauto.ro/",
+  "phone": "0766245765",
+  "evidence": {
+    "name": [
+      "source-1"
+    ],
+    "description": [
+      "source-1"
+    ],
+    "website": [
+      "source-1"
+    ],
+    "phone": [
+      "source-1"
+    ]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Găești",
+    "county": "Dâmbovița",
+    "sourceIds": [
+      "source-1"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-auto",
+      "sourceIds": [
+        "source-1"
+      ],
+      "coverage": [
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ],
+      "countyCoverage": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://www.amgserviceauto.ro/",
+      "note": "Telefon 0766 245 765 și atelier Găești cu mecanică/revizii/diagnoză. Aria tractărilor nu devine acoperire pentru reparații mobile."
+    }
+  ],
+  "sponsored": false
+}

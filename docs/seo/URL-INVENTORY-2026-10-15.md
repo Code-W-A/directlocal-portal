@@ -1,0 +1,106 @@
+# Pagini locale pentru verificare
+
+- [Găsește firme locale, simplu.](http://127.0.0.1:3000/) — index, modificare 2026-10-15
+- [Servicii locale](http://127.0.0.1:3000/servicii/) — index, modificare 2026-10-15
+- [Caută o firmă](http://127.0.0.1:3000/cauta/) — noindex, modificare 2026-10-15
+- [Acoperișuri Montaj](http://127.0.0.1:3000/firme/acoperisuri-montaj/) — index, modificare 2026-10-15
+- [Acoperișuri pe Viață](http://127.0.0.1:3000/firme/acoperisuri-pe-viata/) — index, modificare 2026-10-15
+- [Acoperișuri-Reparații](http://127.0.0.1:3000/firme/acoperisuri-reparatii/) — index, modificare 2026-10-15
+- [Alpha Cleaning](http://127.0.0.1:3000/firme/alpha-cleaning/) — index, modificare 2026-10-15
+- [AMG Service Auto](http://127.0.0.1:3000/firme/amg-service-auto/) — index, modificare 2026-10-15
+- [AUTODET](http://127.0.0.1:3000/firme/autodet/) — index, modificare 2026-10-15
+- [BEDA IMPEX](http://127.0.0.1:3000/firme/beda-impex/) — index, modificare 2026-10-15
+- [Clean Trust](http://127.0.0.1:3000/firme/clean-trust/) — index, modificare 2026-10-15
+- [Clinica de Frig](http://127.0.0.1:3000/firme/clinica-de-frig/) — index, modificare 2026-10-15
+- [Construcții Dâmbovița](http://127.0.0.1:3000/firme/constructii-dambovita/) — index, modificare 2026-10-15
+- [Decris Electro Instal](http://127.0.0.1:3000/firme/decris-electro-instal/) — index, modificare 2026-10-15
+- [Detailing Mobil](http://127.0.0.1:3000/firme/detailing-mobil/) — index, modificare 2026-10-12
+- [EcoSolaris](http://127.0.0.1:3000/firme/ecosolaris/) — index, modificare 2026-10-15
+- [Electro & Construct](http://127.0.0.1:3000/firme/electro-construct/) — index, modificare 2026-10-15
+- [Gaz Instal Proiect Dâmbovița](http://127.0.0.1:3000/firme/gaz-instal-proiect/) — index, modificare 2026-10-15
+- [Igienizare Tapițerie](http://127.0.0.1:3000/firme/igienizare-tapiterie/) — index, modificare 2026-10-15
+- [Instal AeroCris](http://127.0.0.1:3000/firme/instal-aerocris/) — index, modificare 2026-10-15
+- [Instalator Târgoviște](http://127.0.0.1:3000/firme/instalator-targoviste/) — index, modificare 2026-10-15
+- [ITP Auto Vișina](http://127.0.0.1:3000/firme/itp-auto-visina/) — index, modificare 2026-10-15
+- [JADCOM](http://127.0.0.1:3000/firme/jadcom/) — index, modificare 2026-10-15
+- [Marsico Energy](http://127.0.0.1:3000/firme/marsico-energy/) — index, modificare 2026-10-15
+- [MDC Instal Clima Expert](http://127.0.0.1:3000/firme/mdc-instal-clima-expert/) — index, modificare 2026-10-15
+- [Prosig Trafic](http://127.0.0.1:3000/firme/prosig-trafic/) — index, modificare 2026-10-15
+- [Raiman Auto](http://127.0.0.1:3000/firme/raiman-auto/) — index, modificare 2026-10-15
+- [Reparații Best](http://127.0.0.1:3000/firme/reparatii-best/) — index, modificare 2026-10-15
+- [Service Microcentrale](http://127.0.0.1:3000/firme/service-microcentrale/) — index, modificare 2026-10-15
+- [SOL-X](http://127.0.0.1:3000/firme/sol-x/) — index, modificare 2026-10-15
+- [SOLARYUS](http://127.0.0.1:3000/firme/solaryus/) — index, modificare 2026-10-15
+- [StarCleaning](http://127.0.0.1:3000/firme/starcleaning/) — index, modificare 2026-10-15
+- [Voltecon](http://127.0.0.1:3000/firme/voltecon/) — index, modificare 2026-10-15
+- [Zoom Cleaning](http://127.0.0.1:3000/firme/zoom-cleaning/) — index, modificare 2026-10-12
+- [Amenajări interioare în județul Dâmbovița](http://127.0.0.1:3000/servicii/amenajari-interioare/dambovita/) — index, modificare 2026-10-15
+- [Amenajări interioare în Târgoviște](http://127.0.0.1:3000/servicii/amenajari-interioare/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Amenajări interioare](http://127.0.0.1:3000/servicii/amenajari-interioare/) — index, modificare 2026-10-15
+- [Contact DirectLocal.ro](http://127.0.0.1:3000/contact/) — index, modificare 2026-10-15
+- [Curățare canapele în Constanța](http://127.0.0.1:3000/servicii/curatare-canapele/constanta/constanta/) — index, modificare 2026-10-15
+- [Curățare canapele în județul Ilfov](http://127.0.0.1:3000/servicii/curatare-canapele/ilfov/) — index, modificare 2026-10-15
+- [Curățare canapele în județul Brașov](http://127.0.0.1:3000/servicii/curatare-canapele/brasov/) — index, modificare 2026-10-15
+- [Curățare canapele în județul Constanța](http://127.0.0.1:3000/servicii/curatare-canapele/constanta/) — index, modificare 2026-10-15
+- [Curățare canapele în județul Timiș](http://127.0.0.1:3000/servicii/curatare-canapele/timis/) — index, modificare 2026-10-15
+- [Curățare canapele în Brașov](http://127.0.0.1:3000/servicii/curatare-canapele/brasov/brasov/) — index, modificare 2026-10-15
+- [Curățare canapele în Timișoara](http://127.0.0.1:3000/servicii/curatare-canapele/timis/timisoara/) — index, modificare 2026-10-15
+- [Curățare canapele: servicii și furnizori locali](http://127.0.0.1:3000/servicii/curatare-canapele/) — index, modificare 2026-10-15
+- [Curățenie în județul Dâmbovița](http://127.0.0.1:3000/servicii/curatenie/dambovita/) — index, modificare 2026-10-15
+- [Curățenie în Târgoviște](http://127.0.0.1:3000/servicii/curatenie/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Curățenie](http://127.0.0.1:3000/servicii/curatenie/) — index, modificare 2026-10-15
+- [Despre DirectLocal.ro](http://127.0.0.1:3000/despre-noi/) — index, modificare 2026-10-15
+- [Electrician auto în județul Dâmbovița](http://127.0.0.1:3000/servicii/electrician-auto/dambovita/) — index, modificare 2026-10-15
+- [Electrician auto în Târgoviște](http://127.0.0.1:3000/servicii/electrician-auto/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Electrician auto](http://127.0.0.1:3000/servicii/electrician-auto/) — index, modificare 2026-10-15
+- [Electricieni în județul Dâmbovița](http://127.0.0.1:3000/servicii/electricieni/dambovita/) — index, modificare 2026-10-15
+- [Electricieni](http://127.0.0.1:3000/servicii/electricieni/) — index, modificare 2026-10-15
+- [Înscrie firma în DirectLocal.ro](http://127.0.0.1:3000/inscriere-firma/) — index, modificare 2026-10-15
+- [Instalatori în Găești](http://127.0.0.1:3000/servicii/instalatori/dambovita/gaesti/) — index, modificare 2026-10-15
+- [Instalatori în județul Dâmbovița](http://127.0.0.1:3000/servicii/instalatori/dambovita/) — index, modificare 2026-10-15
+- [Instalatori în Târgoviște](http://127.0.0.1:3000/servicii/instalatori/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Instalatori](http://127.0.0.1:3000/servicii/instalatori/) — index, modificare 2026-10-15
+- [ITP în județul Dâmbovița](http://127.0.0.1:3000/servicii/itp/dambovita/) — index, modificare 2026-10-15
+- [ITP în Pucioasa](http://127.0.0.1:3000/servicii/itp/dambovita/pucioasa/) — index, modificare 2026-10-15
+- [ITP în Târgoviște](http://127.0.0.1:3000/servicii/itp/dambovita/targoviste/) — index, modificare 2026-10-15
+- [ITP pentru șoferii din Titu](http://127.0.0.1:3000/servicii/itp/dambovita/titu/) — index, modificare 2026-10-15
+- [ITP](http://127.0.0.1:3000/servicii/itp/) — index, modificare 2026-10-15
+- [Metodologia directorului](http://127.0.0.1:3000/metodologie/) — index, modificare 2026-10-15
+- [Montaj aer condiționat în Găești](http://127.0.0.1:3000/servicii/montaj-aer-conditionat/dambovita/gaesti/) — index, modificare 2026-10-15
+- [Montaj aer condiționat în județul Dâmbovița](http://127.0.0.1:3000/servicii/montaj-aer-conditionat/dambovita/) — index, modificare 2026-10-15
+- [Montaj aer condiționat în Târgoviște](http://127.0.0.1:3000/servicii/montaj-aer-conditionat/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Montaj aer condiționat](http://127.0.0.1:3000/servicii/montaj-aer-conditionat/) — index, modificare 2026-10-15
+- [Montaj centrale termice în județul Dâmbovița](http://127.0.0.1:3000/servicii/montaj-centrale-termice/dambovita/) — index, modificare 2026-10-15
+- [Montaj centrale termice în Târgoviște](http://127.0.0.1:3000/servicii/montaj-centrale-termice/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Montaj centrale termice](http://127.0.0.1:3000/servicii/montaj-centrale-termice/) — index, modificare 2026-10-15
+- [Montaj pompe de căldură în județul Dâmbovița](http://127.0.0.1:3000/servicii/montaj-pompe-de-caldura/dambovita/) — index, modificare 2026-10-15
+- [Montaj pompe de căldură](http://127.0.0.1:3000/servicii/montaj-pompe-de-caldura/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în Bacău](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/bacau/bacau/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în Buzău](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/buzau/buzau/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în Focșani](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/vrancea/focsani/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Argeș](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/arges/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Bacău](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/bacau/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Buzău](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/buzau/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Dâmbovița](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/dambovita/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Prahova](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/prahova/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în județul Vrancea](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/vrancea/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în Pitești](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/arges/pitesti/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice în Ploiești](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/prahova/ploiesti/) — index, modificare 2026-10-15
+- [Panouri fotovoltaice](http://127.0.0.1:3000/servicii/panouri-fotovoltaice/) — index, modificare 2026-10-15
+- [Renovări apartamente în județul Dâmbovița](http://127.0.0.1:3000/servicii/renovari-apartamente/dambovita/) — index, modificare 2026-10-15
+- [Renovări apartamente în Târgoviște](http://127.0.0.1:3000/servicii/renovari-apartamente/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Renovări apartamente](http://127.0.0.1:3000/servicii/renovari-apartamente/) — index, modificare 2026-10-15
+- [Reparații acoperișuri în județul Dâmbovița](http://127.0.0.1:3000/servicii/reparatii-acoperisuri/dambovita/) — index, modificare 2026-10-15
+- [Reparații acoperișuri](http://127.0.0.1:3000/servicii/reparatii-acoperisuri/) — index, modificare 2026-10-15
+- [Service aer condiționat în județul Dâmbovița](http://127.0.0.1:3000/servicii/service-aer-conditionat/dambovita/) — index, modificare 2026-10-15
+- [Service aer condiționat în Târgoviște](http://127.0.0.1:3000/servicii/service-aer-conditionat/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Service aer condiționat](http://127.0.0.1:3000/servicii/service-aer-conditionat/) — index, modificare 2026-10-15
+- [Service auto în Găești](http://127.0.0.1:3000/servicii/service-auto/dambovita/gaesti/) — index, modificare 2026-10-15
+- [Service auto în județul Dâmbovița](http://127.0.0.1:3000/servicii/service-auto/dambovita/) — index, modificare 2026-10-15
+- [Service auto în Târgoviște](http://127.0.0.1:3000/servicii/service-auto/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Service auto](http://127.0.0.1:3000/servicii/service-auto/) — index, modificare 2026-10-15
+- [Service centrale termice în județul Dâmbovița](http://127.0.0.1:3000/servicii/service-centrale/dambovita/) — index, modificare 2026-10-15
+- [Service centrale termice](http://127.0.0.1:3000/servicii/service-centrale/) — index, modificare 2026-10-15
+- [Vopsitorie auto în județul Dâmbovița](http://127.0.0.1:3000/servicii/vopsitorie-auto/dambovita/) — index, modificare 2026-10-15
+- [Vopsitorie auto în Târgoviște](http://127.0.0.1:3000/servicii/vopsitorie-auto/dambovita/targoviste/) — index, modificare 2026-10-15
+- [Vopsitorie auto](http://127.0.0.1:3000/servicii/vopsitorie-auto/) — index, modificare 2026-10-15

@@ -1,0 +1,140 @@
+{
+  "id": "sol-x",
+  "slug": "sol-x",
+  "status": "published",
+  "updatedAt": "2026-10-15",
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "name": "SOL-X",
+  "description": "SOL-X oferă instalarea sistemelor fotovoltaice și declară sediul central în Ploiești. Pagina pentru Dâmbovița include Târgoviște și Găești în aria de lucru.",
+  "seo": {
+    "title": "SOL-X — servicii și contact",
+    "description": "SOL-X oferă instalarea sistemelor fotovoltaice și declară sediul central în Ploiești. Pagina pentru Dâmbovița include Târgoviște și Găești în aria de lucru."
+  },
+  "website": "https://sol-x.ro/",
+  "phone": "0729733448",
+  "evidence": {
+    "name": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ],
+    "description": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ],
+    "website": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ],
+    "phone": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ]
+  },
+  "headquarters": {
+    "locality": "Ploiești",
+    "county": "Prahova",
+    "sourceIds": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
+    ]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4"
+      ],
+      "coverage": [
+        {
+          "locationId": "targoviste",
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4"
+          ]
+        },
+        {
+          "locationId": "gaesti",
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4"
+          ]
+        },
+        {
+          "locationId": "ploiesti",
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4"
+          ]
+        }
+      ],
+      "countyCoverage": [
+        {
+          "countyId": "dambovita",
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4"
+          ]
+        },
+        {
+          "countyId": "prahova",
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "checkedAt": "2026-10-15",
+      "url": "https://sol-x.ro/",
+      "note": "Denumire, telefon, sediu Ploiești și servicii fotovoltaice; nu preluăm economii, recenzii, finanțări sau performanțe promise."
+    },
+    {
+      "id": "source-2",
+      "checkedAt": "2026-10-15",
+      "url": "https://sol-x.ro/fotovoltaice-targoviste.html",
+      "note": "Montaj fotovoltaice în Târgoviște."
+    },
+    {
+      "id": "source-3",
+      "checkedAt": "2026-10-15",
+      "url": "https://sol-x.ro/fotovoltaice-dambovita.html",
+      "note": "Acoperire Dâmbovița, inclusiv Găești."
+    },
+    {
+      "id": "source-4",
+      "checkedAt": "2026-10-15",
+      "url": "https://sol-x.ro/fotovoltaice-ploiesti.html",
+      "note": "Pagina oficială confirmă explicit instalarea completă în Ploiești și contactul. Nu preluăm timpi de intervenție, estimări de producție ori finanțări."
+    }
+  ],
+  "sponsored": false
+}

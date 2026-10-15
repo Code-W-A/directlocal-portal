@@ -17,7 +17,8 @@ test("search supports real catalog, accents, empty results and combined filters"
 test("sitemap selector excludes noindex even with global indexing enabled", async () => {
   const config = resolveSiteConfig({ SITE_URL: "https://director.ro", INDEXING_ENABLED: "true" });
   const pages = getPublicPages(await loadCatalog(), config);
-  assert.equal(indexablePages(pages, config).length, 6);
+  assert.deepEqual(indexablePages(pages, config), pages.filter(p => p.indexStatus === "index"));
+  assert(!indexablePages(pages, config).some(p => p.path === "/cauta/"));
   const candidate = { ...pages[0], indexStatus: "index" as const };
   assert.deepEqual(indexablePages([...pages.slice(1), candidate], config), [...pages.slice(1).filter(p => p.indexStatus === "index"), candidate]);
   assert.equal(indexablePages([candidate], resolveSiteConfig({})).length, 0);
