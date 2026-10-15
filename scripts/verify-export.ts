@@ -1,6 +1,7 @@
+import { loadBuildArtifacts } from "./lib/build-artifacts";
 import { verifyStructuredData } from "../src/lib/seo/verify-schema";
 import nextEnv from "@next/env";
-import { readFile, readdir, stat } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
 import { load } from "cheerio";
@@ -9,7 +10,13 @@ const { loadCatalog } = await import("../src/lib/content/load");
 const { site } = await import("../src/config/site");
 const { getPublicPages, indexablePages } = await import("../src/lib/seo/registry");
 const { absoluteUrl, contentPath, companyPath } = await import("../src/lib/seo/urls");
-const root = path.resolve(process.env.DIRECTORY_BUILD_DIR ?? ".next", "server/app");
+const buildDir = path.resolve(process.env.DIRECTORY_BUILD_DIR ?? ".next");
+const artifacts = await loadBuildArtifacts(buildDir);
+function artifactFile(key: string) {
+  const file = artifacts.get(key);
+  assert(file, `Missing prerendered build artifact: ${key}`);
+  return file;
+}
 const catalog = await loadCatalog();
 const pages = getPublicPages(catalog, site);
 const titleSet = new Set<string>();
@@ -17,7 +24,7 @@ const h1Set = new Set<string>();
 const descriptionSet = new Set<string>();
 const links = new Map<string, Set<string>>();
 async function exists(file: string) { try { return (await stat(file)).isFile(); } catch { return false; } }
-function htmlFile(route: string) { return path.join(root, route === "/" ? "index.html" : route.replace(/\/$/, "") + ".html"); }
+function htmlFile(route: string) { return artifactFile(route === "/" ? "index.html" : route.replace(/^\/|\/$/g, "") + ".html"); }
 for (const page of pages) {
   const file = htmlFile(page.path);
   links.set(page.path, new Set());
@@ -110,16 +117,16 @@ while (pending.length) {
   for (const target of links.get(current) ?? []) pending.push(target);
 }
 for (const page of pages) assert(reachable.has(page.path), `Orphan page: ${page.path}. Link it from homepage or a reachable hub.`);
-async function listHtml(dir: string): Promise<string[]> {
-  const entries = await readdir(dir, { withFileTypes: true });
-  return (await Promise.all(entries.map(e => e.isDirectory() ? listHtml(path.join(dir, e.name)) : Promise.resolve(e.name.endsWith(".html") ? [path.join(dir, e.name)] : [])))).flat();
+const allowed = new Set([...pages.map(p => htmlFile(p.path)), artifactFile("_not-found.html")]);
+const globalError = artifacts.get("_global-error.html");
+if (globalError) allowed.add(globalError);
+for (const [key, file] of artifacts) {
+  if (key.endsWith(".html")) assert(allowed.has(file), `Unregistered page exported (possible draft): ${file}`);
 }
-const allowed = new Set([...pages.map(p => htmlFile(p.path)), path.join(root, "_not-found.html"), path.join(root, "_global-error.html")]);
-for (const file of await listHtml(root)) assert(allowed.has(file), `Unregistered page exported (possible draft): ${file}`);
-const notFound = load(await readFile(path.join(root, "_not-found.html"), "utf8"));
+const notFound = load(await readFile(artifactFile("_not-found.html"), "utf8"));
 assert(notFound('meta[name="robots"]').toArray().some(e => notFound(e).attr("content")?.includes("noindex")), "404 must be noindex.");
 assert.equal(notFound("h1").length, 1);
-const sitemap = load(await readFile(path.join(root, "sitemap.xml.body"), "utf8"), { xml: true });
+const sitemap = load(await readFile(artifactFile("sitemap.xml.body"), "utf8"), { xml: true });
 const actualUrls = sitemap("url > loc").map((_, el) => sitemap(el).text()).get().sort();
 const expectedUrls = indexablePages(pages, site).map(p => absoluteUrl(p.path, site.url!)).sort();
 assert.deepEqual(actualUrls, expectedUrls, "Sitemap must match published, indexable pages exactly.");
@@ -128,7 +135,7 @@ for (const entry of sitemap("url").toArray()) {
   const expected = pages.find(p => absoluteUrl(p.path, site.url!) === loc)!;
   assert.equal(sitemap(entry).find("lastmod").text(), expected.updatedAt);
 }
-const robots = await readFile(path.join(root, "robots.txt.body"), "utf8");
+const robots = await readFile(artifactFile("robots.txt.body"), "utf8");
 assert(robots.includes("Allow: /"), "Allow bots to see noindex.");
 assert.equal(robots.includes("Sitemap:"), site.indexable);
 console.log(`Prerendered pages verified: ${pages.length} public HTML page(s), 404, internal links, metadata, JSON-LD and sitemap parity.`);
