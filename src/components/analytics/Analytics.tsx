@@ -30,6 +30,8 @@ export function Analytics({ measurementId, enabled }: { measurementId?: string; 
   useEffect(() => {
     if (!allowed) return;
     if (consent !== 'granted') { stopAnalytics(); return; }
+    // Queue consent and events immediately, including while the external tag loads.
+    startAnalytics(measurementId!);
     trackPageView(pathname);
     const click = (event: MouseEvent) => {
       const anchor = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[data-analytics-event]') : null;
@@ -39,7 +41,7 @@ export function Analytics({ measurementId, enabled }: { measurementId?: string; 
     };
     document.addEventListener('click', click, true);
     return () => document.removeEventListener('click', click, true);
-  }, [allowed, consent, pathname]);
+  }, [allowed, consent, pathname, measurementId]);
   if (!allowed) return null;
   const choose = (value: 'granted' | 'denied') => { saveAnalyticsConsent(value); setPreferences(false); };
   return <>

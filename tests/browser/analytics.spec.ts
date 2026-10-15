@@ -66,3 +66,24 @@ test('successful forms and empty search emit no submitted personal text',async({
   await page.getByLabel('Nume sau descriere').fill('private@example.org'); await expect.poll(()=>eventCount(page,'search_no_results')).toBe(1);
   expect(JSON.stringify(await entries(page))).not.toContain('private@example.org');
 });
+
+test('events queue after consent while the external Google script is still loading', async ({page,baseURL}) => {
+  await isolate(page,baseURL!);
+  let release!: () => void;
+  const held = new Promise<void>(resolve => { release = resolve; });
+  await page.route('https://www.googletagmanager.com/**', async route => { await held; await route.fulfill({contentType:'application/javascript',body:'document.documentElement.dataset.testTagLoaded = "yes";'}); });
+  try {
+    await page.goto(site+'/cauta/');
+    await page.getByRole('button',{name:'Accept statisticile',exact:true}).click();
+    await page.getByLabel('Nume sau descriere').fill('test-fara-rezultate');
+    await expect.poll(()=>eventCount(page,'search_no_results')).toBe(1);
+    expect(await eventCount(page,'page_view')).toBe(1);
+    expect((await entries(page)).find(e=>e[0]==='config')?.[1]).toBe('G-1EK33H5G21');
+    await page.getByRole('button',{name:'Preferințe cookies'}).click();
+    await page.getByRole('button',{name:'Refuz statisticile',exact:true}).click();
+    release();
+    await expect(page.locator('html')).toHaveAttribute('data-test-tag-loaded','yes');
+    expect(await page.evaluate(()=>(window as unknown as Record<string,unknown>)['ga-disable-G-1EK33H5G21'])).toBe(true);
+    expect(await eventCount(page,'page_view')).toBe(1);
+  } finally { release(); }
+});

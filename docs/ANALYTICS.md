@@ -1,6 +1,6 @@
 # DirectLocal — Analytics
 
-Configurare verificată la 2026-10-15. Codul este implementat și testat local; publicarea acestei modificări și verificarea colectării live sunt încă în așteptare.
+Configurare verificată la 2026-10-15. Codul este publicat pe https://directlocal.ro din branch main (commitul funcțional 081dbd3). Vercel a confirmat Ready în Production, iar GA4 Realtime a confirmat colectarea reală.
 
 ## Cont și asociere
 
@@ -10,7 +10,7 @@ Configurare verificată la 2026-10-15. Codul este implementat și testat local; 
 - Measurement ID public: G-1EK33H5G21.
 - Search Console: proprietatea Domain directlocal.ro asociată cu acest flux; Google a confirmat „Link created successfully”.
 - Enhanced measurement dezactivat pentru a evita colectarea automată a căutărilor, formularelor și dublarea evenimentelor proprii.
-- Vercel, proiect directlocal-portal: NEXT_PUBLIC_GA_MEASUREMENT_ID=G-1EK33H5G21, Config, exclusiv Production. Salvat; Vercel cere un deployment nou pentru aplicare.
+- Vercel, proiect directlocal-portal: NEXT_PUBLIC_GA_MEASUREMENT_ID=G-1EK33H5G21, Config, exclusiv Production. Salvat și inclus în deploymentul de producție verificat.
 
 ## Evenimente
 
@@ -40,17 +40,22 @@ Dimensiuni personalizate la nivel de eveniment: Firma (`company_id`), Serviciu (
 ## Verificări locale
 
 - `npm run check`: lint, 57 teste unitare/API, validare conținut, build, verificarea HTML a 104 pagini, tipuri — trecute.
-- 10 teste browser pentru Analytics și formulare, desktop/mobil — trecute.
-- După extinderea testelor, cele 4 teste Analytics au trecut din nou: navigare client, revenire pe site, cookie existent păstrat cu acord, refuz/reacceptare fără dublări.
+- 12 teste browser pentru Analytics și formulare, desktop/mobil — trecute.
+- Testele acoperă navigarea client, revenirea pe site, cookie existent păstrat cu acord, refuz/reacceptare fără dublări și încărcarea întârziată a tagului. Evenimentele intră în coadă imediat după acord; un callback întârziat nu poate reactiva colectarea după refuz.
 - Layout fără overflow la 360/390/1440 px; analiza Axe a panoului de acord fără încălcări detectate.
 - Testele interceptează Google tag și API-ul de contact: fără telemetrie de test trimisă Google și fără emailuri reale firmelor.
 
-## Activare live rămasă
+## Verificare live
 
-1. Publicarea codului testat în proiectul Vercel existent, cu variabila Production deja salvată.
-2. Vizită reală cu acord pentru statistici și verificarea în Realtime a primului `page_view`.
-3. Verificarea unui click de telefon și website, fără a trimite formulare fictive firmelor.
-4. Rapoartele standard și datele Search Console pot avea întârziere; asocierea nu creează retroactiv date GA4.
+- Deployment Vercel `3PT1Ede3jmDN3x4h7KB4biWVZ1vK`, Production, Ready, branch main, commit 081dbd3.
+- Domeniul https://directlocal.ro încarcă versiunea nouă.
+- Înainte de acord: zero elemente script Google Tag. După acceptare: tagul G-1EK33H5G21 este prezent, iar panoul se închide.
+- GA4 Realtime a afișat un utilizator activ, un `page_view`, `user_engagement` și `company_website_click` după navigarea reală spre profilul Alpha Cleaning și click pe website.
+- Nu am inițiat apeluri și nu am trimis formulare fictive firmelor. Evenimentele telefon/formulare sunt validate în testele automate izolate.
+- Verificarea este o vizită de control, nu dovada existenței unui trafic organic sau a unui client câștigat.
+- Rapoartele standard și datele Search Console pot avea întârziere; asocierea nu creează retroactiv date GA4.
+
+Dovezi suplimentare: `docs/reports/ga4-production-deployment-2026-10-15.jpg`, `docs/reports/ga4-realtime-live-2026-10-15.jpg`.
 
 Dovezi UI: `docs/reports/ga4-search-console-2026-10-15.jpg`, `ga4-key-events-2026-10-15.jpg`, `ga4-custom-dimensions-2026-10-15.jpg`, `ga4-vercel-variable-2026-10-15.jpg`.
 

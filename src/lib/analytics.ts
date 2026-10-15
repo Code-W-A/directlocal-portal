@@ -62,7 +62,7 @@ export function saveAnalyticsConsent(value: 'granted' | 'denied') {
   window.dispatchEvent(new CustomEvent(analyticsConsentEvent, { detail: value }));
 }
 export function startAnalytics(id: string) {
-  if (!validMeasurementId(id) || !analyticsHostAllowed(location.hostname)) return;
+  if (!validMeasurementId(id) || !analyticsHostAllowed(location.hostname) || readAnalyticsConsent() !== 'granted' || activeId === id) return;
   disabled(false, id);
   window.dataLayer ??= [];
   // The Google bootstrap contract uses an Arguments entry in dataLayer.
