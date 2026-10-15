@@ -3,6 +3,7 @@ import { site } from "@/config/site";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import "./globals.css";
+import { Analytics } from "@/components/analytics/Analytics";
 export const metadata: Metadata = {
   title: { default: site.name, template: `%s | ${site.name}` },
   description: site.description,
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <a href="#continut" className="skip-link">Sari la conținut</a>
     <SiteHeader />
     <main id="continut" tabIndex={-1}>{children}</main>
-    <SiteFooter />
+    <SiteFooter analyticsEnabled={!!process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && process.env.NODE_ENV === "production" && process.env.VERCEL_ENV !== "preview" && process.env.VERCEL_ENV !== "development"} />
+    <Analytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} enabled={process.env.NODE_ENV === "production" && process.env.VERCEL_ENV !== "preview" && process.env.VERCEL_ENV !== "development"} />
   </body></html>;
 }

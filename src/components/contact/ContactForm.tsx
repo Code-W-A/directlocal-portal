@@ -1,6 +1,7 @@
 'use client';
 import { useId, useRef, useState, useSyncExternalStore, type FormEvent } from 'react';
 import styles from './contact-form.module.css';
+import { trackAnalyticsEvent } from '@/lib/analytics';
 const subscribe = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
@@ -21,6 +22,8 @@ export function ContactForm({ type, companyId, companyName, fallbackEmail, page 
     try {
       const response = await fetch('/api/contact/', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...values, type: kind, companyId, page, acknowledged: values.acknowledged === 'on' }) });
       const result = await response.json();
+      if (response.ok && kind === 'company-message') trackAnalyticsEvent('company_message_accepted', { company_id: companyId });
+      if (response.ok && kind === 'company-submission') trackAnalyticsEvent('company_submission_accepted');
       setSuccess(response.ok); setFeedback(result.message || 'Trimiterea nu este disponibilă. Folosește contactul direct.');
     } catch { setFeedback('Conexiunea a fost întreruptă. Nu putem confirma trimiterea. Verifică înainte să reîncerci sau folosește contactul direct.'); }
     finally { locked.current = false; setPending(false); }

@@ -31,7 +31,7 @@ export function CompanyPage({ company, catalog }: { company: Company; catalog: C
           {offerings.map(({ service }) => <li key={service.id}>{catalog.pages.some(p => p.kind === "service" && p.serviceId === service.id && p.status === "published") ? <Link href={servicePath(service)}><ServiceIcon serviceIds={[service.id]} />{service.name}</Link> : service.name}</li>)}
         </ul>
         <p className={styles.heroArea}><Icon name="pin" />{areas.map(area => area.name).join(" · ")}</p>
-        {phoneHref ? <a href={phoneHref} className="button"><Icon name="phone" />{company.phone}</a> : null}
+        {phoneHref ? <a data-analytics-event="phone_click" data-company-id={company.id} href={phoneHref} className="button"><Icon name="phone" />{company.phone}</a> : null}
         {company.sponsored ? <p className={styles.sponsored}>Sponsorizat</p> : null}
         </div>
       </div>
@@ -43,10 +43,10 @@ export function CompanyPage({ company, catalog }: { company: Company; catalog: C
           <h2 id="contact-title">Contactează firma</h2>
           <p>Discută direct cu furnizorul despre preț, disponibilitate și detaliile lucrării.</p>
           {company.phone ? <>
-            <a className={styles.phone} href={phoneHref}>{company.phone}</a>
-            <a className={`button ${styles.call}`} href={phoneHref}><Icon name="phone" />Sună firma</a>
+            <a data-analytics-event="phone_click" data-company-id={company.id} className={styles.phone} href={phoneHref}>{company.phone}</a>
+            <a data-analytics-event="phone_click" data-company-id={company.id} className={`button ${styles.call}`} href={phoneHref}><Icon name="phone" />Sună firma</a>
           </> : null}
-          {company.website ? <a className={styles.secondary} href={company.website} rel="external">Website-ul firmei<Icon name="arrow" /></a> : null}
+          {company.website ? <a data-analytics-event="company_website_click" data-company-id={company.id} className={styles.secondary} href={company.website} rel="external">Website-ul firmei<Icon name="arrow" /></a> : null}
           {company.email ? <a className={styles.secondary} href={`mailto:${company.email}`}><Icon name="mail" />{company.email}</a> : null}
         </section>
         <section className={`${styles.card} ${styles.services}`} aria-labelledby="services-title">

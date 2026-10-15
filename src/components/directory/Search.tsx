@@ -1,12 +1,14 @@
 "use client";
 import { CompanyCard } from "./CompanyCard";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { filterSearch, type SearchRow, type Filters } from "@/lib/content/search";
 import { Icon } from "@/components/ui/Icon";
 import styles from "./search.module.css";
 
 import { SearchSelect } from "@/components/ui/SearchSelect";
+
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 const empty: Filters = { service: "", county: "", city: "", query: "" };
 export function Search({ rows }: { rows: SearchRow[] }) {
@@ -16,6 +18,17 @@ export function Search({ rows }: { rows: SearchRow[] }) {
   const counties = [...new Map(areas.filter(a => !filters.service || a.serviceId === filters.service).map(a => [a.countyId, a.county])).entries()].sort((a,b) => a[1].localeCompare(b[1], "ro"));
   const cities = [...new Map(areas.filter(a => a.cityId && (!filters.service || a.serviceId === filters.service) && (!filters.county || a.countyId === filters.county)).map(a => [a.cityId, `${a.city}, ${a.county}`])).entries()].sort((a,b) => a[1].localeCompare(b[1], "ro"));
   const results = filterSearch(rows, filters);
+  const lastEmptySearch = useRef('');
+  useEffect(() => {
+    if (results.length) { lastEmptySearch.current = ''; return; }
+    const key = JSON.stringify(filters);
+    if (key === lastEmptySearch.current) return;
+    const timer = window.setTimeout(() => {
+      const sent = trackAnalyticsEvent('search_no_results', { service_id: filters.service, county_id: filters.county, city_id: filters.city, has_text_query: !!filters.query.trim(), query_length: filters.query.trim().length });
+      if (sent) lastEmptySearch.current = key;
+    }, 800);
+    return () => window.clearTimeout(timer);
+  }, [filters, results.length]);
   return <>
     <section className={styles.filters} aria-labelledby="filters-title">
       <div className={styles.panelHead}><div><h2 id="filters-title">Ce serviciu cauți?</h2><p>Rezultatele se actualizează pe măsură ce alegi filtrele.</p></div><button className={styles.reset} type="button" onClick={() => setFilters(empty)}>Resetează filtrele</button></div>

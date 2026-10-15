@@ -15,7 +15,7 @@ export function CompanyCard({ row }: { row: SearchRow }) {
       <p className={styles.area}><Icon name="pin" /><span><strong>Zonă deservită</strong><span>{areas.join(" · ")}</span></span></p>
       <p className={styles.description}>{row.description}</p>
       {row.checkedAt ? <p className={styles.checked}>Surse consultate: <time dateTime={row.checkedAt}>{row.checkedAt.split("-").reverse().join(".")}</time></p> : null}
-      <div className={styles.actions}>{row.phone ? <a className={styles.phone} href={'tel:' + row.phone.replace(/[^+\d]/g, "")} aria-label={'Sună ' + row.name + ' la ' + row.phone}><Icon name="phone" />{row.phone}</a> : null}{row.email ? <Link href={`${row.href}#mesaj`}>Trimite mesaj</Link> : null}<Link className={styles.profile} href={row.href} aria-label={'Vezi profilul ' + row.name}>Vezi profilul <Icon name="arrow" /></Link></div>
+      <div className={styles.actions}>{row.phone ? <a data-analytics-event="phone_click" data-company-id={row.id} className={styles.phone} href={'tel:' + row.phone.replace(/[^+\d]/g, "")} aria-label={'Sună ' + row.name + ' la ' + row.phone}><Icon name="phone" />{row.phone}</a> : null}{row.email ? <Link href={`${row.href}#mesaj`}>Trimite mesaj</Link> : null}<Link className={styles.profile} href={row.href} aria-label={'Vezi profilul ' + row.name}>Vezi profilul <Icon name="arrow" /></Link></div>
     </div>
   </article>;
 }
