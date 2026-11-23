@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "energofit",
+  "slug": "energofit",
+  "name": "EnergoFIT",
+  "description": "EnergoFIT prezintă montajul și punerea în funcțiune a pompelor de căldură și numește județul Dâmbovița printre județele în care lucrează. Adresa publicată a firmei este în Ciulnița, Slobozia, județul Ialomița.",
+  "phone": "0722699775",
+  "email": "contact@energofit.ro",
+  "website": "https://energofit.ro/servicii/pompe-de-caldura/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://energofit.ro/servicii/pompe-de-caldura/",
+      "checkedAt": "2026-11-23",
+      "note": "Pagina de pompe de căldură: montaj și punere în funcțiune. Textul spune că firma este prezentă în județele București, Dâmbovița, Ilfov, Giurgiu, Alexandria, Ialomița, Tulcea, Constanța, Galați și Brăila. Telefon 0722 699 775, email contact@energofit.ro, adresă Str. 1 Mai nr. 5, Ciulnița, Slobozia, Ialomița. Nu preluăm mărci sau economii estimate."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: Dâmbovița este numită explicit ca județ deservit, iar sediul este în Ialomița. Nu atribuim un oraș din Dâmbovița. Fără tarife sau autorizații.",
+  "seo": {
+    "title": "EnergoFIT — servicii și contact",
+    "description": "EnergoFIT prezintă montajul și punerea în funcțiune a pompelor de căldură și numește județul Dâmbovița printre județele în care lucrează. Adresa publicată a firmei este în Ciulnița, Slobozia, județul Ialomița."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Ciulnița",
+    "county": "Ialomița",
+    "street": "Strada 1 Mai nr. 5",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "montaj-pompe-de-caldura",
+      "sourceIds": ["source-1"],
+      "coverage": [],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    }
+  ]
+}

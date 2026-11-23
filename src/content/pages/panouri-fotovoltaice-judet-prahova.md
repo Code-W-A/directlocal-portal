@@ -3,22 +3,23 @@
   "id": "panouri-fotovoltaice-judet-prahova",
   "slug": "panouri-fotovoltaice-judet-prahova",
   "status": "published",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-11-23",
   "indexStatus": "index",
   "editorialReviewed": true,
-  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "reviewNote": "Revizie editorială 23.11.2026: listă extinsă cu eSol, care include Prahova între județele limitrofe. Nu creăm o pagină de oraș doar din mențiunea județului. Fără ratinguri sau economii.",
   "kind": "county",
   "serviceId": "panouri-fotovoltaice",
   "countyId": "prahova",
   "companyIds": [
-    "sol-x"
+    "sol-x",
+    "esol"
   ],
   "title": "Panouri fotovoltaice în județul Prahova",
   "seo": {
     "title": "Panouri fotovoltaice în județul Prahova — firme și zone",
     "description": "Consultă furnizorii de panouri fotovoltaice documentați pentru județul Prahova, localitățile disponibile și contactele directe."
   },
-  "intro": "Lista pentru județul Prahova reunește o firmă documentată pentru panouri fotovoltaice. Alege o localitate disponibilă sau consultă aria publicată de furnizor înainte să soliciți o ofertă.",
+  "intro": "Lista pentru județul Prahova reunește firme documentate pentru panouri fotovoltaice. SOL-X are sediu în Ploiești, iar eSol include județul între zonele limitrofe.",
   "sources": [
     {
       "id": "sol-x-source-1",
@@ -43,12 +44,18 @@
       "checkedAt": "2026-10-15",
       "url": "https://sol-x.ro/fotovoltaice-ploiesti.html",
       "note": "Pagina oficială confirmă explicit instalarea completă în Ploiești și contactul. Nu preluăm timpi de intervenție, estimări de producție ori finanțări."
+    },
+    {
+      "id": "esol-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://esol.ro/",
+      "note": "Prahova este numită între județele limitrofe ale montajului. Sediul rămâne în Pitești."
     }
   ]
 }
 ---
 ## Cum este acoperit județul Prahova
-SOL-X declară acoperire în județul Prahova. Cere confirmarea adresei exacte când programezi lucrarea.
+SOL-X declară acoperire în județul Prahova. eSol include Prahova între județele limitrofe și are sediul în Pitești, nu în Ploiești. Cere confirmarea adresei exacte când programezi lucrarea.
 
 ## Compararea ofertelor
 Compară modelele componentelor, lucrările incluse și condițiile de service. Întreabă separat despre documentația de racordare; nu presupune că finanțarea sau economiile estimate sunt confirmate.
@@ -58,6 +65,7 @@ Compară modelele componentelor, lucrările incluse și condițiile de service. 
 
 ## Ce poți compara în această listă
 - **SOL-X**: sediu declarat în Ploiești. Contactul și serviciile sunt reunite în [profil](/firme/sol-x/).
+- **eSol**: Prahova este județ limitrof; sediul este în Pitești. Contactul este în [profil](/firme/esol/).
 
 ### Cum aleg pagina potrivită?
 Pagina județului oferă o vedere de ansamblu. Pagina orașului restrânge selecția la firme cu o asociere documentată pentru localitatea respectivă; nu extindem automat o arie de lucru doar din adresa sediului.

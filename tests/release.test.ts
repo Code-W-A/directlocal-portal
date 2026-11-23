@@ -39,7 +39,7 @@ test('all 40 registry opportunities have an accountable decision and no blocked 
     if(opportunity.targetUrl) { assert(urls.has(opportunity.targetUrl)); assert(opportunity.companyIds.length); }
     else { assert.equal(opportunity.decision,'blocked'); assert.equal(opportunity.indexStatus,'noindex'); }
   }
-  assert(!urls.has('/cauta/')); assert(pages.every(p=>p.updatedAt <= '2026-10-15'));
+  assert(!urls.has('/cauta/')); assert(pages.every(p=>p.updatedAt <= '2026-11-23'));
   const domains=catalog.companies.filter(c=>c.website).map(c=>new URL(c.website!).hostname.replace(/^www\./,''));
   assert.equal(new Set(domains).size, domains.length);
 });

@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "darom",
+  "slug": "darom",
+  "name": "DAROM",
+  "description": "DAROM prezintă curățenie pentru clădiri de birouri, hale și spații administrative, adresată firmelor cu suprafețe mari. Printre adresele de contact este Regele Carol I nr. 60 din Târgoviște.",
+  "phone": "0730607157",
+  "email": "contact@darom.ro",
+  "website": "https://darom.ro/contact/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://darom.ro/contact/",
+      "checkedAt": "2026-11-23",
+      "note": "Curățenie profesională pentru clădiri, exclusiv firme cu suprafețe de peste 1.000 m². Telefoane +40 730 607 157 și +40 720 063 618, email contact@darom.ro. Adrese: Calea Floreasca 32 București, Tebea 22 Otopeni și Regele Carol I nr. 60, Târgoviște. Nu preluăm afirmații despre rezultate."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: serviciul este pentru spații comerciale mari, iar Târgoviște apare ca adresă de contact, nu ca acoperire a locuințelor. Fără tarife sau recenzii.",
+  "seo": {
+    "title": "DAROM — servicii și contact",
+    "description": "DAROM prezintă curățenie pentru clădiri de birouri, hale și spații administrative, adresată firmelor cu suprafețe mari. Printre adresele de contact este Regele Carol I nr. 60 din Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Regele Carol I nr. 60",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatenie",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

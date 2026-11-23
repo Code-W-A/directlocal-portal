@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "claunic-expert-itp",
+  "slug": "claunic-expert-itp",
+  "name": "Claunic Expert ITP",
+  "description": "Claunic Expert ITP prezintă inspecția tehnică pe site-ul ITP Târgoviște. Stația publicată este în satul Bungetu, comuna Văcărești, pe Calea București, DN 71, nu în municipiu.",
+  "phone": "0729830569",
+  "email": "contact@itptargoviste.ro",
+  "website": "https://itptargoviste.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://itptargoviste.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Site ITP Târgoviște, brand Claunic. Telefon 0729 830 569, email contact@itptargoviste.ro. Adresa: Calea București, DN 71, sat Bungetu, Văcărești. Nu preluăm tarifele afișate și nu confirmăm autorizarea RAR în registrul autorității."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: stația este în Văcărești și site-ul o prezintă pentru căutarea din Târgoviște. Telefonul diferă de atelierul Claunic Service. Fără tarife sau autorizații importate.",
+  "seo": {
+    "title": "Claunic Expert ITP — servicii și contact",
+    "description": "Claunic Expert ITP prezintă inspecția tehnică pe site-ul ITP Târgoviște. Stația publicată este în satul Bungetu, comuna Văcărești, pe Calea București, DN 71, nu în municipiu."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Văcărești",
+    "county": "Dâmbovița",
+    "street": "Calea București, DN 71, sat Bungetu",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

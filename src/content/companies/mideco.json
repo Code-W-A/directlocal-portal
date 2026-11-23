@@ -1,0 +1,55 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "mideco",
+  "slug": "mideco",
+  "name": "Mideco",
+  "description": "Mideco prezintă finisaje interioare și lucrări la șarpantă și învelitori, ca firmă de construcții din județul Dâmbovița. Punctul de lucru publicat este pe Calea Domnească nr. 98 din Târgoviște, iar sediul social este în satul Gura Șuții.",
+  "phone": "0722432689",
+  "email": "midecoconstruct@yahoo.com",
+  "website": "https://mideco.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://mideco.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "SC Mideco Every Day Construct SRL, CUI RO 36447531, J15/877/2016. Telefon +40 722 432 689, email midecoconstruct@yahoo.com. Sediu social Sat Gura Șuții nr. 929. Punct de lucru Calea Domnească nr. 98, Târgoviște. Textul o prezintă ca firmă de construcții în județul Dâmbovița și enumeră finisaje (tencuieli, glet, vopsitorii, gresie, faianță, parchet) și reparații ori montaj de șarpantă și învelitori."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: punctul de lucru din Târgoviște este separat de sediul social din Gura Șuții. Publicăm finisajele și lucrările de acoperiș declarate, fără renovări de apartamente sau certificări.",
+  "seo": {
+    "title": "Mideco — servicii și contact",
+    "description": "Mideco prezintă finisaje interioare și lucrări la șarpantă și învelitori, ca firmă de construcții din județul Dâmbovița. Punctul de lucru publicat este pe Calea Domnească nr. 98 din Târgoviște, iar sediul social este în satul Gura Șuții."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Calea Domnească nr. 98",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "amenajari-interioare",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    },
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    }
+  ]
+}

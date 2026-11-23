@@ -1,0 +1,46 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "curat-si-sanatos",
+  "slug": "curat-si-sanatos",
+  "name": "Curat și Sănătos",
+  "description": "Curat și Sănătos prezintă curățenie la domiciliu, la birou și după constructor. Orașele numite pe pagină sunt București, Pitești, Ploiești și Târgoviște.",
+  "phone": "0736129969",
+  "email": "office@curatsisanatos.ro",
+  "website": "https://curatsisanatos.ro/servicii-de-curatenie/curatenie/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://curatsisanatos.ro/servicii-de-curatenie/curatenie/",
+      "checkedAt": "2026-11-23",
+      "note": "Servicii de curățenie la domiciliu, birouri și după constructor. Contact: 0736.129.969, office@curatsisanatos.ro. Orașele afișate: București, Pitești, Ploiești, Târgoviște. Nu există adresă de sediu pe pagină și nu preluăm programul ca disponibilitate garantată."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: serviciile și cele patru orașe sunt pe pagina firmei. Nu există stradă publicată, deci nu inventăm un sediu. Fără tarife sau recenzii.",
+  "seo": {
+    "title": "Curat și Sănătos — servicii și contact",
+    "description": "Curat și Sănătos prezintă curățenie la domiciliu, la birou și după constructor. Orașele numite pe pagină sunt București, Pitești, Ploiești și Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "curatenie",
+      "sourceIds": ["source-1"],
+      "coverage": [
+        { "locationId": "targoviste", "sourceIds": ["source-1"] },
+        { "locationId": "pitesti", "sourceIds": ["source-1"] },
+        { "locationId": "ploiesti", "sourceIds": ["source-1"] }
+      ],
+      "countyCoverage": []
+    }
+  ]
+}

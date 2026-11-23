@@ -1,0 +1,55 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "casa-prim",
+  "slug": "casa-prim",
+  "name": "Casa Prim",
+  "description": "Casa Prim prezintă furnizarea și montajul de panouri fotovoltaice. Sediul social publicat este în Pucioasa, pe Strada Morilor nr. 17, iar printre punctele de lucru este Calea Domnească nr. 231 din Târgoviște.",
+  "phone": "0746111109",
+  "email": "contact@casaprim.ro",
+  "website": "https://www.casaprim.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://www.casaprim.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Casa Prim Fotovoltaice / Casa Prim Textil SRL. Pagina principală prezintă furnizarea și instalarea de sisteme fotovoltaice. Nu preluăm procentul de reducere a facturii, garanția de 25 de ani sau citatele de recenzii."
+    },
+    {
+      "id": "source-2",
+      "url": "https://www.casaprim.ro/contact",
+      "checkedAt": "2026-11-23",
+      "note": "Contact: telefon 0746 111 109 și 0345 560 000, email contact@casaprim.ro. CUI RO 33985323, J15/36/2015. Sediu social Pucioasa, Str. Morilor nr. 17. Puncte de lucru: Str. Morilor 22, Pucioasa, și Calea Domnească nr. 231, Târgoviște."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: instalarea este pe pagina principală, iar punctul de lucru din Târgoviște este pe pagina de contact. Sediul social rămâne în Pucioasa. Fără economii, garanții sau recenzii.",
+  "seo": {
+    "title": "Casa Prim — servicii și contact",
+    "description": "Casa Prim prezintă furnizarea și montajul de panouri fotovoltaice. Sediul social publicat este în Pucioasa, pe Strada Morilor nr. 17, iar printre punctele de lucru este Calea Domnească nr. 231 din Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1", "source-2"],
+    "description": ["source-1", "source-2"],
+    "website": ["source-1"],
+    "phone": ["source-2"],
+    "email": ["source-2"]
+  },
+  "headquarters": {
+    "kind": "headquarters",
+    "locality": "Pucioasa",
+    "county": "Dâmbovița",
+    "street": "Strada Morilor nr. 17",
+    "sourceIds": ["source-2"]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": ["source-1", "source-2"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1", "source-2"] }],
+      "countyCoverage": []
+    }
+  ]
+}

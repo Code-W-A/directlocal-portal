@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "status": "daily_quota_exceeded",
+  "results": [
+    {
+      "url": "https://directlocal.ro/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/amenajari-interioare/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/curatare-canapele/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/curatenie/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/electrician-auto/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/electricieni/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/instalatori/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/itp/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/montaj-aer-conditionat/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/montaj-centrale-termice/",
+      "status": "requested"
+    },
+    {
+      "url": "https://directlocal.ro/servicii/montaj-pompe-de-caldura/",
+      "status": "requested"
+    }
+  ],
+  "pending": [
+    "https://directlocal.ro/servicii/panouri-fotovoltaice/",
+    "https://directlocal.ro/servicii/renovari-apartamente/",
+    "https://directlocal.ro/servicii/reparatii-acoperisuri/",
+    "https://directlocal.ro/servicii/service-aer-conditionat/",
+    "https://directlocal.ro/servicii/service-auto/",
+    "https://directlocal.ro/servicii/service-centrale/",
+    "https://directlocal.ro/servicii/vopsitorie-auto/"
+  ],
+  "googleMessage": "Sorry--we couldn't process this request because you've exceeded your daily quota. Please try submitting this again tomorrow."
+}

@@ -3,17 +3,20 @@
   "id": "service-auto-judet-dambovita",
   "slug": "service-auto-judet-dambovita",
   "status": "published",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-11-23",
   "indexStatus": "index",
   "editorialReviewed": true,
-  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "reviewNote": "Revizie editorială 23.11.2026: listă extinsă cu ateliere din Văcărești, Răzvad și Doicești, prezentate de site-uri pentru Târgoviște. Adresa punctului de lucru rămâne cea publicată. Fără autorizații importate.",
   "kind": "county",
   "serviceId": "service-auto",
   "countyId": "dambovita",
   "companyIds": [
     "beda-impex",
     "raiman-auto",
-    "amg-service-auto"
+    "amg-service-auto",
+    "claunic-service",
+    "auto-moto-targoviste",
+    "melidra"
   ],
   "title": "Service auto în județul Dâmbovița",
   "seo": {
@@ -39,12 +42,30 @@
       "checkedAt": "2026-10-15",
       "url": "https://www.amgserviceauto.ro/",
       "note": "Telefon 0766 245 765 și atelier Găești cu mecanică/revizii/diagnoză. Aria tractărilor nu devine acoperire pentru reparații mobile."
+    },
+    {
+      "id": "claunic-service-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://claunicservice.ro/",
+      "note": "Atelier în Văcărești, prezentat ca service auto Târgoviște. Nu preluăm autorizarea RAR."
+    },
+    {
+      "id": "auto-moto-targoviste-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://www.automototargoviste.ro/",
+      "note": "Service în Răzvad, brand Auto-Moto Târgoviște, anvelope și mecanică."
+    },
+    {
+      "id": "melidra-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://melidra.ro/statie-itp/",
+      "note": "Service auto Dâmbovița, adresă în Doicești, pagină orientată și spre Târgoviște."
     }
   ]
 }
 ---
 ## Cum este acoperit județul Dâmbovița
-Selecția cuprinde furnizori documentați pentru Târgoviște, Găești. Prezența în lista județului Dâmbovița nu înseamnă că fiecare firmă lucrează în toate localitățile.
+Selecția cuprinde furnizori documentați pentru Târgoviște și Găești, plus ateliere din Văcărești, Răzvad și Doicești ale căror site-uri se adresează Târgoviștei. Prezența în lista județului Dâmbovița nu înseamnă că fiecare firmă lucrează în toate localitățile.
 
 ## Reparația la atelier
 Cere acordul asupra devizului înainte de începerea lucrării. Clarifică proveniența pieselor, timpul estimat și documentele oferite la predarea mașinii.
@@ -57,6 +78,9 @@ Cere acordul asupra devizului înainte de începerea lucrării. Clarifică prove
 - **BEDA IMPEX**: punct de lucru în Târgoviște. Contactul și serviciile sunt reunite în [profil](/firme/beda-impex/).
 - **Raiman Auto**: punct de lucru în Târgoviște. Contactul și serviciile sunt reunite în [profil](/firme/raiman-auto/).
 - **AMG Service Auto**: punct de lucru în Găești. Contactul și serviciile sunt reunite în [profil](/firme/amg-service-auto/).
+- **Claunic Service**: atelier în Văcărești, sat Bungetu. Contactul este în [profil](/firme/claunic-service/).
+- **Auto-Moto Târgoviște**: service în Răzvad. Contactul este în [profil](/firme/auto-moto-targoviste/).
+- **Melidra Eco Drive**: service în Doicești, cu mențiune pentru Dâmbovița. Contactul este în [profil](/firme/melidra/).
 
 ### Cum aleg pagina potrivită?
 Pagina județului oferă o vedere de ansamblu. Pagina orașului restrânge selecția la firme cu o asociere documentată pentru localitatea respectivă; nu extindem automat o arie de lucru doar din adresa sediului.

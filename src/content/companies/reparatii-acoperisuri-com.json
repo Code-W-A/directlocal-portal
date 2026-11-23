@@ -1,0 +1,46 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "reparatii-acoperisuri-com",
+  "slug": "reparatii-acoperisuri-com",
+  "name": "Reparații Acoperișuri.com",
+  "description": "Reparații Acoperișuri.com prezintă lucrări de reparații pentru acoperișuri și numește în titlu București, Ilfov, Prahova și Dâmbovița. Site-ul publică telefon și email, fără denumire de firmă și fără stradă.",
+  "phone": "0767961266",
+  "email": "contact@reparatii-acoperis.com",
+  "website": "https://reparatii-acoperisuri.com/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://reparatii-acoperisuri.com/",
+      "checkedAt": "2026-11-23",
+      "note": "Titlul paginii: Reparații acoperișuri București, Ilfov, Prahova, Dâmbovița. Telefon +40 767 961 266. Emailuri contact@reparatii-acoperis.com și contact.reparatii.acoperisuri@gmail.com. Nu există denumire juridică sau adresă de sediu. Nu preluăm superlative."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: identitatea publică este marca site-ului, cu telefon și email. Județele Dâmbovița, Prahova și Ilfov sunt în titlu. Nu inventăm o firmă sau o stradă.",
+  "seo": {
+    "title": "Reparații Acoperișuri.com — servicii și contact",
+    "description": "Reparații Acoperișuri.com prezintă lucrări de reparații pentru acoperișuri și numește în titlu București, Ilfov, Prahova și Dâmbovița. Site-ul publică telefon și email, fără denumire de firmă și fără stradă."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "reparatii-acoperisuri",
+      "sourceIds": ["source-1"],
+      "coverage": [],
+      "countyCoverage": [
+        { "countyId": "dambovita", "sourceIds": ["source-1"] },
+        { "countyId": "prahova", "sourceIds": ["source-1"] },
+        { "countyId": "ilfov", "sourceIds": ["source-1"] }
+      ]
+    }
+  ]
+}

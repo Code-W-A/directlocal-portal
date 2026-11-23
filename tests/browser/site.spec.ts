@@ -123,9 +123,10 @@ test("new cities and county coverage have working listings and profiles", async 
   }
   await page.goto("/cauta/");
   await chooseOption(page.getByRole("button", { name: /^Județ / }), "ilfov");
-  await expect(page.getByRole("status")).toHaveText("1 firmă găsită");
+  await expect(page.getByRole("status")).toHaveText("2 firme găsite");
   await expectOptionCount(page.getByRole("button", { name: /^Oraș / }), 1);
   await expect(page.getByRole("link", { name: "Detailing Mobil", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Reparații Acoperișuri.com", exact: true })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("ilfov-search.png"), fullPage: true });
   await chooseOption(page.getByRole("button", { name: /^Județ / }), "timis");
   await chooseOption(page.getByRole("button", { name: /^Oraș / }), "timisoara");

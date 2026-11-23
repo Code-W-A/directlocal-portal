@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "claunic-service",
+  "slug": "claunic-service",
+  "name": "Claunic Service",
+  "description": "Claunic Service prezintă mecanică auto, revizii și diagnoză și își promovează atelierul pentru Târgoviște. Punctul de lucru publicat este în satul Bungetu, comuna Văcărești, pe Calea București, DN 71.",
+  "phone": "0736730892",
+  "email": "office@claunicservice.ro",
+  "website": "https://claunicservice.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://claunicservice.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Titlul paginii este Service Auto Târgoviște. Servicii: mecanică, diagnoză, revizie, ulei, filtre, frâne, transmisie. Telefon 0736 730 892, email office@claunicservice.ro. Adresa: Calea București, DN 71, sat Bungetu, Văcărești, Dâmbovița. Nu preluăm apartenența la o rețea sau autorizarea RAR ca fapt verificat de director."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: atelierul este în Văcărești, nu în municipiul Târgoviște, iar site-ul se adresează căutării din Târgoviște. Fără autorizații sau tarife importate.",
+  "seo": {
+    "title": "Claunic Service — servicii și contact",
+    "description": "Claunic Service prezintă mecanică auto, revizii și diagnoză și își promovează atelierul pentru Târgoviște. Punctul de lucru publicat este în satul Bungetu, comuna Văcărești, pe Calea București, DN 71."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Văcărești",
+    "county": "Dâmbovița",
+    "street": "Calea București, DN 71, sat Bungetu",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-auto",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

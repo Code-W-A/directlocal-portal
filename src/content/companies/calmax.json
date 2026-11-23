@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "calmax",
+  "slug": "calmax",
+  "name": "Calmax",
+  "description": "Calmax prezintă implementarea și execuția sistemelor geotermale aer-apă pentru încălzire și răcire. Site-ul publică două firme, CALMAX INSTAL și CALMAX IMPEX, ambele cu adrese în Târgoviște.",
+  "phone": "0741177128",
+  "email": "office@calmax.ro",
+  "website": "https://www.calmax.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://www.calmax.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Homepage: sisteme geotermale aer-apă, răcire și încălzire, implementare și execuție. CALMAX INSTAL S.R.L., George Cair nr. 2A, Târgoviște, J15/449/2021, CUI RO43966752, telefon 0741 177 128, office@calmax.ro. CALMAX IMPEX S.R.L., Tony Bulandra nr. 4, Târgoviște, telefon 0722 172 976, officeimpex@calmax.ro. Profilul folosește telefonul și emailul CALMAX INSTAL și menționează ambele denumiri."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: lucrarea de pompă de căldură și adresele din Târgoviște sunt pe site. Cele două SRL-uri rămân numite separat. Fără tarife, garanții sau autorizații importate.",
+  "seo": {
+    "title": "Calmax — servicii și contact",
+    "description": "Calmax prezintă implementarea și execuția sistemelor geotermale aer-apă pentru încălzire și răcire. Site-ul publică două firme, CALMAX INSTAL și CALMAX IMPEX, ambele cu adrese în Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "George Cair nr. 2A",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "montaj-pompe-de-caldura",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

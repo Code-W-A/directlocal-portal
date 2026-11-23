@@ -1,0 +1,47 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "auto-moto-targoviste",
+  "slug": "auto-moto-targoviste",
+  "name": "Auto-Moto Târgoviște",
+  "description": "Auto-Moto Târgoviște prezintă anvelope, vulcanizare mobilă și mecanică auto. Adresa publicată a service-ului este Strada Tudor Vladimirescu 1, Răzvad, nu în municipiul Târgoviște.",
+  "phone": "0721500590",
+  "website": "https://www.automototargoviste.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://www.automototargoviste.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Brand Auto-Moto Târgoviște, programare 0721 500 590. Servicii: anvelope, vulcanizare mobilă și mecanică. Adresa: Strada Tudor Vladimirescu 1, Răzvad, Dâmbovița. Nu preluăm afirmații despre calitatea lucrărilor."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: atelierul este în Răzvad, iar brandul se adresează Târgoviștei. Fără recenzii sau tarife importate.",
+  "seo": {
+    "title": "Auto-Moto Târgoviște — servicii și contact",
+    "description": "Auto-Moto Târgoviște prezintă anvelope, vulcanizare mobilă și mecanică auto. Adresa publicată a service-ului este Strada Tudor Vladimirescu 1, Răzvad, nu în municipiul Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Răzvad",
+    "county": "Dâmbovița",
+    "street": "Strada Tudor Vladimirescu 1",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-auto",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

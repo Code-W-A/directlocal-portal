@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-15",
+  "site": "https://directlocal.ro",
+  "branch": "main",
+  "commit": "3ebb097eb89de48d1669fc6427fd72976ad6542f",
+  "deploymentStatus": "Ready / Production",
+  "measurementId": "G-1EK33H5G21",
+  "ga4Property": "559112900",
+  "searchConsoleLinked": "sc-domain:directlocal.ro",
+  "liveEvidence": {
+    "googleTagBeforeConsent": 0,
+    "googleTagAfterConsent": "https://www.googletagmanager.com/gtag/js?id=G-1EK33H5G21",
+    "realtimeActiveUsers": 1,
+    "realtimeEvents": {"page_view": 2, "company_website_click": 1, "search_no_results": 1, "user_engagement": 2},
+    "companyWebsiteClickParameter": {"company_id": "alpha-cleaning"},
+    "browserErrors": []
+  },
+  "localChecks": {"lint": "passed", "typecheck": "passed", "unitTests": "57 passed", "contentValidation": "passed", "buildAnd104PageHtmlVerification": "passed", "desktopMobileBrowserTests": "12 passed"},
+  "limits": ["This is controlled verification traffic, not organic traffic or confirmed customers.", "Phone clicks do not confirm calls.", "Company messages and submissions were tested using mocked transport; no real messages were sent to companies.", "Standard GA4 and Search Console reports can take longer to populate."],
+  "screenshots": ["ga4-production-final-2026-10-15.jpg", "ga4-realtime-final-2026-10-15.jpg"]
+}

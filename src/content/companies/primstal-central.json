@@ -1,0 +1,54 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "primstal-central",
+  "slug": "primstal-central",
+  "name": "Primstal Central",
+  "description": "Primstal Central SRL prezintă montaj și service de centrale termice, plus instalații sanitare, pentru județul Dâmbovița. Telefonul și emailul sunt publice; strada afișată nu include localitatea.",
+  "phone": "0728992550",
+  "email": "primstalcentral@yahoo.com",
+  "website": "https://primstal-central.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://primstal-central.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Numele Primstal Central SRL, telefon 0728.992.550, email, montaj și service de centrale, instalații sanitare și mențiunea instalații termice Dâmbovița. Adresa este Str. Calea București, Bl. H2, sc. C, parter, fără localitate. Nu preluăm autorizări ISCIR, garanții sau timpi de intervenție."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: contact utilizabil și servicii pentru județul Dâmbovița, pe website-ul firmei. Localitatea străzii nu este publicată, deci nu o atribuim Târgoviștei. Fără tarife, recenzii sau autorizații importate.",
+  "seo": {
+    "title": "Primstal Central — servicii și contact",
+    "description": "Primstal Central SRL prezintă montaj și service de centrale termice, plus instalații sanitare, pentru județul Dâmbovița. Telefonul și emailul sunt publice; strada afișată nu include localitatea."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "service-centrale",
+      "sourceIds": ["source-1"],
+      "coverage": [],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    },
+    {
+      "serviceId": "montaj-centrale-termice",
+      "sourceIds": ["source-1"],
+      "coverage": [],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    },
+    {
+      "serviceId": "instalatori",
+      "sourceIds": ["source-1"],
+      "coverage": [],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    }
+  ]
+}

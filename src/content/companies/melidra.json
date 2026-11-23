@@ -1,0 +1,55 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "melidra",
+  "slug": "melidra",
+  "name": "Melidra Eco Drive",
+  "description": "Melidra Eco Drive prezintă o stație ITP și service auto pentru Dâmbovița, cu pagina orientată și spre Târgoviște. Adresa publicată este Aleea Sinaia nr. 241, Doicești.",
+  "phone": "0771257891",
+  "email": "office@melidra.ro",
+  "website": "https://melidra.ro/statie-itp/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://melidra.ro/statie-itp/",
+      "checkedAt": "2026-11-23",
+      "note": "Melidra Eco Drive: stație ITP și mențiunea Service AUTO Dâmbovița. Titlul paginii include Service auto Târgoviște. Adresa Aleea Sinaia nr. 241, Doicești. Telefoane 0771 257 891 și 0371 630 192, email office@melidra.ro. ITP pentru autoturisme, microbuze și autoutilitare până la 3.500 kg, inclusiv GPL, după textul paginii. Nu confirmăm autorizarea."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: punctul de lucru este în Doicești. Site-ul leagă ITP și service-ul de Dâmbovița și de căutarea din Târgoviște. Fără autorizații sau tarife importate.",
+  "seo": {
+    "title": "Melidra Eco Drive — servicii și contact",
+    "description": "Melidra Eco Drive prezintă o stație ITP și service auto pentru Dâmbovița, cu pagina orientată și spre Târgoviște. Adresa publicată este Aleea Sinaia nr. 241, Doicești."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Doicești",
+    "county": "Dâmbovița",
+    "street": "Aleea Sinaia nr. 241",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    },
+    {
+      "serviceId": "service-auto",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": [{ "countyId": "dambovita", "sourceIds": ["source-1"] }]
+    }
+  ]
+}

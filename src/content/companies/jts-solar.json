@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "jts-solar",
+  "slug": "jts-solar",
+  "name": "JTS Solar",
+  "description": "JTS Solar prezintă instalarea de panouri fotovoltaice și un showroom lângă Pitești, pe DN65B, în Geamăna. Sediul social publicat este în satul Borlești, comuna Merișani, județul Argeș. Site-ul spune și că instalează în toată țara.",
+  "phone": "0771504694",
+  "email": "contact@jtssolar.ro",
+  "website": "https://www.jtssolar.ro/despre-noi/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://www.jtssolar.ro/despre-noi/",
+      "checkedAt": "2026-11-23",
+      "note": "JTS SOLAR, firmă J.T.S INSTAL CONSTRUCT S.R.L., CIF RO43112865. Sediu social Sat Borlești nr. 167, Com. Merișani, Argeș. Showroom DN65B, Geamăna, lângă Pitești. Telefoane 0771 504 694 și 0752 080 807. Emailuri oferte@jtssolar.ro și contact@jtssolar.ro. Textul menționează instalare în toată România. Profilul documentează Pitești și județul Argeș, unde sunt showroom-ul și sediul, și păstrează mențiunea națională fără a deschide pagini în alte județe."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: showroom-ul de lângă Pitești și sediul din Merișani susțin pagina din Argeș. Afirmația „în toată țara” nu generează pagini locale. Fără proiecte sau recenzii importate.",
+  "seo": {
+    "title": "JTS Solar — servicii și contact",
+    "description": "JTS Solar prezintă instalarea de panouri fotovoltaice și un showroom lângă Pitești, pe DN65B, în Geamăna. Sediul social publicat este în satul Borlești, comuna Merișani, județul Argeș. Site-ul spune și că instalează în toată țara."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "headquarters",
+    "locality": "Merișani",
+    "county": "Argeș",
+    "street": "Sat Borlești nr. 167",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "pitesti", "sourceIds": ["source-1"] }],
+      "countyCoverage": [{ "countyId": "arges", "sourceIds": ["source-1"] }]
+    }
+  ]
+}

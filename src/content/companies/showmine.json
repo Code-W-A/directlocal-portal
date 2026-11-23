@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "showmine",
+  "slug": "showmine",
+  "name": "SHOWMINE",
+  "description": "SHOWMINE, marca Iluminat Solar a SHOWMINE TECH SRL, prezintă instalarea de panouri fotovoltaice. Adresa publicată pe aceeași pagină este Strada Calafat nr. 9, Târgoviște.",
+  "phone": "0726211010",
+  "email": "office@showmine.ro",
+  "website": "https://www.iluminatsolar.com/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://www.iluminatsolar.com/",
+      "checkedAt": "2026-11-23",
+      "note": "SHOWMINE TECH SRL / Iluminat Solar. Telefon 0726 211 010, email office@showmine.ro, adresă Str. Calafat nr. 9, Târgoviște, Dâmbovița, pe pagina care prezintă instalarea fotovoltaică. Nu preluăm autorizări AFM, numărul de proiecte, puterea instalată sau programe de finanțare."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: adresa din Târgoviște și instalarea sunt pe aceeași pagină. Nu extindem acoperirea la tot județul și nu preluăm finanțări sau cifre de proiecte.",
+  "seo": {
+    "title": "SHOWMINE — servicii și contact",
+    "description": "SHOWMINE, marca Iluminat Solar a SHOWMINE TECH SRL, prezintă instalarea de panouri fotovoltaice. Adresa publicată pe aceeași pagină este Strada Calafat nr. 9, Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Târgoviște",
+    "county": "Dâmbovița",
+    "street": "Strada Calafat nr. 9",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

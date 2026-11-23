@@ -1,0 +1,61 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "proinstal",
+  "slug": "proinstal",
+  "name": "PROINSTAL",
+  "description": "PROINSTAL SRL prezintă montaj și reparații de centrale termice și lucrări de instalații sanitare. Magazinul publicat este în Găești, pe strada 1 Decembrie nr. 2.",
+  "phone": "0765419168",
+  "email": "proinstal2005@gmail.com",
+  "website": "https://instalatii-dambovita.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://instalatii-dambovita.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "PROINSTAL SRL, telefon 0765419168, email proinstal2005@gmail.com, magazin în Găești, strada 1 Decembrie nr. 2. Pagina enumeră montaj, reparare și punere în funcțiune la centrale termice, plus instalații sanitare. Nu preluăm autorizarea ISCIR, prețurile din magazin sau promisiuni de intervenție."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: contact, magazinul din Găești și lucrările de centrale și instalații sanitare sunt pe site. Nu extindem magazinul la tot județul. Fără tarife sau autorizații importate.",
+  "seo": {
+    "title": "PROINSTAL — servicii și contact",
+    "description": "PROINSTAL SRL prezintă montaj și reparații de centrale termice și lucrări de instalații sanitare. Magazinul publicat este în Găești, pe strada 1 Decembrie nr. 2."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Găești",
+    "county": "Dâmbovița",
+    "street": "Strada 1 Decembrie nr. 2",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "instalatori",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "gaesti", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "service-centrale",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "gaesti", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    },
+    {
+      "serviceId": "montaj-centrale-termice",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "gaesti", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

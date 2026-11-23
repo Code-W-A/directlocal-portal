@@ -1,0 +1,53 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "esol",
+  "slug": "esol",
+  "name": "eSol",
+  "description": "eSol, denumirea comercială a SC SOLAR SOLUTION SRL, prezintă montaj de panouri fotovoltaice în Argeș și în județele limitrofe, printre care Dâmbovița și Prahova. Sediul publicat este în Pitești, pe Bulevardul Nicolae Bălcescu nr. 143.",
+  "phone": "0745069426",
+  "email": "office@esol.ro",
+  "website": "https://esol.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://esol.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "SC SOLAR SOLUTION SRL, RO45829298, Pitești, Bld. Nicolae Bălcescu nr. 143. Telefon 0745 069 426, email office@esol.ro. Textul declară montaj complet în Argeș și în județele limitrofe Dâmbovița, Olt, Vâlcea, Teleorman, Prahova și București-Ilfov. Nu preluăm ratinguri, economii estimate sau garanții comerciale."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: Pitești, Argeș, Dâmbovița și Prahova sunt numite pe site. Nu creăm pagini de oraș în județele limitrofe doar din mențiunea județului. Fără ratinguri sau economii.",
+  "seo": {
+    "title": "eSol — servicii și contact",
+    "description": "eSol, denumirea comercială a SC SOLAR SOLUTION SRL, prezintă montaj de panouri fotovoltaice în Argeș și în județele limitrofe, printre care Dâmbovița și Prahova. Sediul publicat este în Pitești, pe Bulevardul Nicolae Bălcescu nr. 143."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"],
+    "email": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "headquarters",
+    "locality": "Pitești",
+    "county": "Argeș",
+    "street": "Bulevardul Nicolae Bălcescu nr. 143",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "panouri-fotovoltaice",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "pitesti", "sourceIds": ["source-1"] }],
+      "countyCoverage": [
+        { "countyId": "arges", "sourceIds": ["source-1"] },
+        { "countyId": "dambovita", "sourceIds": ["source-1"] },
+        { "countyId": "prahova", "sourceIds": ["source-1"] }
+      ]
+    }
+  ]
+}

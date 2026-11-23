@@ -3,10 +3,10 @@
   "id": "reparatii-acoperisuri-judet-dambovita",
   "slug": "reparatii-acoperisuri-judet-dambovita",
   "status": "published",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-11-23",
   "indexStatus": "index",
   "editorialReviewed": true,
-  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "reviewNote": "Revizie editorială 23.11.2026: listă extinsă cu Mideco, care declară lucrări la șarpantă și învelitori, și cu site-ul Reparații Acoperișuri, care numește Dâmbovița. Fără superlative sau garanții importate.",
   "kind": "county",
   "serviceId": "reparatii-acoperisuri",
   "countyId": "dambovita",
@@ -14,7 +14,9 @@
     "acoperisuri-reparatii",
     "reparatii-best",
     "acoperisuri-montaj",
-    "acoperisuri-pe-viata"
+    "acoperisuri-pe-viata",
+    "mideco",
+    "reparatii-acoperisuri-com"
   ],
   "title": "Reparații acoperișuri în județul Dâmbovița",
   "seo": {
@@ -46,12 +48,24 @@
       "checkedAt": "2026-10-15",
       "url": "https://acoperisuripeviata.ro/reparatii-acoperisuri",
       "note": "Brandul website-ului, telefon, reparații și acoperire în Dâmbovița. Nu importăm promisiuni privind rezistența sau disponibilitatea."
+    },
+    {
+      "id": "mideco-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://mideco.ro/",
+      "note": "Reparații și montaj de șarpantă și învelitori, firmă de construcții în județul Dâmbovița, punct de lucru în Târgoviște."
+    },
+    {
+      "id": "reparatii-acoperisuri-com-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://reparatii-acoperisuri.com/",
+      "note": "Titlul paginii numește Dâmbovița, alături de București, Ilfov și Prahova. Telefon și email publice, fără denumire juridică sau stradă."
     }
   ]
 }
 ---
 ## Cum este acoperit județul Dâmbovița
-Acoperișuri-Reparații, Reparații Best, Acoperișuri Montaj, Acoperișuri pe Viață declară acoperire în județul Dâmbovița. Cere confirmarea adresei exacte când programezi lucrarea.
+Acoperișuri-Reparații, Reparații Best, Acoperișuri Montaj și Acoperișuri pe Viață declară acoperire în județul Dâmbovița. Mideco adaugă lucrări la șarpantă și învelitori, cu punct de lucru în Târgoviște. Site-ul Reparații Acoperișuri numește județul, fără stradă. Cere confirmarea adresei exacte când programezi lucrarea.
 
 ## Devizul pentru reparație
 Cere lista suprafețelor și materialelor, modul de evacuare a deșeurilor și condițiile de recepție. Nu urca pe acoperiș pentru a pregăti solicitarea.
@@ -61,6 +75,8 @@ Cere lista suprafețelor și materialelor, modul de evacuare a deșeurilor și c
 - **Reparații Best**: consultă localitățile declarate în profil. Contactul și serviciile sunt reunite în [profil](/firme/reparatii-best/).
 - **Acoperișuri Montaj**: consultă localitățile declarate în profil. Contactul și serviciile sunt reunite în [profil](/firme/acoperisuri-montaj/).
 - **Acoperișuri pe Viață**: consultă localitățile declarate în profil. Contactul și serviciile sunt reunite în [profil](/firme/acoperisuri-pe-viata/).
+- **Mideco**: șarpantă și învelitori, punct de lucru în Târgoviște. Contactul este în [profil](/firme/mideco/).
+- **Reparații Acoperișuri.com**: Dâmbovița este în titlul site-ului, fără sediu publicat. Contactul este în [profil](/firme/reparatii-acoperisuri-com/).
 
 ### Cum aleg pagina potrivită?
 Pagina județului oferă o vedere de ansamblu. Pagina orașului restrânge selecția la firme cu o asociere documentată pentru localitatea respectivă; nu extindem automat o arie de lucru doar din adresa sediului.

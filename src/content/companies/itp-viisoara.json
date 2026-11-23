@@ -1,0 +1,47 @@
+{
+  "status": "published",
+  "updatedAt": "2026-11-23",
+  "id": "itp-viisoara",
+  "slug": "itp-viisoara",
+  "name": "ITP Viișoara",
+  "description": "ITP Viișoara prezintă inspecția tehnică la stația de pe DCL 198, în Viișoara, județul Dâmbovița. Site-ul o descrie ca fiind aproape de Târgoviște.",
+  "phone": "0722694064",
+  "website": "https://itpviisoara.ro/",
+  "sources": [
+    {
+      "id": "source-1",
+      "url": "https://itpviisoara.ro/",
+      "checkedAt": "2026-11-23",
+      "note": "Stație ITP pe DCL 198, Viișoara, aproape de Târgoviște. Telefon pentru programări ITP 0722694064. Pagina menționează și un service partener, cu alt număr, pe care nu îl contopim cu stația. Nu confirmăm clasele RAR și nu preluăm tarife."
+    }
+  ],
+  "sponsored": false,
+  "indexStatus": "index",
+  "editorialReviewed": true,
+  "reviewNote": "Revizie editorială 23.11.2026: stația este în Viișoara și site-ul o leagă explicit de zona Târgoviște. Autorizarea RAR rămâne de verificat la sursa oficială. Fără tarife.",
+  "seo": {
+    "title": "ITP Viișoara — servicii și contact",
+    "description": "ITP Viișoara prezintă inspecția tehnică la stația de pe DCL 198, în Viișoara, județul Dâmbovița. Site-ul o descrie ca fiind aproape de Târgoviște."
+  },
+  "evidence": {
+    "name": ["source-1"],
+    "description": ["source-1"],
+    "website": ["source-1"],
+    "phone": ["source-1"]
+  },
+  "headquarters": {
+    "kind": "workplace",
+    "locality": "Viișoara",
+    "county": "Dâmbovița",
+    "street": "DCL 198",
+    "sourceIds": ["source-1"]
+  },
+  "offerings": [
+    {
+      "serviceId": "itp",
+      "sourceIds": ["source-1"],
+      "coverage": [{ "locationId": "targoviste", "sourceIds": ["source-1"] }],
+      "countyCoverage": []
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "method": "HTTPS with certificate validation and explicit connection to published authoritative A record; local DNS cache still propagating",
+  "results": [
+    {
+      "path": "/",
+      "success": true,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://directlocal.ro/\"/>"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\"/>"
+      ],
+      "sitemapUrls": 0,
+      "robotsText": null
+    },
+    {
+      "path": "/servicii/",
+      "success": true,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://directlocal.ro/servicii/\"/>"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\"/>"
+      ],
+      "sitemapUrls": 0,
+      "robotsText": null
+    },
+    {
+      "path": "/servicii/panouri-fotovoltaice/bacau/bacau/",
+      "success": true,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://directlocal.ro/servicii/panouri-fotovoltaice/bacau/bacau/\"/>"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\"/>"
+      ],
+      "sitemapUrls": 0,
+      "robotsText": null
+    },
+    {
+      "path": "/cauta/",
+      "success": true,
+      "canonical": [],
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex, follow\"/>"
+      ],
+      "sitemapUrls": 0,
+      "robotsText": null
+    },
+    {
+      "path": "/robots.txt",
+      "success": true,
+      "canonical": [],
+      "robots": [],
+      "sitemapUrls": 0,
+      "robotsText": "User-Agent: *\nAllow: /\n\nSitemap: https://directlocal.ro/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "success": true,
+      "canonical": [],
+      "robots": [],
+      "sitemapUrls": 103,
+      "robotsText": null
+    }
+  ]
+}

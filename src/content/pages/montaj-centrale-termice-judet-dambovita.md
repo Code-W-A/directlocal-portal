@@ -3,16 +3,18 @@
   "id": "montaj-centrale-termice-judet-dambovita",
   "slug": "montaj-centrale-termice-judet-dambovita",
   "status": "published",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-11-23",
   "indexStatus": "index",
   "editorialReviewed": true,
-  "reviewNote": "Revizie editorială 15.10.2026: contact utilizabil, serviciu și arie susținute de surse oficiale; fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
+  "reviewNote": "Revizie editorială 23.11.2026: listă extinsă cu Primstal Central, pentru județ, și PROINSTAL, cu magazin în Găești. Fără estimări, recenzii sau certificări importate. Firmele nu au fost contactate telefonic.",
   "kind": "county",
   "serviceId": "montaj-centrale-termice",
   "countyId": "dambovita",
   "companyIds": [
     "jadcom",
-    "service-microcentrale"
+    "service-microcentrale",
+    "primstal-central",
+    "proinstal"
   ],
   "title": "Montaj centrale termice în județul Dâmbovița",
   "seo": {
@@ -38,12 +40,24 @@
       "checkedAt": "2026-10-15",
       "url": "https://www.servicemicrocentrale.ro/",
       "note": "Nume, telefon unic, montaj/reparații centrale și localitățile Târgoviște/Găești. Același dispecerat apare la Future Line Instal: aceasta nu este importată ca alternativă independentă."
+    },
+    {
+      "id": "primstal-central-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://primstal-central.ro/",
+      "note": "Montaj de centrale și mențiunea instalații termice Dâmbovița. Strada publicată nu numește orașul."
+    },
+    {
+      "id": "proinstal-source-1",
+      "checkedAt": "2026-11-23",
+      "url": "https://instalatii-dambovita.ro/",
+      "note": "Montaj de centrale termice, cu magazin în Găești pe strada 1 Decembrie nr. 2."
     }
   ]
 }
 ---
 ## Cum este acoperit județul Dâmbovița
-JADCOM, Service Microcentrale declară acoperire în județul Dâmbovița. Cere confirmarea adresei exacte când programezi lucrarea.
+JADCOM și Service Microcentrale declară acoperire în județul Dâmbovița. Pentru montaj, Primstal Central rămâne la nivel de județ, iar PROINSTAL publică magazinul din Găești, strada 1 Decembrie nr. 2. Cere confirmarea adresei exacte când programezi lucrarea.
 
 ## Delimitarea lucrărilor
 Solicită o ofertă care precizează demontarea, montajul, materialele și documentele de predare. Clarifică separat punerea în funcțiune și persoana care o realizează.
@@ -54,6 +68,8 @@ Solicită o ofertă care precizează demontarea, montajul, materialele și docum
 ## Ce poți compara în această listă
 - **JADCOM**: consultă localitățile declarate în profil. Contactul și serviciile sunt reunite în [profil](/firme/jadcom/).
 - **Service Microcentrale**: sediu declarat în București. Contactul și serviciile sunt reunite în [profil](/firme/service-microcentrale/).
+- **Primstal Central**: montaj de centrale pentru județ, fără oraș pe adresă. Contactul este în [profil](/firme/primstal-central/).
+- **PROINSTAL**: montaj de centrale, magazin în Găești. Contactul este în [profil](/firme/proinstal/).
 
 ### Cum aleg pagina potrivită?
 Pagina județului oferă o vedere de ansamblu. Pagina orașului restrânge selecția la firme cu o asociere documentată pentru localitatea respectivă; nu extindem automat o arie de lucru doar din adresa sediului.
